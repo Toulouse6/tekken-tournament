@@ -1,0 +1,47 @@
+[
+    {
+        "Id": 1,
+        "ShortName": "Jin",
+        "LongName": "Jin Kazama",
+        "FightingStyle": "Karate",
+        "Nationality": "Japan",
+        "Height": 183,
+        "Weight": 87,
+        "Gender": "m",
+        "Images": {
+            "Headshot": "src/assets/images/Jin-headshot.png",
+            "FullBody": "src/assets/images/Jin.png",
+            "Background": "src/assets/images/Jin-bg.png"
+        }
+    },
+    {
+        "Id": 2,
+        "ShortName": "Heihachi",
+        "LongName": "Heihachi Mishima",
+        "FightingStyle": "Heihachi Style Traditional Martial Arts",
+        "Nationality": "Japan",
+        "Height": 167,
+        "Weight": 57,
+        "Gender": "f",
+        "Images": {
+            "Headshot": "src/assets/images/Heihachi-headshot.png",
+            "FullBody": "src/assets/images/Heihachi.png",
+            "Background": "src/assets/images/Heihachi-bg.png"
+        }
+    },
+    {
+        "Id": 2,
+        "ShortName": "Kazuya",
+        "LongName": "Kazuya Mishima",
+        "FightingStyle": "Kazuya Style Traditional Martial Arts",
+        "Nationality": "Japan",
+        "Height": 167,
+        "Weight": 57,
+        "Gender": "f",
+        "Images": {
+            "Headshot": "src/assets/images/Kazuya-headshot.png",
+            "FullBody": "src/assets/images/Kazuya.png",
+            "Background": "src/assets/images/Kazuya-bg.png"
+        }
+    }
+]

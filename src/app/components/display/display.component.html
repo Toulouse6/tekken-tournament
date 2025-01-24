@@ -1,0 +1,21 @@
+<div class="display">
+    <h2>Display Selected Fighters</h2>
+  
+    <div *ngIf="fighter1">
+      <h3>Fighter 1: {{ fighter1.LongName }}</h3>
+      <img [src]="fighter1.Images.Headshot" alt="Fighter 1 Headshot" />
+      <img [src]="fighter1.Images.FullBody" alt="Fighter 1 Full Body" />
+    </div>
+  
+    <div *ngIf="fighter2">
+      <h3>Fighter 2: {{ fighter2.LongName }}</h3>
+      <img [src]="fighter2.Images.Headshot" alt="Fighter 2 Headshot" />
+      <img [src]="fighter2.Images.FullBody" alt="Fighter 2 Full Body" />
+    </div>
+  
+    <div *ngIf="stage">
+      <h3>Stage</h3>
+      <p>{{ stage }}</p>
+    </div>
+  </div>
+  

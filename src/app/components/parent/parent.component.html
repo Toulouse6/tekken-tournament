@@ -1,0 +1,12 @@
+<div>
+    <app-character-selection
+      (selectionChange)="onSelectionChange($event)"
+    ></app-character-selection>
+  
+    <app-display
+      [fighter1]="fighter1"
+      [fighter2]="fighter2"
+      [stage]="stage"
+    ></app-display>
+  </div>
+  

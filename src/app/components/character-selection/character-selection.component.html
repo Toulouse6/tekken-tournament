@@ -1,0 +1,25 @@
+<div class="character-selection">
+    <h2>Character Selection</h2>
+  
+    <label for="fighter1">Fighter 1:</label>
+    <select [(ngModel)]="fighter1" (change)="onSelectionChange()">
+      <option *ngFor="let character of characters" [ngValue]="character">
+        {{ character.LongName }}
+      </option>
+    </select>
+  
+    <label for="fighter2">Fighter 2:</label>
+    <select [(ngModel)]="fighter2" (change)="onSelectionChange()">
+      <option *ngFor="let character of characters" [ngValue]="character">
+        {{ character.LongName }}
+      </option>
+    </select>
+  
+    <label for="stage">Stage:</label>
+    <select [(ngModel)]="stage" (change)="onSelectionChange()">
+      <option *ngFor="let s of stage" [value]="s">
+        {{ s }}
+      </option>
+    </select>
+  </div>
+  
