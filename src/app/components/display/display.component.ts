@@ -12,5 +12,5 @@ import { CommonModule } from '@angular/common';
 export class DisplayComponent {
   @Input() fighter1: Character | null = null;
   @Input() fighter2: Character | null = null;
-  @Input() stage: string | null = null;
+  @Input() backgroundImage: string | null = null;
 }

@@ -1,3 +1,12 @@
-<app-character-selection></app-character-selection>
-<hr />
-<app-display></app-display>
+
+<app-display
+  [fighter1]="fighter1"
+  [fighter2]="fighter2"
+  [backgroundImage]="getArenasImage()"
+></app-display>
+
+<app-character-selection
+  [arenas]="arenasNames"
+  (selectionChange)="onSelectionChange($event)"
+></app-character-selection>
+

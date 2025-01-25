@@ -1,6 +1,21 @@
 [
     {
         "Id": 1,
+        "ShortName": "Kazuya",
+        "LongName": "Kazuya Mishima",
+        "FightingStyle": "Kazuya Style Traditional Martial Arts",
+        "Nationality": "Japan",
+        "Height": 175,
+        "Weight": 80,
+        "Gender": "m",
+        "Images": {
+            "FullBody": "./assets/images/kazuya.png",
+            "Background": "./assets/images/kazuya-bg.png",
+            "Headshot": "./assets/images/kazuya-headshot.png"
+        }
+    },
+    {
+        "Id": 2,
         "ShortName": "Jin",
         "LongName": "Jin Kazama",
         "FightingStyle": "Karate",
@@ -9,13 +24,13 @@
         "Weight": 87,
         "Gender": "m",
         "Images": {
-            "Headshot": "src/assets/images/Jin-headshot.png",
-            "FullBody": "src/assets/images/Jin.png",
-            "Background": "src/assets/images/Jin-bg.png"
+            "FullBody": "./assets/images/jin2.png",
+            "Background": "./assets/images/jin-bg.png",
+            "Headshot": "./assets/images/jin-headshot.png"
         }
     },
     {
-        "Id": 2,
+        "Id": 3,
         "ShortName": "Heihachi",
         "LongName": "Heihachi Mishima",
         "FightingStyle": "Heihachi Style Traditional Martial Arts",
@@ -24,24 +39,114 @@
         "Weight": 57,
         "Gender": "f",
         "Images": {
-            "Headshot": "src/assets/images/Heihachi-headshot.png",
-            "FullBody": "src/assets/images/Heihachi.png",
-            "Background": "src/assets/images/Heihachi-bg.png"
+            "FullBody": "./assets/images/heihachi.png",
+            "Background": "./assets/images/heihachi-bg.png",
+            "Headshot": "./assets/images/heihachi-headshot.png"
         }
     },
     {
-        "Id": 2,
-        "ShortName": "Kazuya",
-        "LongName": "Kazuya Mishima",
-        "FightingStyle": "Kazuya Style Traditional Martial Arts",
-        "Nationality": "Japan",
-        "Height": 167,
-        "Weight": 57,
-        "Gender": "f",
+        "Id": 4,
+        "ShortName": "Bryan",
+        "LongName": "Bryan Fury",
+        "FightingStyle": "Kickboxing",
+        "Nationality": "United States",
+        "Height": 186,
+        "Weight": 90,
+        "Gender": "m",
         "Images": {
-            "Headshot": "src/assets/images/Kazuya-headshot.png",
-            "FullBody": "src/assets/images/Kazuya.png",
-            "Background": "src/assets/images/Kazuya-bg.png"
+            "FullBody": "./assets/images/bryan.png",
+            "Background": "./assets/images/bryan-bg.png",
+            "Headshot": "./assets/images/bryan-headshot.png"
+        }
+    },
+    {
+        "Id": 5,
+        "ShortName": "Yoshimitsu",
+        "LongName": "Yoshimitsu",
+        "FightingStyle": "Manji Ninjutsu",
+        "Nationality": "Unknown",
+        "Height": 178,
+        "Weight": 63,
+        "Gender": "m",
+        "Images": {
+            "FullBody": "./assets/images/yoshimitsu2.png",
+            "Background": "./assets/images/yoshimitsu-bg.png",
+            "Headshot": "./assets/images/yoshimitsu-headshot.png"
+        }
+    },
+    {
+        "Id": 6,
+        "ShortName": "Eddy",
+        "LongName": "Eddy Gordo",
+        "FightingStyle": "Capoeira",
+        "Nationality": "Brazil",
+        "Height": 188,
+        "Weight": 75,
+        "Gender": "m",
+        "Images": {
+            "FullBody": "./assets/images/eddy.png",
+            "Background": "./assets/images/eddy-bg.png",
+            "Headshot": "./assets/images/eddy-headshot.png"
+        }
+    },
+    {
+        "Id": 7,
+        "ShortName": "King",
+        "LongName": "King",
+        "FightingStyle": "Professional Wrestling",
+        "Nationality": "Mexico",
+        "Height": 190,
+        "Weight": 90,
+        "Gender": "m",
+        "Images": {
+            "FullBody": "./assets/images/king.png",
+            "Background": "./assets/images/king-bg.png",
+            "Headshot": "./assets/images/king-headshot.png"
+        }
+    },
+    {
+        "Id": 8,
+        "ShortName": "Ogre",
+        "LongName": "True Ogre",
+        "FightingStyle": "Ancient Assassination Arts",
+        "Nationality": "Unknown",
+        "Height": 250,
+        "Weight": 200,
+        "Gender": "m",
+        "Images": {
+            "FullBody": "./assets/images/ogre.png",
+            "Background": "./assets/images/ogre-bg.png",
+            "Headshot": "./assets/images/ogre-headshot.png"
+        }
+    },
+    {
+        "Id": 9,
+        "ShortName": "Devil Jin",
+        "LongName": "Devil Jin",
+        "FightingStyle": "Karate",
+        "Nationality": "Unknown",
+        "Height": 183,
+        "Weight": 87,
+        "Gender": "m",
+        "Images": {
+            "FullBody": "./assets/images/devil-jin.png",
+            "Background": "./assets/images/devil-jin-bg.png",
+            "Headshot": "./assets/images/devil-jin-headshot.png"
+        }
+    },
+    {
+        "Id": 9,
+        "ShortName": "Devil Kazuya",
+        "LongName": "Devil Kazuya",
+        "FightingStyle": "Advanced Mishima Style Karate",
+        "Nationality": "Unknown",
+        "Height": 181,
+        "Weight": 81,
+        "Gender": "m",
+        "Images": {
+            "FullBody": "./assets/images/devil-kazuya.png",
+            "Background": "./assets/images/devil-kazuya-bg.png",
+            "Headshot": "./assets/images/devil-kazuya-headshot.png"
         }
     }
 ]

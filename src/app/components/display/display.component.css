@@ -1,0 +1,126 @@
+.display {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 60vh;
+    width: 100%;
+    margin: auto;
+    padding: 0;
+    text-align: center;
+    overflow: hidden;
+    color: white;
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.vsFrame {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+}
+
+.fighter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 85%;
+    text-align: center;
+    background-size: cover;
+    border-radius: 1rem;
+    padding: 1rem;
+    position: relative;
+    overflow: hidden;
+    margin: 3rem;
+}
+
+.fighter::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+}
+
+.fighter img.fullBody {
+    width: auto;
+    height: 18rem;
+    position: absolute;
+    bottom: 0.5rem;
+    z-index: 3;
+}
+
+.vsText {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3rem;
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 2px 5px black;
+    z-index: 3;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+h2 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    margin-bottom: 1rem;
+}
+
+
+@media (max-width: 768px) {
+
+    .vsFrame {
+        gap: 1rem;
+        height: auto;
+    }
+
+    .fighter {
+        height: auto;
+        padding: 1rem;
+    }
+
+    .fullBody {
+        width: 8rem;
+    }
+
+    .vsText {
+        font-size: 2rem;
+    }
+
+}

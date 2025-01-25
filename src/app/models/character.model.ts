@@ -8,9 +8,9 @@ export interface Character {
     Weight: number;
     Gender: string;
     Images: {
-      Headshot: string;
       FullBody: string;
       Background: string;
+      Headshot: string;
     };
   }
   
