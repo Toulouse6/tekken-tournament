@@ -1,28 +1,29 @@
-<div class="display" [style.backgroundImage]="'url(' + backgroundImage + ')'" [style.backgroundSize]="'cover'"
-    [style.backgroundPosition]="'center'">
+<div class="display" 
+     [style.backgroundImage]="'url(' + backgroundImage + ')'" 
+     [style.backgroundSize]="'cover'"
+     [style.backgroundPosition]="'center'">
 
     <div class="overlay"></div>
 
     <div class="vsFrame">
-        <!-- Fighter 1 -->
         <div class="fighter fighter1" *ngIf="fighter1"
-            [style.backgroundImage]="'url(' + fighter1.Images.Background + ')'" [style.backgroundSize]="'cover'"
-            [style.backgroundPosition]="'center'">
+             [style.backgroundImage]="'url(' + fighter1.Images.Background + ')'" 
+             [style.backgroundSize]="'cover'"
+             [style.backgroundPosition]="'center'">
 
             <img class="fullBody" [src]="fighter1.Images.FullBody" alt="Fighter 1 Full Body" />
         </div>
 
-        <!-- VS Text -->
         <div *ngIf="fighter1 && fighter2" class="vsText">
-            <h3>{{ fighter1.LongName }}</h3>
-            <h3>VS</h3>
-            <h3>{{ fighter2.LongName }}</h3>
+            <h2>{{ fighter1.LongName }}</h2>
+            <h3>VS.</h3>
+            <h2>{{ fighter2.LongName }}</h2>
         </div>
 
-        <!-- Fighter 2 -->
         <div class="fighter fighter2" *ngIf="fighter2"
-            [style.backgroundImage]="'url(' + fighter2.Images.Background + ')'" [style.backgroundSize]="'cover'"
-            [style.backgroundPosition]="'center'">
+             [style.backgroundImage]="'url(' + fighter2.Images.Background + ')'" 
+             [style.backgroundSize]="'cover'"
+             [style.backgroundPosition]="'center'">
 
             <img class="fullBody" [src]="fighter2.Images.FullBody" alt="Fighter 2 Full Body" />
         </div>

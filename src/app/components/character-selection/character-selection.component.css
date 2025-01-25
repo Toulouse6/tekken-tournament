@@ -31,27 +31,33 @@
 
 .character-tile:hover {
     transform: scale(1.1);
+    border-color: white;  
 }
 
 .character-tile.selected {
     transform: scale(1.1);
+    border-color: #e4aa2d;  
 }
 
 .character-tile.disabled {
     filter: grayscale(100%);
     pointer-events: none;
+    opacity: 0.7; 
 }
 
 .character-tile p {
+    font-family: "tekken", sans-serif; 
     background-color: white;
-    color: #222;
+    color: #3d3d3d;
     padding: 0.2rem 0.5rem;
     border-radius: 5px;
     margin-top: auto;
     font-size: 0.9rem;
     position: relative;
     bottom: -35px;
-
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    font-weight: bold;
+    text-transform: uppercase;
 }
 
 .arena-selection {
@@ -74,4 +80,21 @@
     color: white;
     outline: none;
     transition: border 0.3s ease;
+}
+
+.arena-selection select:focus {
+    border: 1px solid #888;  
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .character-tile {
+        height: 4rem; 
+        width: 4rem;
+    }
+
+    .character-tile p {
+        font-size: 0.8rem;  
+        bottom: -30px;
+    }
 }
