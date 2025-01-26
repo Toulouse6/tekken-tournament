@@ -3,14 +3,27 @@ import { Character } from '../../models/character.model';
 import { CommonModule } from '@angular/common';
 
 @Component({
-  selector: 'app-display',
-  templateUrl: './display.component.html',
-  styleUrls: ['./display.component.css'],
-  standalone: true,
-  imports: [CommonModule],
+    selector: 'app-display',
+    templateUrl: './display.component.html',
+    styleUrls: ['./display.component.css'],
+    standalone: true,
+    imports: [CommonModule],
 })
 export class DisplayComponent {
-  @Input() fighter1: Character | null = null;
-  @Input() fighter2: Character | null = null;
-  @Input() backgroundImage: string | null = null;
+    @Input() fighter1: Character | null = null;
+    @Input() fighter2: Character | null = null;
+    @Input() backgroundImage: string | null = null;
+
+
+    startFight(): void {
+        if (this.fighter1 && this.fighter2) {
+            console.log(`${this.fighter1.LongName} is fighting ${this.fighter2.LongName}!`);
+    
+    // Stage events
+    
+    
+        }
+
+    }
+
 }

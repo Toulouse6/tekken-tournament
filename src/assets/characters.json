@@ -69,7 +69,7 @@
         "Weight": 63,
         "Gender": "m",
         "Images": {
-            "FullBody": "./assets/images/yoshimitsu2.png",
+            "FullBody": "./assets/images/yoshimitsu.png",
             "Background": "./assets/images/yoshimitsu-bg.png",
             "Headshot": "./assets/images/yoshimitsu-headshot.png"
         }
@@ -84,7 +84,7 @@
         "Weight": 75,
         "Gender": "m",
         "Images": {
-            "FullBody": "./assets/images/eddy.png",
+            "FullBody": "./assets/images/eddy2.png",
             "Background": "./assets/images/eddy-bg.png",
             "Headshot": "./assets/images/eddy-headshot.png"
         }

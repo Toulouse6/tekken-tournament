@@ -18,12 +18,10 @@
 
 <!-- Arena Selection -->
 <div class="arena-selection">
-    <label for="arena">Select Arena:</label>
-    <select id="arena" [(ngModel)]="arena" (change)="onSelectionChange()">
-      <!-- Use arena.name to display the name of the arena -->
-      <option *ngFor="let arena of arenas" [value]="arena.name">
-        {{ arena.name }}
-      </option>
-    </select>
-  </div>
-  
+  <label for="arena">Select Arena:</label>
+  <select id="arena" [(ngModel)]="arena" (change)="onSelectionChange()">
+    <option *ngFor="let arena of arenas" [value]="arena">
+      {{ arena }}
+    </option>
+  </select>
+</div>
