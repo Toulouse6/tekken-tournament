@@ -42,6 +42,41 @@ h1 {
     font-size: 1.8rem;
 }
 
+.display.fight-active {
+    transition: filter 0.5s ease-in-out;
+}
+
+.display.fight-active .fighter {
+    background-image: none !important;
+    transition: filter 0.5s ease-in-out, background 0.5s ease-in-out;
+}
+
+.display.fight-active .fighter::before {
+    background: transparent !important;
+}
+
+.display.fight-active .fighter img.fullBody {
+    filter: inherit !important;
+    filter: brightness(1.4) contrast(1.2);
+    transform: scale(1.1);
+    bottom: 2rem;
+    transition: transform 0.4s ease-in-out, filter 0.4s ease-in-out;
+}
+
+.fighter img.fullBody {
+    width: auto;
+    height: 20rem;
+    position: absolute;
+    bottom: 0.5rem;
+    z-index: 3;
+    filter: brightness(1.2) contrast(1.1);
+    transition: filter 0.3s ease-in-out;
+}
+
+.fighter img.fullBody:hover {
+    filter: brightness(1.4) contrast(1.2);
+}
+
 
 @media(max-width: 1024px) {
 

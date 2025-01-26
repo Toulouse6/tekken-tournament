@@ -18,10 +18,22 @@
 
 <!-- Arena Selection -->
 <div class="arena-selection">
-  <label for="arena">Select Arena:</label>
-  <select id="arena" [(ngModel)]="arena" (change)="onSelectionChange()">
-    <option *ngFor="let arena of arenas" [value]="arena">
-      {{ arena }}
-    </option>
-  </select>
+    <select id="arena" [(ngModel)]="arena" (change)="onSelectionChange()">
+        <option value="" disabled>Select arena...</option>
+        <option *ngFor="let arena of arenas" [value]="arena.name">
+            {{ arena.name }}
+        </option>
+    </select>
 </div>
+
+<!-- Fight Button -->
+<div class="controls">
+    <button 
+        class="fight-button" 
+        [disabled]="!fighter1 || !fighter2 || !arena"
+        (click)="startFight()">
+        Start Fight
+    </button>
+</div>
+
+  

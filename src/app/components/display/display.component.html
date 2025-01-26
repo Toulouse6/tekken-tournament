@@ -9,7 +9,8 @@
             [style.backgroundImage]="'url(' + fighter1.Images.Background + ')'" [style.backgroundSize]="'cover'"
             [style.backgroundPosition]="'center'">
 
-            <img *ngIf="fighter1" class="fullBody" [src]="fighter1.Images.FullBody"
+            <!-- If both are selected -->
+            <img *ngIf="fighter1 && fighter2" class="fullBody" [src]="fighter1.Images.FullBody"
                 alt="Fighter 1 Full Body" />
         </div>
         <!-- Fighter 2 -->
@@ -18,19 +19,15 @@
             [style.backgroundPosition]="'center'">
 
             <!-- If both are selected -->
-            <img *ngIf="fighter2" class="fullBody" [src]="fighter2.Images.FullBody"
+            <img *ngIf="fighter1 && fighter2" class="fullBody" [src]="fighter2.Images.FullBody"
                 alt="Fighter 2 Full Body" />
         </div>
         <!-- VS Text -->
         <div *ngIf="fighter1 && fighter2" class="vsText">
-            <h2 class="f2">{{ fighter1.LongName }}</h2>
+            <h2 class="f1">{{ fighter1.LongName }}</h2>
             <h3>VS.</h3>
-            <h2 class="f1">{{ fighter2.LongName }}</h2>
+            <h2 class="f2">{{ fighter2.LongName }}</h2>
         </div>
-    </div>
-    <!-- Fight Button -->
-    <div class="fight-button" *ngIf="fighter1 && fighter2">
-        <button (click)="startFight()">Fight Now</button>
     </div>
 
 </div>

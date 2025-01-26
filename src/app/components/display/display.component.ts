@@ -15,15 +15,4 @@ export class DisplayComponent {
     @Input() backgroundImage: string | null = null;
 
 
-    startFight(): void {
-        if (this.fighter1 && this.fighter2) {
-            console.log(`${this.fighter1.LongName} is fighting ${this.fighter2.LongName}!`);
-    
-    // Stage events
-    
-    
-        }
-
-    }
-
 }

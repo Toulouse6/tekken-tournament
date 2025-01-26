@@ -14,6 +14,7 @@ import { FormsModule } from '@angular/forms';
 export class CharacterSelectionComponent implements OnInit {
 
     @Input() arenas: { name: string; image: string }[] = [];
+
     
     @Output() selectionChange = new EventEmitter<{
         fighter1: Character | null;
@@ -24,7 +25,7 @@ export class CharacterSelectionComponent implements OnInit {
     characters: Character[] = [];
     fighter1: Character | null = null;
     fighter2: Character | null = null;
-    arena: string | null = null;
+    arena: string | null = "";
 
     activeArenaIndex: number = 0;
 
@@ -65,4 +66,30 @@ export class CharacterSelectionComponent implements OnInit {
             character !== this.fighter2
         );
     }
+
+    startFight(): void {
+        if (this.fighter1 && this.fighter2) {
+            console.log(`${this.fighter1.LongName} is fighting ${this.fighter2.LongName}!`);
+    
+            // Turn fight-active
+            const displayElement = document.querySelector('.display') as HTMLElement;
+            if (displayElement) {
+                displayElement.classList.add('fight-active');
+            }
+    
+            // Reset after 10 sec
+            setTimeout(() => {
+                this.resetFight();
+            }, 10000);
+        }
+    }
+    
+    resetFight(): void {
+        const displayElement = document.querySelector('.display') as HTMLElement;
+        if (displayElement) {
+            displayElement.classList.remove('fight-active');
+        }
+    }
+    
+
 }
