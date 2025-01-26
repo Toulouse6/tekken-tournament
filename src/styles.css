@@ -75,11 +75,15 @@ h1 {
 }
 
 .display.fight-active+.arena-selection {
-    display: none;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
 }
 
-.display.fight-active+.controls {
-    display: none;
+.display.fight-active+.controls .fight-button {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
 }
 
 .display.fight-active .fighter {
@@ -100,7 +104,28 @@ h1 {
     transform: scale(1.2);
     bottom: 3.5rem;
     filter: brightness(1.2) contrast(1.1);
-    transition: filter 0.3s ease-in-out;
+    transition: filter 1s ease-in-out;
+}
+
+.display.fight-active .fighter1 img.fullBody {
+    right: 0rem;
+    transform: scale(1.1);
+    transition: right 2.5s ease-in-out, transform 2.5s ease-in-out, filter 2.5s ease-in-out;
+}
+
+.display.fight-active .fighter2 img.fullBody {
+    left: 0rem;
+    transform: scale(1.1);
+    transition: left 2.5s ease-in-out, transform 2.5s ease-in-out, filter 2.5s ease-in-out;
+}
+
+
+.fighter1 img.fullBody {
+    right: 10rem;
+}
+
+.fighter2 img.fullBody {
+    left: 10rem;
 }
 
 .fighter img.fullBody {

@@ -13,12 +13,12 @@ export class CharacterService {
         { name: 'Arena 3', image: './assets/images/arena-3.png' },
     ];
 
-    // Return characters from the imported JSON
+    // Return characters
     getCharacters(): Observable<Character[]> {
         return of(charactersData as Character[]);
     }
 
-    // Return mock Arenas
+    // Return Arenas
     getArenas(): Observable<{ name: string; image: string }[]> {
         return of(this.arenas);
     }

@@ -27,7 +27,7 @@ export class AppComponent implements OnInit {
   ngOnInit(): void {
     // Load arenas
     this.characterService.getArenas().subscribe((data) => {
-      this.arenas = data; // Use full arenas array
+      this.arenas = data; 
     });
   }
 
@@ -43,6 +43,6 @@ export class AppComponent implements OnInit {
 
   getArenasImage(): string {
     const selectedArena = this.arenas.find((s) => s.name === this.arena);
-    return selectedArena ? selectedArena.image : './assets/images/default-arena.png'; // Fallback image
+    return selectedArena ? selectedArena.image : ''; // Fallback image
   }
 }

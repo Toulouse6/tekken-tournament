@@ -15,7 +15,7 @@ export class CharacterSelectionComponent implements OnInit {
 
     @Input() arenas: { name: string; image: string }[] = [];
 
-    
+
     @Output() selectionChange = new EventEmitter<{
         fighter1: Character | null;
         fighter2: Character | null;
@@ -60,7 +60,7 @@ export class CharacterSelectionComponent implements OnInit {
         this.onSelectionChange(); // Emit changes
     }
 
-  isDisabled(character: Character): boolean {
+    isDisabled(character: Character): boolean {
         return (
             this.fighter1 !== null &&
             this.fighter2 !== null &&
@@ -72,30 +72,27 @@ export class CharacterSelectionComponent implements OnInit {
     startFight(): void {
         if (this.fighter1 && this.fighter2) {
             console.log(`${this.fighter1.LongName} is fighting ${this.fighter2.LongName}!`);
-    
+
             // Activate fight state
             const displayElement = document.querySelector('.display') as HTMLElement;
             if (displayElement) {
                 displayElement.classList.add('fight-active');
             }
-    
+
             // Optionally disable UI
             this.isFightActive = true;
-    
+
             // Reset fight
             setTimeout(() => {
                 this.resetFight();
-            }, 8000);
+            }, 6000);
         }
     }
-    
+
     resetFight(): void {
-        const displayElement = document.querySelector('.display') as HTMLElement;
-        if (displayElement) {
-            displayElement.classList.remove('fight-active');
-        }
-        this.isFightActive = false; // Re-enable UI
+        // Reload & reset all states
+        window.location.reload();
     }
-        
+
 
 }
