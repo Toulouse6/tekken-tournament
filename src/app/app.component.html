@@ -1,3 +1,4 @@
+<app-header></app-header>
 
 <app-display
   [fighter1]="fighter1"
@@ -6,7 +7,6 @@
 ></app-display>
 
 <app-character-selection
-  [arenas]="arenasNames"
+  [arenas]="arenas"
   (selectionChange)="onSelectionChange($event)"
 ></app-character-selection>
-

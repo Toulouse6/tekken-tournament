@@ -3,11 +3,12 @@ import { Character } from './models/character.model';
 import { CharacterService } from './services/character.service';
 import { CharacterSelectionComponent } from './components/character-selection/character-selection.component';
 import { DisplayComponent } from './components/display/display.component';
+import { HeaderComponent } from './components/header/header.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CharacterSelectionComponent, DisplayComponent],
+  imports: [CharacterSelectionComponent, DisplayComponent, HeaderComponent],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
 })
@@ -19,15 +20,14 @@ export class AppComponent implements OnInit {
   arena: string | null = null;
 
   arenas: { name: string; image: string }[] = [];
-  arenasNames: string[] = []; // Add this property
+  arenasNames: string[] = [];
 
   constructor(private characterService: CharacterService) {}
 
   ngOnInit(): void {
-    // Load arenas and populate arenasNames
+    // Load arenas
     this.characterService.getArenas().subscribe((data) => {
-      this.arenas = data;
-      this.arenasNames = this.arenas.map((arena) => arena.name); // Extract arenas names
+      this.arenas = data; // Use full arenas array
     });
   }
 
@@ -41,9 +41,8 @@ export class AppComponent implements OnInit {
     this.arena = selection.arena;
   }
 
-  getArenasImage(): string | null {
+  getArenasImage(): string {
     const selectedArena = this.arenas.find((s) => s.name === this.arena);
-    return selectedArena ? selectedArena.image : ''; // Default fallback
+    return selectedArena ? selectedArena.image : './assets/images/default-arena.png'; // Fallback image
   }
-  
 }

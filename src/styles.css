@@ -6,6 +6,15 @@
     font-weight: normal;
 }
 
+
+@font-face {
+    font-family: "tekken-h1";
+    src: url("./assets/fonts/cafgone.ttf") format("opentype"); 
+    font-style: normal;
+    font-weight: normal;
+}
+
+
 @font-face {
     font-family: "tekken-h2";
     src: url("./assets/fonts/nagasaki.otf") format("opentype"); 
@@ -24,19 +33,18 @@ html, body {
 }
 
 h1 {
-    font-family: "tekken-h2", sans-serif;
-    text-transform: uppercase;
+    font-family: "tekken-h1", sans-serif;
+    text-transform: capitalize;
     margin-bottom: 1rem;
     text-align: center;
     color: white;
-    font-size: 2rem;
+    font-size: 1.8rem;
 }
 
 h2 {
     font-family: "tekken-h2", sans-serif;
     text-transform: uppercase;
-    margin-bottom: 1rem;
     text-align: center;
     color: white;
-    font-size: 2rem;
+    font-size: 2.5rem;
 }

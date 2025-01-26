@@ -13,7 +13,7 @@ import { FormsModule } from '@angular/forms';
 })
 export class CharacterSelectionComponent implements OnInit {
 
-    @Input() arenas: string[] = [];
+    @Input() arenas: { name: string; image: string }[] = [];
     
     @Output() selectionChange = new EventEmitter<{
         fighter1: Character | null;
@@ -25,6 +25,8 @@ export class CharacterSelectionComponent implements OnInit {
     fighter1: Character | null = null;
     fighter2: Character | null = null;
     arena: string | null = null;
+
+    activeArenaIndex: number = 0;
 
     constructor(private characterService: CharacterService) { }
 
@@ -43,23 +45,19 @@ export class CharacterSelectionComponent implements OnInit {
     }
 
     toggleFighterSelection(character: Character): void {
-
         if (this.fighter1 === character) {
             this.fighter1 = null;
         } else if (this.fighter2 === character) {
             this.fighter2 = null;
-        }
-
-        else if (!this.fighter1) {
+        } else if (!this.fighter1) {
             this.fighter1 = character;
         } else if (!this.fighter2) {
             this.fighter2 = character;
         }
-
         this.onSelectionChange(); // Emit changes
     }
 
-    isDisabled(character: Character): boolean {
+  isDisabled(character: Character): boolean {
         return (
             this.fighter1 !== null &&
             this.fighter2 !== null &&

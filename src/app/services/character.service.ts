@@ -4,24 +4,24 @@ import { Character } from '../models/character.model';
 import charactersData from '../../assets/characters.json';
 
 @Injectable({
-  providedIn: 'root',
+    providedIn: 'root',
 })
 export class CharacterService {
-  private arenas = [
-    { name: 'arena 1', image: './assets/images/stage-1.png' },
-    { name: 'arena 2', image: './assets/images/stage-2.png' },
-    { name: 'arena 3', image: './assets/images/stage-3.png' },
-  ];
+    private arenas = [
+        { name: 'Arena 1', image: './assets/images/arena-1' },
+        { name: 'Arena 2', image: './assets/images/arena-2.png' },
+        { name: 'Arena 3', image: './assets/images/arena-3.png' },
+    ];
 
-  // Return characters from the imported JSON
-  getCharacters(): Observable<Character[]> {
-    return of(charactersData as Character[]);
-  }
+    // Return characters from the imported JSON
+    getCharacters(): Observable<Character[]> {
+        return of(charactersData as Character[]);
+    }
 
-  // Return mock arenas
-  getArenas(): Observable<{ name: string; image: string }[]> {
-    return of(this.arenas);
-  }
+    // Return mock Arenas
+    getArenas(): Observable<{ name: string; image: string }[]> {
+        return of(this.arenas);
+    }
 
-  
+
 }
