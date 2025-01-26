@@ -119,17 +119,15 @@ button:hover:before {
   }
   
   .arena-selection  {
-    margin: -27rem 0 !important;
-        padding-bottom: 10rem;
-        text-align: center;
+        transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
+        margin: 2rem auto;
         position: absolute;
+        padding-bottom: 1rem;
+        text-align: center;
         display: flex;
         width: 100%;
         justify-content: center;
 
-        opacity: 1;
-        visibility: visible;
-        transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
     }
 
     

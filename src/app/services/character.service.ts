@@ -8,9 +8,13 @@ import charactersData from '../../assets/characters.json';
 })
 export class CharacterService {
     private arenas = [
-        { name: 'Arena 1', image: './assets/images/arena-1.png' },
-        { name: 'Arena 2', image: './assets/images/arena-2.png' },
-        { name: 'Arena 3', image: './assets/images/arena-3.png' },
+        { name: 'The Budah Nest', image: './assets/images/arenas/budah-nest.png' },
+        { name: 'Elegant Palace', image: './assets/images/arenas/elegant-palace.png' },
+        { name: 'Garden', image: './assets/images/arenas/garden.png'},        
+        { name: 'Cyber Zone', image: './assets/images/arenas/cyber-zone.png' },
+        { name: 'Tree of Life', image: './assets/images/arenas/tree-of-life.png' },
+        { name: 'Temple', image: './assets/images/arenas/temple.png' },
+
     ];
 
     // Return characters
