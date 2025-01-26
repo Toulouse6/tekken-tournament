@@ -28,6 +28,8 @@ export class CharacterSelectionComponent implements OnInit {
     arena: string | null = "";
 
     activeArenaIndex: number = 0;
+    isFightActive: boolean = false;
+
 
     constructor(private characterService: CharacterService) { }
 
@@ -71,16 +73,19 @@ export class CharacterSelectionComponent implements OnInit {
         if (this.fighter1 && this.fighter2) {
             console.log(`${this.fighter1.LongName} is fighting ${this.fighter2.LongName}!`);
     
-            // Turn fight-active
+            // Activate fight state
             const displayElement = document.querySelector('.display') as HTMLElement;
             if (displayElement) {
                 displayElement.classList.add('fight-active');
             }
     
-            // Reset after 10 sec
+            // Optionally disable UI
+            this.isFightActive = true;
+    
+            // Reset fight
             setTimeout(() => {
                 this.resetFight();
-            }, 10000);
+            }, 12000);
         }
     }
     
@@ -89,7 +94,8 @@ export class CharacterSelectionComponent implements OnInit {
         if (displayElement) {
             displayElement.classList.remove('fight-active');
         }
+        this.isFightActive = false; // Re-enable UI
     }
-    
+        
 
 }

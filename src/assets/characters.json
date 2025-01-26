@@ -84,7 +84,7 @@
         "Weight": 75,
         "Gender": "m",
         "Images": {
-            "FullBody": "./assets/images/eddy2.png",
+            "FullBody": "./assets/images/eddy.png",
             "Background": "./assets/images/eddy-bg.png",
             "Headshot": "./assets/images/eddy-headshot.png"
         }

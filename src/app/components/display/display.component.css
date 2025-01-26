@@ -58,9 +58,7 @@ h2 {
 
 .fighter:hover {
     transform: scale(1.05);
-
-
-    
+    filter: brightness(1.1) contrast(1.1);
 }
 
 .fighter::before {

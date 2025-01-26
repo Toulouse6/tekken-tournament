@@ -17,7 +17,7 @@
 </div>
 
 <!-- Arena Selection -->
-<div class="arena-selection">
+<div class="arena-selection" *ngIf="!isFightActive">
     <select id="arena" [(ngModel)]="arena" (change)="onSelectionChange()">
         <option value="" disabled>Select arena...</option>
         <option *ngFor="let arena of arenas" [value]="arena.name">
@@ -27,13 +27,13 @@
 </div>
 
 <!-- Fight Button -->
-<div class="controls">
+<div class="controls" *ngIf="!isFightActive">
     <button 
-        class="fight-button" 
-        [disabled]="!fighter1 || !fighter2 || !arena"
-        (click)="startFight()">
-        Start Fight
+      class="fight-button" 
+      [disabled]="!fighter1 || !fighter2 || !arena"
+      (click)="startFight()">
+      Start Fight
     </button>
-</div>
+  </div>
 
   
