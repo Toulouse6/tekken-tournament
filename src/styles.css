@@ -28,6 +28,7 @@ body {
     width: 100%;
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
     background-color: #131313;
     color: white;
 }
