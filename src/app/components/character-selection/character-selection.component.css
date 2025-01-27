@@ -32,7 +32,7 @@ button {
     margin: 0;
     text-align: center;
     font-size: 1rem;
-    --purple: #9B7EDA;
+    --blue: #134053;
     padding: 0.8em 3em;
     letter-spacing: 0.08em;
     position: relative;
@@ -41,14 +41,14 @@ button {
     overflow: hidden;
     transition: all 0.3s;
     line-height: 1.4em;
-    border: 2px solid var(--purple);
-    background: linear-gradient(to right, rgba(155, 126, 218, 0.1) 1%, transparent 40%, transparent 60%, rgba(155, 126, 218, 0.1) 100%);
-    color: var(--purple);
-    box-shadow: inset 0 0 10px rgba(155, 126, 218, 0.4), 0 0 9px 3px rgba(155, 126, 218, 0.1);
+    border: 2px solid var(--blue);
+    background: linear-gradient(to right, rgba(0, 76, 104, 0.1) 1%, transparent 40%, transparent 60%, rgba(0, 76, 104, 0.1) 100%);
+    color: var(--blue);
+    box-shadow: inset 0 0 10px rgba(0, 76, 104, 0.4), 0 0 9px 3px rgba(0, 76, 104, 0.1);
   }
 
 button:hover {
-    box-shadow: inset 0 0 10px rgba(155, 126, 218, 0.6), 0 0 9px 3px rgba(155, 126, 218, 0.2);
+    box-shadow: inset 0 0 10px rgba(0, 76, 104, 0.6), 0 0 9px 3px rgba(0, 76, 104, 0.2);
 }
 
 button:before {
@@ -59,7 +59,7 @@ button:before {
     height: 100%;
     top: 0;
     transition: transform .4s ease-in-out;
-    background: linear-gradient(to right, transparent 1%, rgba(155, 126, 218, 0.1) 40%, rgba(155, 126, 218, 0.1) 60%, transparent 100%);
+    background: linear-gradient(to right, transparent 1%, rgba(0, 76, 104, 0.1) 40%, rgba(0, 76, 104, 0.1) 60%, transparent 100%);
 }
 
 button:hover:before {
@@ -104,8 +104,8 @@ button:hover:before {
   
   .character-tile.selected {
     transform: scale(1.1);
-    border-color: #7a54c1;
-    box-shadow: inset 0 0 10px rgba(155, 126, 218, 0.6), 0 0 9px 3px rgba(155, 126, 218, 0.2);
+    border-color: #064866;
+    box-shadow: inset 0 0 10px rgba(0, 76, 104, 0.6), 0 0 9px 3px rgba(0, 76, 104, 0.2);
   }
   
   .character-tile.disabled {
@@ -124,7 +124,7 @@ button:hover:before {
     font-size: 0.8rem;
     position: relative;
     bottom: -35px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 5px rgba(0, 76, 104, 0.2);
     font-weight: bold;
     text-transform: uppercase;
   }
@@ -146,7 +146,7 @@ button:hover:before {
     align-items: center;
     padding: 0.5rem;
     font-size: 1rem;
-    --purple: #9B7EDA;
+    --blue: #064866;
     padding: 0.8em 3em;
     letter-spacing: 0.08em;
     position: relative;
@@ -155,13 +155,13 @@ button:hover:before {
     overflow: hidden;
     transition: all 0.5s;
     line-height: 1.4em;
-    border: 2px solid var(--purple);
-    background: linear-gradient(to right, rgba(155, 126, 218, 0.1) 1%, transparent 40%, transparent 60%, rgba(155, 126, 218, 0.1) 100%);
-    color: var(--purple);
-    box-shadow: inset 0 0 10px rgba(155, 126, 218, 0.4), 0 0 9px 3px rgba(155, 126, 218, 0.1);
+    border: 2px solid var(--blue);
+    background: linear-gradient(to right, rgba(0, 76, 104, 0.1) 1%, transparent 40%, transparent 60%, rgba(0, 76, 104, 0.1) 100%);
+    color: var(--blue);
+    box-shadow: inset 0 0 10px rgba(0, 76, 104, 0.4), 0 0 9px 3px rgba(0, 76, 104, 0.1);
   }
 
   .arena-selection select:focus {
-    border: 2px solid #9B7EDA;
+    border: 2px solid #134053;
   }
   
