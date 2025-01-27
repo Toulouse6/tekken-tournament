@@ -15,12 +15,8 @@
 
     <!-- Arena Selection -->
     <div class="arena-selection" *ngIf="!(fighter1 && fighter2 && arena)">
-        <select id="arena" [(ngModel)]="arena" (change)="onSelectionChange()">
-            <option value="" disabled [selected]="!arena">Select arena...</option>
-            <option *ngFor="let arena of arenas" [value]="arena.name">
-                {{ arena.name }}
-            </option>
-        </select>
+        <button class="arena-nav prev" (click)="previousArena()">&#9664; Prev</button>
+        <button class="arena-nav next" (click)="nextArena()">Next &#9654;</button>
     </div>
 
 

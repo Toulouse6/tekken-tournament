@@ -47,6 +47,31 @@ export class CharacterSelectionComponent implements OnInit {
         });
     }
 
+    updateArena(): void {
+        const selectedArena = this.arenas[this.activeArenaIndex];
+        this.arena = selectedArena ? selectedArena.name : null;
+        this.selectionChange.emit({
+            fighter1: this.fighter1,
+            fighter2: this.fighter2,
+            arena: this.arena,
+        });
+    }
+    
+    nextArena(): void {
+        if (this.arenas.length > 0) {
+            this.activeArenaIndex = (this.activeArenaIndex + 1) % this.arenas.length; // Loop to the beginning
+            this.updateArena();
+        }
+    }
+    
+    previousArena(): void {
+        if (this.arenas.length > 0) {
+            this.activeArenaIndex =
+                (this.activeArenaIndex - 1 + this.arenas.length) % this.arenas.length; // Loop to the end
+            this.updateArena();
+        }
+    }
+    
     toggleFighterSelection(character: Character): void {
         if (this.fighter1 === character) {
             this.fighter1 = null;
@@ -59,6 +84,7 @@ export class CharacterSelectionComponent implements OnInit {
         }
         this.onSelectionChange(); // Emit changes
     }
+    
 
     isDisabled(character: Character): boolean {
         return (
