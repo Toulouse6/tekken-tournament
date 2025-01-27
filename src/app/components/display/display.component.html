@@ -18,6 +18,15 @@
       [style.backgroundPosition]="'center'"
     >
       <img class="fullBody" [src]="fighter1.Images.FullBody" alt="Fighter 1 Full Body" />
+    
+      <div class="attributes">
+        <p><strong>{{ fighter1.name }}</strong></p>
+        <p>{{ fighter1.FightingStyle }}</p>
+        <p>{{ fighter1.Nationality }}</p>
+        <p>{{ fighter1.Height }} cm / {{ fighter1.Weight }} kg</p>
+
+      </div>
+    
     </div>
 
     <!-- Fighter 2 -->
@@ -29,13 +38,19 @@
       [style.backgroundPosition]="'center'"
     >
       <img class="fullBody" [src]="fighter2.Images.FullBody" alt="Fighter 2 Full Body" />
+    
+      <div class="attributes">
+        <p><strong>{{ fighter2.name }}</strong></p>
+        <p>{{ fighter2.FightingStyle }}</p>
+        <p>{{ fighter2.Nationality }}</p>
+        <p>{{ fighter2.Height }} cm / {{ fighter2.Weight }} kg</p>
+      </div>
+    
     </div>
 
     <!-- VS Text -->
     <div *ngIf="fighter1 && fighter2" class="vsText">
-      <h2 class="f1">{{ fighter1.name }}</h2>
       <h3>VS.</h3>
-      <h2 class="f2">{{ fighter2.name }}</h2>
     </div>
   </div>
 </div>
