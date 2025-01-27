@@ -1,3 +1,24 @@
+.selection-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: auto;
+    gap: 2rem;
+    position: relative;
+}
+
+.character-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    padding: 0.5rem;
+    width: 100%;
+    margin: auto 0;
+  }
+
 .fight-button {
     position: absolute;
     bottom: 25rem;
@@ -54,16 +75,6 @@ button:hover:before {
     display: none;
     transition: transform 1s ease;
 }
-
-.character-grid {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2rem;
-    justify-content: center;
-    padding: 1rem;
-    width: 100%;
-    margin: auto 0;
-  }
   
   .character-tile {
     display: flex;
@@ -119,16 +130,15 @@ button:hover:before {
   }
   
   .arena-selection  {
-        transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
-        margin: 2rem auto;
-        position: absolute;
-        padding-bottom: 1rem;
-        text-align: center;
-        display: flex;
-        width: 100%;
-        justify-content: center;
+    transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
+    margin: 1rem auto;
+    padding-bottom: 1rem;
+    text-align: center;
+    display: flex;
+    width: 100%;
+    justify-content: center;
 
-    }
+}
 
     
   .arena-selection select {

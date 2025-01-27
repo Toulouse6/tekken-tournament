@@ -1,30 +1,34 @@
-<div class="title">
-    <h1>Select Your Warriors</h1>
-</div>
+<div class="selection-container">
 
-<div class="character-grid">
-    <!-- Display Fighters -->
-    <div class="character-tile" *ngFor="let character of characters" (click)="toggleFighterSelection(character)"
-        [class.selected]="character === fighter1 || character === fighter2" [class.disabled]="isDisabled(character)"
-        [style.backgroundImage]="'url(' + character.Images.Headshot + ')'">
-        <p>{{ character.ShortName }}</p>
+    <div class="title">
+        <h1>Select Your Warriors</h1>
     </div>
-</div>
 
-]<!-- Arena Selection -->
-<div class="arena-selection" *ngIf="!(fighter1 && fighter2 && arena)">
-    <select id="arena" [(ngModel)]="arena" (change)="onSelectionChange()">
-        <option value="" disabled [selected]="!arena">Select arena...</option>
-        <option *ngFor="let arena of arenas" [value]="arena.name">
-            {{ arena.name }}
-        </option>
-    </select>
-</div>
+    <div class="character-grid">
+        <!-- Display Fighters -->
+        <div class="character-tile" *ngFor="let character of characters" (click)="toggleFighterSelection(character)"
+            [class.selected]="character === fighter1 || character === fighter2" [class.disabled]="isDisabled(character)"
+            [style.backgroundImage]="'url(' + character.Images.Headshot + ')'">
+            <p>{{ character.ShortName }}</p>
+        </div>
+    </div>
+
+    <!-- Arena Selection -->
+    <div class="arena-selection" *ngIf="!(fighter1 && fighter2 && arena)">
+        <select id="arena" [(ngModel)]="arena" (change)="onSelectionChange()">
+            <option value="" disabled [selected]="!arena">Select arena...</option>
+            <option *ngFor="let arena of arenas" [value]="arena.name">
+                {{ arena.name }}
+            </option>
+        </select>
+    </div>
 
 
-<!-- Fight Button -->
-<div class="controls" *ngIf="!isFightActive">
-    <button class="fight-button" [disabled]="!fighter1 || !fighter2 || !arena" (click)="startFight()">
-        Start Fight
-    </button>
+    <!-- Fight Button -->
+    <div class="controls" *ngIf="!isFightActive">
+        <button class="fight-button" [disabled]="!fighter1 || !fighter2 || !arena" (click)="startFight()">
+            Start Fight
+        </button>
+    </div>
+
 </div>
