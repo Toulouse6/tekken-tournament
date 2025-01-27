@@ -32,16 +32,16 @@ button {
     margin: 0;
     text-align: center;
     font-size: 1rem;
-    --blue: #134053;
+    color: white;
     padding: 0.8em 3em;
     letter-spacing: 0.08em;
     position: relative;
-    font-family: "tekken-h2", sans-serif;
+    font-family: "tekken-h1", sans-serif;
     border-radius: 0.6em;
     overflow: hidden;
     transition: all 0.3s;
     line-height: 1.4em;
-    border: 2px solid var(--blue);
+    border: 1px solid white;
     background: linear-gradient(to right, rgba(0, 76, 104, 0.1) 1%, transparent 40%, transparent 60%, rgba(0, 76, 104, 0.1) 100%);
     color: var(--blue);
     box-shadow: inset 0 0 10px rgba(0, 76, 104, 0.4), 0 0 9px 3px rgba(0, 76, 104, 0.1);
@@ -49,7 +49,11 @@ button {
 
 button:hover {
     box-shadow: inset 0 0 10px rgba(0, 76, 104, 0.6), 0 0 9px 3px rgba(0, 76, 104, 0.2);
-    color: white;
+    border: 2px solid var(--blue);
+    background: linear-gradient(to right, rgba(0, 76, 104, 0.1) 1%, transparent 40%, transparent 60%, rgba(0, 76, 104, 0.1) 100%);
+    color: var(--blue);
+    box-shadow: inset 0 0 10px rgba(0, 76, 104, 0.4), 0 0 9px 3px rgba(0, 76, 104, 0.1);
+
 }
 
 button:before {
@@ -100,7 +104,7 @@ button:hover:before {
 
   .character-tile:hover {
     transform: scale(1.1);
-    border-color: white;
+    border-color: #2d7390;
   }
   
   .character-tile.selected {
@@ -156,13 +160,20 @@ button:hover:before {
     overflow: hidden;
     transition: all 0.5s;
     line-height: 1.4em;
-    border: 2px solid var(--blue);
+    border: 2px solid white;
     background: linear-gradient(to right, rgba(0, 76, 104, 0.1) 1%, transparent 40%, transparent 60%, rgba(0, 76, 104, 0.1) 100%);
-    color: var(--blue);
+    color: white;
     box-shadow: inset 0 0 10px rgba(0, 76, 104, 0.4), 0 0 9px 3px rgba(0, 76, 104, 0.1);
   }
 
   .arena-selection select:focus {
-    border: 2px solid #134053;
+    border: 2px solid var(--blue);
+    --blue: #064866;
+    transition: all 0.5s;
+    border: 2px solid var(--blue);
+    background: linear-gradient(to right, rgba(0, 76, 104, 0.1) 1%, transparent 40%, transparent 60%, rgba(0, 76, 104, 0.1) 100%);
+    color: white;
+    box-shadow: inset 0 0 10px rgba(0, 76, 104, 0.4), 0 0 9px 3px rgba(0, 76, 104, 0.1);
+
   }
   
