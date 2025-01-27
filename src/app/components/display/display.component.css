@@ -10,9 +10,13 @@
     overflow: hidden;
     color: white;
     position: relative;
-    background-position: center bottom !important;  
-    background-size: cover;  
-    background-repeat: no-repeat;  
+    background-position: center bottom !important;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.display.default-arena {
+    background-position: top !important;
 }
 
 .overlay {
