@@ -1,56 +1,40 @@
-<div
-  class="display"
-  [ngClass]="{'default-arena': backgroundPosition === 'center'}"
-  [style.backgroundImage]="'url(' + backgroundImage + ')'"
-  [style.backgroundPosition]="backgroundPosition"
-  [style.backgroundSize]="'cover'"
-  [style.backgroundRepeat]="'no-repeat'"
->
-  <div class="overlay"></div>
+<div class="display" [ngClass]="{'default-arena': backgroundPosition === 'center'}"
+    [style.backgroundImage]="'url(' + backgroundImage + ')'" [style.backgroundPosition]="backgroundPosition"
+    [style.backgroundSize]="'cover'" [style.backgroundRepeat]="'no-repeat'">
+    <div class="overlay"></div>
 
-  <div class="vsFrame">
-    <!-- Fighter 1 -->
-    <div
-      class="fighter fighter1"
-      *ngIf="fighter1"
-      [style.backgroundImage]="'url(' + fighter1.Images.Background + ')'"
-      [style.backgroundSize]="'cover'"
-      [style.backgroundPosition]="'center'"
-    >
-      <img class="fullBody" [src]="fighter1.Images.FullBody" alt="Fighter 1 Full Body" />
-    
-      <div class="attributes">
-        <p><strong>{{ fighter1.name }}</strong></p>
-        <p>{{ fighter1.FightingStyle }}</p>
-        <p>{{ fighter1.Nationality }}</p>
-        <p>{{ fighter1.Height }} cm | {{ fighter1.Weight }} kg</p>
+    <div class="vsFrame">
+        <!-- Fighter 1 -->
+        <div class="fighter fighter1" *ngIf="fighter1"
+            [style.backgroundImage]="'url(' + fighter1.Images.Background + ')'" [style.backgroundSize]="'cover'"
+            [style.backgroundPosition]="'center'">
+            <img class="fullBody" [src]="fighter1.Images.FullBody" alt="Fighter 1 Full Body" />
 
-      </div>
-    
+            <div class="attributes">
+                <p><strong>{{ fighter1.name }}</strong></p>
+                <p>{{ fighter1.FightingStyle }}</p>
+                <p>{{ fighter1.Nationality }}</p>
+            </div>
+
+        </div>
+
+        <!-- Fighter 2 -->
+        <div class="fighter fighter2" *ngIf="fighter2"
+            [style.backgroundImage]="'url(' + fighter2.Images.Background + ')'" [style.backgroundSize]="'cover'"
+            [style.backgroundPosition]="'center'">
+            <img class="fullBody" [src]="fighter2.Images.FullBody" alt="Fighter 2 Full Body" />
+
+            <div class="attributes">
+                <p><strong>{{ fighter2.name }}</strong></p>
+                <p>{{ fighter2.FightingStyle }}</p>
+                <p>{{ fighter2.Nationality }}</p>
+            </div>
+
+        </div>
+
+        <!-- VS Text -->
+        <div *ngIf="fighter1 && fighter2" class="vsText">
+            <h3>VS</h3>
+        </div>
     </div>
-
-    <!-- Fighter 2 -->
-    <div
-      class="fighter fighter2"
-      *ngIf="fighter2"
-      [style.backgroundImage]="'url(' + fighter2.Images.Background + ')'"
-      [style.backgroundSize]="'cover'"
-      [style.backgroundPosition]="'center'"
-    >
-      <img class="fullBody" [src]="fighter2.Images.FullBody" alt="Fighter 2 Full Body" />
-    
-      <div class="attributes">
-        <p><strong>{{ fighter2.name }}</strong></p>
-        <p>{{ fighter2.FightingStyle }}</p>
-        <p>{{ fighter2.Nationality }}</p>
-        <p>{{ fighter2.Height }} cm | {{ fighter2.Weight }} kg</p>
-      </div>
-    
-    </div>
-
-    <!-- VS Text -->
-    <div *ngIf="fighter1 && fighter2" class="vsText">
-      <h3>VS</h3>
-    </div>
-  </div>
 </div>

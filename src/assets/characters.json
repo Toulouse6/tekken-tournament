@@ -4,8 +4,6 @@
         "name": "Kazuya Mishima",
         "FightingStyle": "Traditional Martial Arts",
         "Nationality": "Japan",
-        "Height": 175,
-        "Weight": 80,
         "Images": {
             "FullBody": "./assets/images/fighters/fullbody/kazuya.png",
             "Background": "./assets/images/fighters/backgrounds/kazuya-bg.png",
@@ -17,8 +15,6 @@
         "name": "Jin Kazama",
         "FightingStyle": "Karate",
         "Nationality": "Japan",
-        "Height": 183,
-        "Weight": 87,
         "Images": {
             "FullBody": "./assets/images/fighters/fullbody/jin2.png",
             "Background": "./assets/images/fighters/backgrounds/jin-bg.png",
@@ -30,8 +26,6 @@
         "name": "Heihachi Mishima",
         "FightingStyle": "Traditional Martial Arts",
         "Nationality": "Japan",
-        "Height": 167,
-        "Weight": 57,
         "Images": {
             "FullBody": "./assets/images/fighters/fullbody/heihachi.png",
             "Background": "./assets/images/fighters/backgrounds/heihachi-bg.png",
@@ -43,8 +37,6 @@
         "name": "Bryan Fury",
         "FightingStyle": "Kickboxing",
         "Nationality": "United States",
-        "Height": 186,
-        "Weight": 90,
         "Images": {
             "FullBody": "./assets/images/fighters/fullbody/bryan.png",
             "Background": "./assets/images/fighters/backgrounds/bryan-bg.png",
@@ -55,9 +47,7 @@
         "Id": 5,
         "name": "Yoshimitsu",
         "FightingStyle": "Manji Ninjutsu",
-        "Nationality": "Unknown",
-        "Height": 178,
-        "Weight": 63,
+        "Nationality": "Japan",
         "Images": {
             "FullBody": "./assets/images/fighters/fullbody/yoshimitsu2.png",
             "Background": "./assets/images/fighters/backgrounds/yoshimitsu-bg.png",
@@ -69,8 +59,6 @@
         "name": "Eddy Gordo",
         "FightingStyle": "Capoeira",
         "Nationality": "Brazil",
-        "Height": 188,
-        "Weight": 75,
         "Images": {
             "FullBody": "./assets/images/fighters/fullbody/eddy.png",
             "Background": "./assets/images/fighters/backgrounds/eddy-bg2.png",
@@ -82,8 +70,6 @@
         "name": "Armor King",
         "FightingStyle": "Professional Wrestling",
         "Nationality": "Mexico",
-        "Height": 190,
-        "Weight": 90,
         "Images": {
             "FullBody": "./assets/images/fighters/fullbody/king.png",
             "Background": "./assets/images/fighters/backgrounds/king-bg.png",
@@ -95,8 +81,6 @@
         "name": "Fahkumram",
         "FightingStyle": "Muay Thai",
         "Nationality": "United States",
-        "Height": 230,
-        "Weight": 192,
         "Images": {
             "Headshot": "./assets/images/fighters/headshots/fahkumram-headshot.png",
             "FullBody": "./assets/images/fighters/fullbody/fahkumram.png",
@@ -107,9 +91,7 @@
         "Id": 9,
         "name": "Raven",
         "FightingStyle": "Manji Ninjutsu",
-        "Nationality": "known",
-        "Height": 235,
-        "Weight": 185,
+        "Nationality": "United Kingdom",
         "Images": {
             "Headshot": "./assets/images/fighters/headshots/raven-headshot.png",
             "FullBody": "./assets/images/fighters/fullbody/raven.png",
@@ -121,8 +103,6 @@
         "name": "True Ogre",
         "FightingStyle": "Ancient Assassination Arts",
         "Nationality": "Ancient Egypt",
-        "Height": 250,
-        "Weight": 200,
         "Images": {
             "FullBody": "./assets/images/fighters/fullbody/ogre.png",
             "Background": "./assets/images/fighters/backgrounds/ogre-bg.png",
@@ -133,9 +113,7 @@
         "Id": 11,
         "name": "Devil Jin",
         "FightingStyle": "Advanced Mishima Style Karate",
-        "Nationality": "Unknown",
-        "Height": 183,
-        "Weight": 87,
+        "Nationality": "Oyashima",
         "Images": {
             "FullBody": "./assets/images/fighters/fullbody/devil-jin.png",
             "Background": "./assets/images/fighters/backgrounds/devil-jin-bg.png",
@@ -146,9 +124,7 @@
         "Id": 12,
         "name": "Devil Kazuya",
         "FightingStyle": "Advanced Mishima Style Karate",
-        "Nationality": "Unknown",
-        "Height": 181,
-        "Weight": 81,
+        "Nationality": "Oyashima",
         "Images": {
             "FullBody": "./assets/images/fighters/fullbody/devil-kazuya.png",
             "Background": "./assets/images/fighters/backgrounds/devil-kazuya-bg.png",
