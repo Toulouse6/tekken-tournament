@@ -42,6 +42,6 @@ export class AppComponent implements OnInit {
 
   getArenasImage(): string {
     const selectedArena = this.arenas.find((s) => s.name === this.arena);
-    return selectedArena ? selectedArena.image : './assets/images/arenas/default-arena-bg.png'; // Fallback image
+    return selectedArena ? selectedArena.image : './assets/images/arenas/default-arena.png'; // Fallback image
   }
 }
