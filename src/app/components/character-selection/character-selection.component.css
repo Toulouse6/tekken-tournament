@@ -4,6 +4,7 @@
     align-items: center;
     justify-content: center;
     width: 100%;
+    padding-bottom: 3rem;
     margin: auto;
     gap: 2rem;
     position: relative;
@@ -133,13 +134,11 @@ button:hover:before {
     display: flex;
     flex-direction: column;
     align-items: center;
-    
     gap: 1rem;
     bottom: 50%;
-    
     margin: 0;
     position: absolute;
-    top: -5.5vh;
+    top: -5vh;
     left: 50%;
     transform: translate(-50%, -50%);
 }
