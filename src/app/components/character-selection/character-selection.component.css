@@ -86,7 +86,6 @@ button:hover:before {
 .character-tile:hover {
     transform: scale(1.1);
     border-color: #a48025;
-    text-shadow: 0 0 5px rgba(255, 223, 0, 0.8), 0 0 15px rgba(255, 223, 0, 0.6), 0 0 20px rgba(255, 215, 0, 0.5);
     animation: shiny-effect 3s infinite linear;
 }
 

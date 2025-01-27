@@ -1,4 +1,4 @@
-/* Font Face Declarations */
+/* Font Face */
 @font-face {
     font-family: "tekken";
     src: url("./assets/fonts/misaki.ttf") format("truetype");
@@ -6,20 +6,19 @@
     font-weight: normal;
 }
 
-@keyframes shiny-effect {
-    0% {
-        background-position: 0% 50%;
-    }
-
-    50% {
-        background-position: 100% 50%;
-    }
-
-    100% {
-        background-position: 0% 50%;
-    }
+@font-face {
+    font-family: "vs";
+    src: url("./assets/fonts/cinzel.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
 }
 
+@font-face {
+    font-family: "stats";
+    src: url("./assets/fonts/cinzel.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
 
 html,
 body {
@@ -137,7 +136,6 @@ h1 {
     position: absolute;
     bottom: 0.5rem;
     z-index: 3;
-    filter: brightness(1.2) contrast(1.1);
     transition: filter 0.3s ease-in-out;
 }
 
