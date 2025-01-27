@@ -10,7 +10,6 @@ export class CharacterService {
     private arenas = [
         { name: "Steet View", image: './assets/images/arenas/street-view.png' },
         { name: 'Green Fields', image: './assets/images/arenas/green-fields.png' },
-        { name: "Old City", image: './assets/images/arenas/old-city.png' },
         { name: 'The Farm', image: './assets/images/arenas/farm.png' },
         { name: 'Crystal Room', image: './assets/images/arenas/crystal-room.png' },
         { name: 'Olympus', image: './assets/images/arenas/olympus.png' },
