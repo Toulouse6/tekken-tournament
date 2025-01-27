@@ -8,9 +8,9 @@
         "Height": 175,
         "Weight": 80,
         "Images": {
-            "FullBody": "./assets/images/kazuya.png",
-            "Background": "./assets/images/kazuya-bg.png",
-            "Headshot": "./assets/images/kazuya-headshot.png"
+            "FullBody": "./assets/images/fighters/fullbody/kazuya.png",
+            "Background": "./assets/images/fighters/backgrounds/kazuya-bg.png",
+            "Headshot": "./assets/images/fighters/headshots/kazuya-headshot.png"
         }
     },
     {
@@ -22,9 +22,9 @@
         "Height": 183,
         "Weight": 87,
         "Images": {
-            "FullBody": "./assets/images/jin2.png",
-            "Background": "./assets/images/jin-bg.png",
-            "Headshot": "./assets/images/jin-headshot.png"
+            "FullBody": "./assets/images/fighters/fullbody/jin2.png",
+            "Background": "./assets/images/fighters/backgrounds/jin-bg.png",
+            "Headshot": "./assets/images/fighters/headshots/jin-headshot.png"
         }
     },
     {
@@ -36,9 +36,9 @@
         "Height": 167,
         "Weight": 57,
         "Images": {
-            "FullBody": "./assets/images/heihachi.png",
-            "Background": "./assets/images/heihachi-bg.png",
-            "Headshot": "./assets/images/heihachi-headshot.png"
+            "FullBody": "./assets/images/fighters/fullbody/heihachi.png",
+            "Background": "./assets/images/fighters/backgrounds/heihachi-bg.png",
+            "Headshot": "./assets/images/fighters/headshots/heihachi-headshot.png"
         }
     },
     {
@@ -50,9 +50,9 @@
         "Height": 186,
         "Weight": 90,
         "Images": {
-            "FullBody": "./assets/images/bryan.png",
-            "Background": "./assets/images/bryan-bg.png",
-            "Headshot": "./assets/images/bryan-headshot.png"
+            "FullBody": "./assets/images/fighters/fullbody/bryan.png",
+            "Background": "./assets/images/fighters/backgrounds/bryan-bg.png",
+            "Headshot": "./assets/images/fighters/headshots/bryan-headshot.png"
         }
     },
     {
@@ -64,9 +64,9 @@
         "Height": 178,
         "Weight": 63,
         "Images": {
-            "FullBody": "./assets/images/yoshimitsu2.png",
-            "Background": "./assets/images/yoshimitsu-bg.png",
-            "Headshot": "./assets/images/yoshimitsu-headshot.png"
+            "FullBody": "./assets/images/fighters/fullbody/yoshimitsu2.png",
+            "Background": "./assets/images/fighters/backgrounds/yoshimitsu-bg.png",
+            "Headshot": "./assets/images/fighters/headshots/yoshimitsu-headshot.png"
         }
     },
     {
@@ -78,9 +78,9 @@
         "Height": 188,
         "Weight": 75,
         "Images": {
-            "FullBody": "./assets/images/eddy.png",
-            "Background": "./assets/images/eddy-bg2.png",
-            "Headshot": "./assets/images/eddy-headshot.png"
+            "FullBody": "./assets/images/fighters/fullbody/eddy.png",
+            "Background": "./assets/images/fighters/backgrounds/eddy-bg2.png",
+            "Headshot": "./assets/images/fighters/headshots/eddy-headshot.png"
         }
     },
     {
@@ -92,9 +92,9 @@
         "Height": 190,
         "Weight": 90,
         "Images": {
-            "FullBody": "./assets/images/king.png",
-            "Background": "./assets/images/king-bg.png",
-            "Headshot": "./assets/images/king-headshot.png"
+            "FullBody": "./assets/images/fighters/fullbody/king.png",
+            "Background": "./assets/images/fighters/backgrounds/king-bg.png",
+            "Headshot": "./assets/images/fighters/headshots/king-headshot.png"
         }
     },
     {
@@ -106,9 +106,9 @@
         "Height": 230,
         "Weight": 192,
         "Images": {
-            "Headshot": "./assets/images/fahkumram-headshot.png",
-            "FullBody": "./assets/images/fahkumram.png",
-            "Background": "./assets/images/fahkumram-bg.png"
+            "Headshot": "./assets/images/fighters/headshots/fahkumram-headshot.png",
+            "FullBody": "./assets/images/fighters/fullbody/fahkumram.png",
+            "Background": "./assets/images/fighters/backgrounds/fahkumram-bg.png"
         }
     },
     {
@@ -120,9 +120,9 @@
         "Height": 235,
         "Weight": 185,
         "Images": {
-            "Headshot": "./assets/images/raven-headshot.png",
-            "FullBody": "./assets/images/raven.png",
-            "Background": "./assets/images/raven-bg.png"
+            "Headshot": "./assets/images/fighters/headshots/raven-headshot.png",
+            "FullBody": "./assets/images/fighters/fullbody/raven.png",
+            "Background": "./assets/images/fighters/backgrounds/raven-bg.png"
         }
     },
     {
@@ -134,9 +134,9 @@
         "Height": 250,
         "Weight": 200,
         "Images": {
-            "FullBody": "./assets/images/ogre.png",
-            "Background": "./assets/images/ogre-bg.png",
-            "Headshot": "./assets/images/ogre-headshot.png"
+            "FullBody": "./assets/images/fighters/fullbody/ogre.png",
+            "Background": "./assets/images/fighters/backgrounds/ogre-bg.png",
+            "Headshot": "./assets/images/fighters/headshots/ogre-headshot.png"
         }
     },
     {
@@ -148,9 +148,9 @@
         "Height": 183,
         "Weight": 87,
         "Images": {
-            "FullBody": "./assets/images/devil-jin.png",
-            "Background": "./assets/images/devil-jin-bg.png",
-            "Headshot": "./assets/images/devil-jin-headshot.png"
+            "FullBody": "./assets/images/fighters/fullbody/devil-jin.png",
+            "Background": "./assets/images/fighters/backgrounds/devil-jin-bg.png",
+            "Headshot": "./assets/images/fighters/headshots/devil-jin-headshot.png"
         }
     },
     {
@@ -162,9 +162,9 @@
         "Height": 181,
         "Weight": 81,
         "Images": {
-            "FullBody": "./assets/images/devil-kazuya.png",
-            "Background": "./assets/images/devil-kazuya-bg.png",
-            "Headshot": "./assets/images/devil-kazuya-headshot.png"
+            "FullBody": "./assets/images/fighters/fullbody/devil-kazuya.png",
+            "Background": "./assets/images/fighters/backgrounds/devil-kazuya-bg.png",
+            "Headshot": "./assets/images/fighters/headshots/devil-kazuya-headshot.png"
         }
     }
 ]
