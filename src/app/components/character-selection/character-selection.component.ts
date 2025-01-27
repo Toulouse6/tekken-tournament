@@ -99,7 +99,7 @@ previousArena(): void {
 
     startFight(): void {
         if (this.fighter1 && this.fighter2) {
-            console.log(`${this.fighter1.LongName} is fighting ${this.fighter2.LongName}!`);
+            console.log(`${this.fighter1.name} is fighting ${this.fighter2.name}!`);
 
             // Activate fight state
             const displayElement = document.querySelector('.display') as HTMLElement;
