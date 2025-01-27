@@ -13,6 +13,11 @@
     background-position: center bottom !important;
     background-size: cover;
     background-repeat: no-repeat;
+    transition: transform 0.5s ease-in-out; 
+}
+
+.display.slide-right {
+    transform: translateX(100%); 
 }
 
 .display.default-arena {
@@ -46,7 +51,7 @@
     padding: 0.5rem;
     border-radius: 0.5rem;
     width: 90%;
-    z-index: 4;
+    z-index: 3;
   }
 
   .fighter2 .attributes {

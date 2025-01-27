@@ -1,6 +1,12 @@
-<div class="display" [ngClass]="{'default-arena': backgroundPosition === 'center'}"
-    [style.backgroundImage]="'url(' + backgroundImage + ')'" [style.backgroundPosition]="backgroundPosition"
-    [style.backgroundSize]="'cover'" [style.backgroundRepeat]="'no-repeat'">
+<div class="display"
+     [ngClass]="{
+        'default-arena': backgroundPosition === 'center',
+        'slide-right': isSliding
+     }"
+     [style.backgroundImage]="'url(' + backgroundImage + ')'"
+     [style.backgroundPosition]="backgroundPosition"
+     [style.backgroundSize]="'cover'"
+     [style.backgroundRepeat]="'no-repeat'">
     <div class="overlay"></div>
 
     <div class="vsFrame">
@@ -15,7 +21,6 @@
                 <p>{{ fighter1.FightingStyle }}</p>
                 <p>{{ fighter1.Nationality }}</p>
             </div>
-
         </div>
 
         <!-- Fighter 2 -->
@@ -29,7 +34,6 @@
                 <p>{{ fighter2.FightingStyle }}</p>
                 <p>{{ fighter2.Nationality }}</p>
             </div>
-
         </div>
 
         <!-- VS Text -->

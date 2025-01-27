@@ -13,7 +13,15 @@ export class DisplayComponent {
     @Input() fighter1: Character | null = null;
     @Input() fighter2: Character | null = null;
     @Input() backgroundImage: string | null = null;
-    @Input() backgroundPosition: string = 'center bottom'
+    @Input() backgroundPosition: string = 'center bottom';
+    isSliding: boolean = false;
 
+    triggerSlide(): void {
+        this.isSliding = true;
 
+        // Reset the sliding effect after a brief period
+        setTimeout(() => {
+            this.isSliding = false;
+        }, 500);  // Match the duration of the CSS transition
+    }
 }
