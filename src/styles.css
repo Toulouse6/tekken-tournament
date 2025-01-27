@@ -62,7 +62,6 @@ h1 {
     transition: filter 1s ease-in-out, background 1s ease-in-out;
 }
 
-
 .display.fight-active::before {
     background: rgba(255, 255, 255, 0.1);
     backdrop-filter: none;
