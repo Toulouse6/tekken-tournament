@@ -58,13 +58,13 @@ h1 {
     transition: filter 1s ease-in-out;
 }
 
-.display.fight-active+.arena-selection {
+.display.fight-active .controls-con .fight-button {
     opacity: 0;
     visibility: hidden;
     transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
 }
 
-.display.fight-active+.controls .fight-button {
+.display.fight-active+.controls-con .arena-selection {
     opacity: 0;
     visibility: hidden;
     transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
@@ -86,7 +86,7 @@ h1 {
 .display.fight-active .fighter img.fullBody {
     filter: inherit !important;
     transform: scale(1.2);
-    bottom: 3.5rem;
+    bottom: 1rem;
     filter: brightness(1.2) contrast(1.1);
     transition: filter 1s ease-in-out;
 }

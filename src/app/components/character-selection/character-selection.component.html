@@ -1,30 +1,33 @@
 <div class="selection-container">
 
-    <div class="title">
-        <h1>Select Your Warriors</h1>
-    </div>
-
-    <div class="character-grid">
-        <!-- Display Fighters -->
-        <div class="character-tile" *ngFor="let character of characters" (click)="toggleFighterSelection(character)"
-            [class.selected]="character === fighter1 || character === fighter2" [class.disabled]="isDisabled(character)"
-            [style.backgroundImage]="'url(' + character.Images.Headshot + ')'">
-            <p>{{ character.ShortName }}</p>
+        <div class="title">
+            <h1>Select Your Warriors</h1>
         </div>
-    </div>
-
-    <!-- Arena Selection -->
-    <div class="arena-selection" *ngIf="!(fighter1 && fighter2 && arena)">
-        <button class="arena-nav prev" (click)="previousArena()">&#9664; Prev</button>
-        <button class="arena-nav next" (click)="nextArena()">Next &#9654;</button>
-    </div>
-
-
-    <!-- Fight Button -->
-    <div class="controls" *ngIf="!isFightActive">
-        <button class="fight-button" [disabled]="!fighter1 || !fighter2 || !arena" (click)="startFight()">
-            Start Fight
-        </button>
-    </div>
-
+    
+        <div class="character-grid">
+            <!-- Display Fighters -->
+            <div class="character-tile" *ngFor="let character of characters" (click)="toggleFighterSelection(character)"
+                [class.selected]="character === fighter1 || character === fighter2" [class.disabled]="isDisabled(character)"
+                [style.backgroundImage]="'url(' + character.Images.Headshot + ')'">
+                <p>{{ character.ShortName }}</p>
+            </div>
+        </div>
+    
+        <!-- Arena Selection and Controls -->
+        <div class="controls-con" *ngIf="!isFightActive">
+            <!-- Fight Button -->
+            <button class="fight-button" [disabled]="!fighter1 || !fighter2 || !arena" (click)="startFight()">
+                Start Fight
+            </button>
+    
+            <!-- Arena Navigation -->
+            <div class="arena-selection" *ngIf="!isFightActive">
+                <button class="arena-nav prev" (click)="previousArena()">&#9664; Prev</button>
+                <div class="arena-display">
+                    {{ arena || 'Select Arena' }}
+                </div>
+                <button class="arena-nav next" (click)="nextArena()">Next &#9654;</button>
+            </div>
+        </div>
+        
 </div>

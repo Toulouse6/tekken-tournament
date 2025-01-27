@@ -12,23 +12,15 @@
 .character-grid {
     display: flex;
     flex-wrap: wrap;
-    gap: 1rem;
+    gap: 1.5rem;
     justify-content: center;
     padding: 0.5rem;
     width: 90%;
     margin: auto 0;
-  }
-
-.fight-button {
-    position: absolute;
-    bottom: 25rem;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 3;
-    transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
 }
 
-button {
+.fight-button {
+    display: block;
     margin: 0;
     text-align: center;
     font-size: 1rem;
@@ -38,13 +30,15 @@ button {
     position: relative;
     border-radius: 0.6em;
     overflow: hidden;
-    transition: all 0.3s;
+    font-family: 'tekken', sans-serif;
+    z-index: 3;
+    transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
     line-height: 1.4em;
     border: 1px solid white;
     background: linear-gradient(to right, rgba(0, 76, 104, 0.1) 1%, transparent 40%, transparent 60%, rgba(0, 76, 104, 0.1) 100%);
     color: var(--blue);
     box-shadow: inset 0 0 10px rgba(0, 76, 104, 0.4), 0 0 9px 3px rgba(0, 76, 104, 0.1);
-  }
+}
 
 button:hover {
     box-shadow: inset 0 0 10px rgba(0, 76, 104, 0.6), 0 0 9px 3px rgba(0, 76, 104, 0.2);
@@ -57,9 +51,6 @@ button:hover {
 
 button:before {
     content: "";
-    position: absolute;
-    left: -4em;
-    width: 4em;
     height: 100%;
     top: 0;
     transition: transform .4s ease-in-out;
@@ -74,8 +65,8 @@ button:hover:before {
     display: none;
     transition: transform 1s ease;
 }
-  
-  .character-tile {
+
+.character-tile {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -96,25 +87,25 @@ button:hover:before {
     transition: transform 0.5s ease, border-color 0.5s ease;
 }
 
-  .character-tile:hover {
+.character-tile:hover {
     transform: scale(1.1);
     border-color: #2d7390;
-  }
-  
-  .character-tile.selected {
+}
+
+.character-tile.selected {
     transform: scale(1.1);
     border-color: #2d7390;
     box-shadow: inset 0 0 10px rgba(0, 76, 104, 0.6), 0 0 9px 3px rgba(0, 76, 104, 0.2);
-  
+
 }
-  
-  .character-tile.disabled {
+
+.character-tile.disabled {
     filter: grayscale(100%);
     pointer-events: none;
     opacity: 0.7;
-  }
-  
-  .character-tile p {
+}
+
+.character-tile p {
     background-color: rgb(229, 229, 229);
     color: #3d3d3d;
     padding: 0.2rem 0.5rem;
@@ -126,29 +117,45 @@ button:hover:before {
     box-shadow: 0 2px 5px rgba(0, 76, 104, 0.2);
     font-weight: bold;
     text-transform: uppercase;
-  }
+}
 
 .arena-selection {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 1rem;
-    margin: 2rem auto;
+    gap: 2rem;
     text-align: center;
+    position: relative;
+    width: 100%;
+}
+
+.controls-con {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    gap: 1rem;
+    bottom: 50%;
+    
+    margin: 0;
+    position: absolute;
+    top: -5.5vh;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 
 .arena-nav {
+    font-family: 'tekken', sans-serif;
     background-color: transparent;
     border: none;
     font-size: 1rem;
-    color: #2d7390;
+    color: white;
     cursor: pointer;
     transition: transform 0.3s ease, color 0.3s ease;
 }
 
 .arena-nav:hover {
-    color: #2d7390;
     transform: scale(1.1);
 }
 
@@ -159,5 +166,3 @@ button:hover:before {
     gap: 0.5rem;
     text-align: center;
 }
-
-  

@@ -8,13 +8,12 @@ import charactersData from '../../assets/characters.json';
 })
 export class CharacterService {
     private arenas = [
-        { name: "Budah's Nest", image: './assets/images/arenas/budah-nest.png' },
-        { name: 'Garden of Fate', image: './assets/images/arenas/garden.png'},        
-        { name: 'Cyber Zone', image: './assets/images/arenas/cyber-zone.png' },
-        { name: "The Dragon Palace", image: './assets/images/arenas/elegant-palace.png' },
-        { name: 'Tree of Life', image: './assets/images/arenas/tree-of-life.png' },
-        { name: 'Temple of Emerald', image: './assets/images/arenas/temple.png' },
-
+        { name: "Steet View", image: './assets/images/arenas/street-view.png' },
+        { name: 'Green Fields', image: './assets/images/arenas/green-fields.png' },
+        { name: "Old City", image: './assets/images/arenas/old-city.png' },
+        { name: 'The Farm', image: './assets/images/arenas/farm.png' },
+        { name: 'Crystal Room', image: './assets/images/arenas/crystal-room.png' },
+        { name: 'Olympus', image: './assets/images/arenas/olympus.png' },
     ];
 
     // Return characters
