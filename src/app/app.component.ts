@@ -3,12 +3,11 @@ import { Character } from './models/character.model';
 import { CharacterService } from './services/character.service';
 import { CharacterSelectionComponent } from './components/character-selection/character-selection.component';
 import { DisplayComponent } from './components/display/display.component';
-import { HeaderComponent } from './components/header/header.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CharacterSelectionComponent, DisplayComponent, HeaderComponent],
+  imports: [CharacterSelectionComponent, DisplayComponent],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
 })
