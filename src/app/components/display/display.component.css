@@ -45,15 +45,15 @@
     color: white;
     padding: 0.5rem;
     border-radius: 0.5rem;
-    width: 80%;
+    width: 90%;
     z-index: 4;
   }
 
-  .fighter1 .attributes {
+  .fighter2 .attributes {
     text-align: left;
   }
 
-  .fighter2 .attributes {
+  .fighter1 .attributes {
     text-align: right;
   }
   
@@ -64,7 +64,7 @@
   
   .attributes strong {
     font-size: 2.5rem;
-    color: #e2a42a;
+    color: #a48025;
   }
 
 
@@ -95,27 +95,18 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.7);
     z-index: 1;
-}
-
-.f1 {
-    text-align: right !important;
-}
-
-.f2 {
-    text-align: left !important;
 }
 
 .vsText h3 {
     font-size: 4rem;
-    color: #e2a42a;
-    text-shadow: inset 0 0 10px rgba(3, 75, 109, 0.6), 0 0 9px 3px rgba(0, 76, 104, 0.2);
-}
+    color: #a48025;
+  }
 
 .vsText {
     position: absolute;
-    top: 50%;
+    top: 30%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-weight: bold;
