@@ -6,7 +6,6 @@ export interface Character {
     Nationality: string;
     Height: number;
     Weight: number;
-    Gender: string;
     Images: {
       FullBody: string;
       Background: string;

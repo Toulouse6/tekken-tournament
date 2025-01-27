@@ -7,7 +7,6 @@
         "Nationality": "Japan",
         "Height": 175,
         "Weight": 80,
-        "Gender": "m",
         "Images": {
             "FullBody": "./assets/images/kazuya.png",
             "Background": "./assets/images/kazuya-bg.png",
@@ -22,7 +21,6 @@
         "Nationality": "Japan",
         "Height": 183,
         "Weight": 87,
-        "Gender": "m",
         "Images": {
             "FullBody": "./assets/images/jin2.png",
             "Background": "./assets/images/jin-bg.png",
@@ -37,7 +35,6 @@
         "Nationality": "Japan",
         "Height": 167,
         "Weight": 57,
-        "Gender": "f",
         "Images": {
             "FullBody": "./assets/images/heihachi.png",
             "Background": "./assets/images/heihachi-bg.png",
@@ -52,7 +49,6 @@
         "Nationality": "United States",
         "Height": 186,
         "Weight": 90,
-        "Gender": "m",
         "Images": {
             "FullBody": "./assets/images/bryan.png",
             "Background": "./assets/images/bryan-bg.png",
@@ -67,9 +63,8 @@
         "Nationality": "Unknown",
         "Height": 178,
         "Weight": 63,
-        "Gender": "m",
         "Images": {
-            "FullBody": "./assets/images/yoshimitsu.png",
+            "FullBody": "./assets/images/yoshimitsu2.png",
             "Background": "./assets/images/yoshimitsu-bg.png",
             "Headshot": "./assets/images/yoshimitsu-headshot.png"
         }
@@ -82,22 +77,20 @@
         "Nationality": "Brazil",
         "Height": 188,
         "Weight": 75,
-        "Gender": "m",
         "Images": {
             "FullBody": "./assets/images/eddy.png",
-            "Background": "./assets/images/eddy-bg.png",
+            "Background": "./assets/images/eddy-bg2.png",
             "Headshot": "./assets/images/eddy-headshot.png"
         }
     },
     {
         "Id": 7,
         "ShortName": "King",
-        "LongName": "King",
+        "LongName": "Armor King",
         "FightingStyle": "Professional Wrestling",
         "Nationality": "Mexico",
         "Height": 190,
         "Weight": 90,
-        "Gender": "m",
         "Images": {
             "FullBody": "./assets/images/king.png",
             "Background": "./assets/images/king-bg.png",
@@ -106,13 +99,40 @@
     },
     {
         "Id": 8,
+        "ShortName": "Fahkumram",
+        "LongName": "Fahkumram",
+        "FightingStyle": "Muay Thai Fighter",
+        "Nationality": "United States",
+        "Height": 230,
+        "Weight": 192,
+        "Images": {
+            "Headshot": "./assets/images/fahkumram-headshot.png",
+            "FullBody": "./assets/images/fahkumram.png",
+            "Background": "./assets/images/fahkumram-bg.png"
+        }
+    },
+    {
+        "Id": 9,
+        "ShortName": "Raven",
+        "LongName": "Raven",
+        "FightingStyle": "The Dark Talon of Death",
+        "Nationality": "known",
+        "Height": 235,
+        "Weight": 185,
+        "Images": {
+            "Headshot": "./assets/images/raven-headshot.png",
+            "FullBody": "./assets/images/raven.png",
+            "Background": "./assets/images/raven-bg.png"
+        }
+    },
+    {
+        "Id": 10,
         "ShortName": "Ogre",
         "LongName": "True Ogre",
         "FightingStyle": "Ancient Assassination Arts",
-        "Nationality": "Unknown",
+        "Nationality": "Ancient Egypt",
         "Height": 250,
         "Weight": 200,
-        "Gender": "m",
         "Images": {
             "FullBody": "./assets/images/ogre.png",
             "Background": "./assets/images/ogre-bg.png",
@@ -120,14 +140,13 @@
         }
     },
     {
-        "Id": 9,
+        "Id": 11,
         "ShortName": "Devil Jin",
         "LongName": "Devil Jin",
         "FightingStyle": "Karate",
         "Nationality": "Unknown",
         "Height": 183,
         "Weight": 87,
-        "Gender": "m",
         "Images": {
             "FullBody": "./assets/images/devil-jin.png",
             "Background": "./assets/images/devil-jin-bg.png",
@@ -135,14 +154,13 @@
         }
     },
     {
-        "Id": 9,
+        "Id": 12,
         "ShortName": "Devil Kazuya",
         "LongName": "Devil Kazuya",
         "FightingStyle": "Advanced Mishima Style Karate",
         "Nationality": "Unknown",
         "Height": 181,
         "Weight": 81,
-        "Gender": "m",
         "Images": {
             "FullBody": "./assets/images/devil-kazuya.png",
             "Background": "./assets/images/devil-kazuya-bg.png",
