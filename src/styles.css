@@ -110,18 +110,21 @@ body {
     transition: filter 1s ease-in-out;
 }
 
+.display.fight-active .fighter1 img.fullBody,
+.display.fight-active .fighter2 img.fullBody {
+    transform: scale(0.9); 
+    filter: brightness(1.2) contrast(1.1);
+    transition: transform 2.5s ease-in-out, filter 2.5s ease-in-out;
+}
+
+
 .display.fight-active .fighter1 img.fullBody {
-    right: 0rem;
-    transform: scale(1.1);
-    transition: right 2.5s ease-in-out, transform 2.5s ease-in-out, filter 2.5s ease-in-out;
+
 }
 
 .display.fight-active .fighter2 img.fullBody {
-    left: 0rem;
-    transform: scale(1.1);
-    transition: left 2.5s ease-in-out, transform 2.5s ease-in-out, filter 2.5s ease-in-out;
-}
 
+}
 
 .fighter1 img.fullBody {
     right: 15vw;
