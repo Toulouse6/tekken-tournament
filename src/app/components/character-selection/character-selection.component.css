@@ -186,6 +186,7 @@ button:hover:before {
     }
 
 
+
 }
 
 
@@ -221,6 +222,7 @@ button:hover:before {
 
     .controls-con {
         margin-top: 3.5rem;
+        width: 70% !important;
     }
 
 
@@ -267,7 +269,7 @@ button:hover:before {
 
     .controls-con {
         margin-top: 4.2rem;
-        width: 150% !important;
+        width: 70% !important;
     }
 
     .character-tile {
