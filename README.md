@@ -5,7 +5,7 @@
 Choose your fighter, activate your skills, and see who comes out on top in a dynamic arena with a visually immersive experience.
 
 **Git Page:**  
-<br>https://toulouse6.github.io/tekken-tournament/
+https://toulouse6.github.io/tekken-tournament/
 
 ---
 
