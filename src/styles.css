@@ -112,7 +112,7 @@ body {
 
 .display.fight-active .fighter1 img.fullBody,
 .display.fight-active .fighter2 img.fullBody {
-    transform: scale(1.2); 
+    transform: scale(1.2);
     filter: brightness(1.2) contrast(1.1);
     transition: transform 2.5s ease-in-out, filter 2.5s ease-in-out;
     bottom: 10%;

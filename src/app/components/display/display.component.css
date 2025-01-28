@@ -316,9 +316,14 @@
 @media (max-width: 500px) {
 
     .arena-selection {
-        width: 150%;
+        width: 100%;
         gap: 5rem;
     }
+
+    .attributes {
+        margin-top: -22vh;
+    }
+
 
     .attributes strong {
         font-size: 0.9rem;
@@ -329,7 +334,12 @@
     }
 
     .fighter {
-        height: 55%;
+        height: 45%;
+    }
+
+    .vsText {
+        position: absolute;
+        top: 45%;
     }
 
     .fighter img.fullBody {
@@ -347,11 +357,8 @@
 
 }
 
-@media (max-width: 410px) {
+@media (max-width: 415px) {
 
-    .controls-con {
-        top: 0;
-    }
 
     .attributes strong {
         font-size: 0.7rem
@@ -366,21 +373,33 @@
         top: 5.5rem;
     }
 
-    @media (max-width: 390px) {
+}
+
+@media (max-width: 390px) {
 
 
-        .fighter img.fullBody {
-            top: 6rem;
-        }
+    .fighter img.fullBody {
+        top: 4.5rem;
+    }
 
-        .fighter1 img.fullBody {
-            right: 0;
-        }
+    .fighter1 img.fullBody {
+        right: 0;
+    }
 
-        .fighter2 img.fullBody {
-            left: 0;
-        }
+    .fighter2 img.fullBody {
+        left: 0;
+    }
 
+    .fighter {
+        height: 42%;
+    }
+
+}
+
+@media (max-width: 390px) {
+
+    .fighter img.fullBody {
+        height: 8rem;
     }
 
 }
