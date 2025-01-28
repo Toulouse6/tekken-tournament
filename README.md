@@ -9,17 +9,13 @@ Choose your fighter, activate your skills, and see who comes out on top in a dyn
 
 ---
 
-**Features:**
-
-- **Fighter Selection**
-- **Interactive Arena**
-- **Dynamic Animations**
-
-
 **Technologies:**
 
 - **Angular17**
 - **TypeScript**
+- **jQuery**
+- **RxJS**
+- **HTML5**
 - **CSS3**
 - **HTML5**
 
