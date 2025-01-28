@@ -22,7 +22,7 @@
 
 .fight-button {
     display: block;
-    margin: 0;
+    margin: -2rem auto 0;
     text-align: center;
     font-size: 1rem;
     color: white;
@@ -133,7 +133,7 @@ button:hover:before {
     bottom: 50%;
     margin: 0;
     position: absolute;
-    top: -5vh;
+    top: -12vh;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -143,10 +143,23 @@ button:hover:before {
     font-family: 'tekken', sans-serif;
     background-color: transparent;
     border: none;
-    font-size: 1rem;
     color: white;
     cursor: pointer;
     transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.arena-nav,
+.arena-display {
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+
+.fight-button {
+    margin-top: 2rem;
+}
+
+.arena-display {
+    width: 100%;
 }
 
 .arena-nav:hover {
@@ -163,6 +176,37 @@ button:hover:before {
     text-align: center;
 }
 
+
+@media (max-width: 1200px) {
+
+    .arena-nav,
+    .arena-display {
+        font-size: 1rem;
+        line-height: 1.5;
+    }
+
+    .controls-con {
+        margin-top: 0vh;
+    }
+
+
+}
+
+
+@media (max-width: 1024px) {
+
+    .arena-nav,
+    .arena-display {
+        font-size: 0.9rem;
+        line-height: 1.5;
+    }
+
+    .controls-con {
+        margin-top: 2rem;
+    }
+}
+
+
 @media (max-width: 768px) {
 
     .character-tile {
@@ -173,6 +217,51 @@ button:hover:before {
 
     .character-tile p {
         font-size: 0.7rem;
+    }
+
+    .arena-nav,
+    .arena-display {
+        font-size: 0.8rem;
+        line-height: 1.5;
+    }
+
+    .controls-con {
+        margin-top: 3rem;
+    }
+
+
+    @media (max-width: 700px) {
+
+        .controls-con {
+            margin-top: 4rem;
+        }
+    }
+
+    @media (max-width: 610px) {
+
+        .controls-con {
+            margin-top: 4.5rem;
+        }
+    }
+
+    @media (max-width: 520px) {
+        .fight-button {
+            width: 100%;
+            font-size: 0.8rem;
+        }
+
+        .controls-con {
+            margin-top: 4.5rem;
+        }
 
     }
+
+
+    @media (max-width: 410px) {
+
+        .controls-con {
+            margin-top: 5.rem;
+        }
+    }
+
 }

@@ -72,16 +72,16 @@
 
 .fighter img.fullBody {
     height: auto;
-    max-height: 40vh;
+    max-height: 38vh;
     margin-top: 1rem;
 }
 
 .fighter1 img.fullBody {
-    right: 13;
+    right: 12;
 }
 
 .fighter2 img.fullBody {
-    left: 13rem;
+    left: 12rem;
 }
 
 .fighter {
@@ -180,7 +180,7 @@
     }
 
     .fighter img.fullBody {
-        max-height: 33vh;
+        max-height: 31vh;
     }
 
     .fighter1 img.fullBody {
@@ -243,22 +243,10 @@
         font-size: 2rem;
     }
 
-    .controls-con {
-        bottom: 80%;
-    }
-
     .arena-selection {
         gap: 1rem;
         justify-content: center;
         align-items: center;
-    }
-
-    .arena-nav {
-        font-size: 1rem;
-    }
-
-    .arena-display {
-        font-size: 1rem;
     }
 
     .arena-selection {
@@ -266,10 +254,6 @@
         text-align: center;
     }
 
-    .controls-con {
-        position: relative;
-        top: 5vh;
-    }
 
 
 }
@@ -292,6 +276,10 @@
         left: 0.5rem;
     }
 
+    .fight-button {
+        margin-top: 0;
+    }
+
 }
 
 @media (max-width: 610px) {
@@ -310,7 +298,7 @@
 
     .fighter img.fullBody {
         height: 16rem;
-        top: 10rem;
+        top: 8rem;
     }
 
     .fighter1 img.fullBody {
@@ -325,7 +313,7 @@
 }
 
 
-@media (max-width: 470px) {
+@media (max-width: 500px) {
 
     .arena-selection {
         width: 150%;
@@ -346,7 +334,7 @@
 
     .fighter img.fullBody {
         height: 13rem;
-        top: 5.5rem;
+        top: 5rem;
     }
 
     .fighter1 img.fullBody {
@@ -374,8 +362,25 @@
     }
 
     .fighter img.fullBody {
-        height: 12rem;
-        top: 4.5rem;
+        height: 11rem;
+        top: 5.5rem;
+    }
+
+    @media (max-width: 390px) {
+
+
+        .fighter img.fullBody {
+            top: 6rem;
+        }
+
+        .fighter1 img.fullBody {
+            right: 0;
+        }
+
+        .fighter2 img.fullBody {
+            left: 0;
+        }
+
     }
 
 }
