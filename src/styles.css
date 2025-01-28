@@ -32,7 +32,7 @@ body {
     color: white;
 }
 
-h1 {
+.title h1 {
     font-family: 'tekken', sans-serif;
     text-transform: capitalize;
     margin: 2rem auto -0.5rem;
@@ -149,5 +149,13 @@ h1 {
     .fighter2 img.fullBody {
         left: 7vh;
     }
+}
 
+@media(max-width: 560px) {
+
+    .title h1 {
+        font-size: 1.2rem;
+        letter-spacing: 1px;
+        margin: 2rem auto -0.2rem;
+    }
 }

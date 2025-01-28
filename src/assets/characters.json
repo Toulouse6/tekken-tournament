@@ -1,134 +1,146 @@
 [
     {
-        "Id": 1,
+        "id": 1,
         "name": "Kazuya Mishima",
-        "FightingStyle": "Traditional Martial Arts",
-        "Nationality": "Japan",
-        "Images": {
-            "FullBody": "./assets/images/fighters/fullbody/kazuya.png",
-            "Background": "./assets/images/fighters/backgrounds/kazuya-bg.png",
-            "Headshot": "./assets/images/fighters/headshots/kazuya-headshot.png"
+        "fightingStyle": "Traditional Martial Arts",
+        "bornIn": "1968",
+        "nationality": "Japan",
+        "images": {
+            "fullBody": "./assets/images/fighters/fullbody/kazuya.png",
+            "background": "./assets/images/fighters/backgrounds/kazuya-bg.png",
+            "headshot": "./assets/images/fighters/headshots/kazuya-headshot.png"
         }
     },
     {
-        "Id": 2,
+        "id": 2,
         "name": "Jin Kazama",
-        "FightingStyle": "Karate",
-        "Nationality": "Japan",
-        "Images": {
-            "FullBody": "./assets/images/fighters/fullbody/jin2.png",
-            "Background": "./assets/images/fighters/backgrounds/jin-bg.png",
-            "Headshot": "./assets/images/fighters/headshots/jin-headshot.png"
+        "fightingStyle": "Mishima Style Karate",
+        "bornIn": "1979",
+        "nationality": "Japan",
+        "images": {
+            "fullBody": "./assets/images/fighters/fullbody/jin2.png",
+            "background": "./assets/images/fighters/backgrounds/jin-bg.png",
+            "headshot": "./assets/images/fighters/headshots/jin-headshot.png"
         }
     },
     {
-        "Id": 3,
+        "id": 3,
         "name": "Heihachi Mishima",
-        "FightingStyle": "Traditional Martial Arts",
-        "Nationality": "Japan",
-        "Images": {
-            "FullBody": "./assets/images/fighters/fullbody/heihachi.png",
-            "Background": "./assets/images/fighters/backgrounds/heihachi-bg.png",
-            "Headshot": "./assets/images/fighters/headshots/heihachi-headshot.png"
+        "fightingStyle": "Traditional Martial Arts",
+        "bornIn": "1946",
+        "nationality": "Japan",
+        "images": {
+            "fullBody": "./assets/images/fighters/fullbody/heihachi.png",
+            "background": "./assets/images/fighters/backgrounds/heihachi-bg.png",
+            "headshot": "./assets/images/fighters/headshots/heihachi-headshot.png"
         }
     },
     {
-        "Id": 4,
+        "id": 4,
         "name": "Bryan Fury",
-        "FightingStyle": "Kickboxing",
-        "Nationality": "United States",
-        "Images": {
-            "FullBody": "./assets/images/fighters/fullbody/bryan.png",
-            "Background": "./assets/images/fighters/backgrounds/bryan-bg.png",
-            "Headshot": "./assets/images/fighters/headshots/bryan-headshot.png"
+        "fightingStyle": "Kickboxing",
+        "bornIn": "1985",
+        "nationality": "United States",
+        "images": {
+            "fullBody": "./assets/images/fighters/fullbody/bryan.png",
+            "background": "./assets/images/fighters/backgrounds/bryan-bg.png",
+            "headshot": "./assets/images/fighters/headshots/bryan-headshot.png"
         }
     },
     {
-        "Id": 5,
+        "id": 5,
         "name": "Yoshimitsu",
-        "FightingStyle": "Manji Ninjutsu",
-        "Nationality": "Japan",
-        "Images": {
-            "FullBody": "./assets/images/fighters/fullbody/yoshimitsu2.png",
-            "Background": "./assets/images/fighters/backgrounds/yoshimitsu-bg.png",
-            "Headshot": "./assets/images/fighters/headshots/yoshimitsu-headshot.png"
+        "fightingStyle": "Manji Ninjutsu",
+        "bornIn": "1975",
+        "nationality": "Japan",
+        "images": {
+            "fullBody": "./assets/images/fighters/fullbody/yoshimitsu2.png",
+            "background": "./assets/images/fighters/backgrounds/yoshimitsu-bg.png",
+            "headshot": "./assets/images/fighters/headshots/yoshimitsu-headshot.png"
         }
     },
     {
-        "Id": 6,
+        "id": 6,
         "name": "Eddy Gordo",
-        "FightingStyle": "Capoeira",
-        "Nationality": "Brazil",
-        "Images": {
-            "FullBody": "./assets/images/fighters/fullbody/eddy.png",
-            "Background": "./assets/images/fighters/backgrounds/eddy-bg2.png",
-            "Headshot": "./assets/images/fighters/headshots/eddy-headshot.png"
+        "fightingStyle": "Capoeira",
+        "bornIn": "1976",
+        "nationality": "Brazil",
+        "images": {
+            "fullBody": "./assets/images/fighters/fullbody/eddy.png",
+            "background": "./assets/images/fighters/backgrounds/eddy-bg2.png",
+            "headshot": "./assets/images/fighters/headshots/eddy-headshot.png"
         }
     },
     {
-        "Id": 7,
+        "id": 7,
         "name": "Armor King",
-        "FightingStyle": "Professional Wrestling",
-        "Nationality": "Mexico",
-        "Images": {
-            "FullBody": "./assets/images/fighters/fullbody/king.png",
-            "Background": "./assets/images/fighters/backgrounds/king-bg.png",
-            "Headshot": "./assets/images/fighters/headshots/king-headshot.png"
+        "fightingStyle": "Professional Wrestling",
+        "bornIn": "1970",
+        "nationality": "Mexico",
+        "images": {
+            "fullBody": "./assets/images/fighters/fullbody/king.png",
+            "background": "./assets/images/fighters/backgrounds/king-bg.png",
+            "headshot": "./assets/images/fighters/headshots/king-headshot.png"
         }
     },
     {
-        "Id": 8,
+        "id": 8,
         "name": "Fahkumram",
-        "FightingStyle": "Muay Thai",
-        "Nationality": "United States",
-        "Images": {
-            "Headshot": "./assets/images/fighters/headshots/fahkumram-headshot.png",
-            "FullBody": "./assets/images/fighters/fullbody/fahkumram.png",
-            "Background": "./assets/images/fighters/backgrounds/fahkumram-bg.png"
+        "fightingStyle": "Muay Thai Art",
+        "bornIn": "1985",
+        "nationality": "United States",
+        "images": {
+            "fullBody": "./assets/images/fighters/fullbody/fahkumram.png",
+            "background": "./assets/images/fighters/backgrounds/fahkumram-bg.png",
+            "headshot": "./assets/images/fighters/headshots/fahkumram-headshot.png"
         }
     },
     {
-        "Id": 9,
+        "id": 9,
         "name": "Raven",
-        "FightingStyle": "Manji Ninjutsu",
-        "Nationality": "United Kingdom",
-        "Images": {
-            "Headshot": "./assets/images/fighters/headshots/raven-headshot.png",
-            "FullBody": "./assets/images/fighters/fullbody/raven.png",
-            "Background": "./assets/images/fighters/backgrounds/raven-bg.png"
+        "fightingStyle": "Manji Ninjutsu",
+        "bornIn": "1980",
+        "nationality": "United Kingdom",
+        "images": {
+            "fullBody": "./assets/images/fighters/fullbody/raven.png",
+            "background": "./assets/images/fighters/backgrounds/raven-bg.png",
+            "headshot": "./assets/images/fighters/headshots/raven-headshot.png"
         }
     },
     {
-        "Id": 10,
-        "name": "True Ogre",
-        "FightingStyle": "Ancient Assassination Arts",
-        "Nationality": "Ancient Egypt",
-        "Images": {
-            "FullBody": "./assets/images/fighters/fullbody/ogre.png",
-            "Background": "./assets/images/fighters/backgrounds/ogre-bg.png",
-            "Headshot": "./assets/images/fighters/headshots/ogre-headshot.png"
-        }
-    },
-    {
-        "Id": 11,
+        "id": 10,
         "name": "Devil Jin",
-        "FightingStyle": "Advanced Mishima Style Karate",
-        "Nationality": "Oyashima",
-        "Images": {
-            "FullBody": "./assets/images/fighters/fullbody/devil-jin.png",
-            "Background": "./assets/images/fighters/backgrounds/devil-jin-bg.png",
-            "Headshot": "./assets/images/fighters/headshots/devil-jin-headshot.png"
+        "fightingStyle": "Advanced Mishima Style Karate",
+        "bornIn": "1979",
+        "nationality": "Oyashima",
+        "images": {
+            "fullBody": "./assets/images/fighters/fullbody/devil-jin.png",
+            "background": "./assets/images/fighters/backgrounds/devil-jin-bg.png",
+            "headshot": "./assets/images/fighters/headshots/devil-jin-headshot.png"
         }
     },
     {
-        "Id": 12,
+        "id": 11,
         "name": "Devil Kazuya",
-        "FightingStyle": "Advanced Mishima Style Karate",
-        "Nationality": "Oyashima",
-        "Images": {
-            "FullBody": "./assets/images/fighters/fullbody/devil-kazuya.png",
-            "Background": "./assets/images/fighters/backgrounds/devil-kazuya-bg.png",
-            "Headshot": "./assets/images/fighters/headshots/devil-kazuya-headshot.png"
+        "fightingStyle": "Advanced Mishima Style Karate",
+        "bornIn": "1968",
+        "nationality": "Oyashima",
+        "images": {
+            "fullBody": "./assets/images/fighters/fullbody/devil-kazuya.png",
+            "background": "./assets/images/fighters/backgrounds/devil-kazuya-bg.png",
+            "headshot": "./assets/images/fighters/headshots/devil-kazuya-headshot.png"
+        }
+    },
+    {
+        "id": 12,
+        "name": "True Ogre",
+        "fightingStyle": "Ancient Assassination Arts",
+        "bornIn": "Unknown",
+        "nationality": "Ancient Egypt",
+        "images": {
+            "fullBody": "./assets/images/fighters/fullbody/ogre.png",
+            "background": "./assets/images/fighters/backgrounds/ogre-bg.png",
+            "headshot": "./assets/images/fighters/headshots/ogre-headshot.png"
         }
     }
 ]

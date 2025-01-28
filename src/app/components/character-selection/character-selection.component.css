@@ -151,7 +151,7 @@ button:hover:before {
 
 .arena-nav:hover {
     transform: scale(1.1);
-    background-color: transparent;
+    background-color: none;
     color: #a48025;
 }
 
@@ -161,4 +161,18 @@ button:hover:before {
     align-items: center;
     gap: 0.5rem;
     text-align: center;
+}
+
+@media (max-width: 768px) {
+
+    .character-tile {
+        height: 4rem;
+        width: 4rem;
+        padding-bottom: 0.5rem;
+    }
+
+    .character-tile p {
+        font-size: 0.7rem;
+
+    }
 }

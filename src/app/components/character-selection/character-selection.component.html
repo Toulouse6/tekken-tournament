@@ -8,7 +8,7 @@
             <!-- Display Fighters -->
             <div class="character-tile" *ngFor="let character of characters" (click)="toggleFighterSelection(character)"
                 [class.selected]="character === fighter1 || character === fighter2" [class.disabled]="isDisabled(character)"
-                [style.backgroundImage]="'url(' + character.Images.Headshot + ')'">
+                [style.backgroundImage]="'url(' + character.images.headshot + ')'">
                 <p>{{ character.name }}</p>
             </div>
         </div>

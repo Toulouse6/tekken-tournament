@@ -6,28 +6,28 @@
     <div class="vsFrame">
         <!-- Fighter 1 -->
         <div class="fighter fighter1" *ngIf="fighter1"
-            [style.backgroundImage]="'url(' + fighter1.Images.Background + ')'" [style.backgroundSize]="'cover'"
+            [style.backgroundImage]="'url(' + fighter1.images.background + ')'" [style.backgroundSize]="'cover'"
             [style.backgroundPosition]="'center'">
-            <img class="fullBody" [src]="fighter1.Images.FullBody" alt="Fighter 1 Full Body" />
+            <img class="fullBody" [src]="fighter1.images.fullBody" alt="Fighter 1 Full Body" />
 
             <div class="attributes">
                 <p><strong>{{ fighter1.name }}</strong></p>
-                <p>{{ fighter1.FightingStyle }}</p>
-                <p>{{ fighter1.Nationality }}</p>
+                <p>{{ fighter1.fightingStyle }}</p>
+                <p>{{ fighter1.bornIn }}, {{ fighter1.nationality }}</p>
             </div>
 
         </div>
 
         <!-- Fighter 2 -->
         <div class="fighter fighter2" *ngIf="fighter2"
-            [style.backgroundImage]="'url(' + fighter2.Images.Background + ')'" [style.backgroundSize]="'cover'"
+            [style.backgroundImage]="'url(' + fighter2.images.background + ')'" [style.backgroundSize]="'cover'"
             [style.backgroundPosition]="'center'">
-            <img class="fullBody" [src]="fighter2.Images.FullBody" alt="Fighter 2 Full Body" />
+            <img class="fullBody" [src]="fighter2.images.fullBody" alt="Fighter 2 Full Body" />
 
             <div class="attributes">
                 <p><strong>{{ fighter2.name }}</strong></p>
-                <p>{{ fighter2.FightingStyle }}</p>
-                <p>{{ fighter2.Nationality }}</p>
+                <p>{{ fighter2.fightingStyle }}</p>
+                <p>{{ fighter2.bornIn }}, {{ fighter2.nationality }}</p>
             </div>
 
         </div>

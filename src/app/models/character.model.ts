@@ -1,14 +1,13 @@
 export interface Character {
-    Id: number;
+    id: number;
     name: string;
-    FightingStyle: string;
-    Nationality: string;
-    Height: number;
-    Weight: number;
-    Images: {
-      FullBody: string;
-      Background: string;
-      Headshot: string;
+    fightingStyle: string;
+    nationality: string;
+    bornIn: any;
+    images: {
+      fullBody: string;
+      background: string;
+      headshot: string;
     };
   }
   
