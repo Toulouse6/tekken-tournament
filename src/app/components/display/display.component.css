@@ -315,6 +315,10 @@
 
 @media (max-width: 500px) {
 
+    .display {
+        background-size: cover;
+    }
+
     .arena-selection {
         width: 100%;
         gap: 5rem;
