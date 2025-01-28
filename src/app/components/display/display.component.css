@@ -399,7 +399,11 @@
 @media (max-width: 390px) {
 
     .fighter img.fullBody {
-        height: 8rem;
+        height: 9rem;
+    }
+
+    .fighter img.fullBody {
+        top: 4rem;
     }
 
 }

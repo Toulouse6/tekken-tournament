@@ -266,7 +266,8 @@ button:hover:before {
 @media (max-width: 390px) {
 
     .controls-con {
-        margin-top: 4.5rem;
+        margin-top: 4.2rem;
+        width: 150% !important;
     }
 
     .character-tile {
