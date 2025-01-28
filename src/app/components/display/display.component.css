@@ -17,6 +17,7 @@
 
 .display.default-arena {
     background-position: top !important;
+    background-size: cover;
 }
 
 .overlay {
@@ -316,7 +317,7 @@
 @media (max-width: 500px) {
 
     .display {
-        background-size: cover;
+        background-size: 400%;
     }
 
     .arena-selection {
