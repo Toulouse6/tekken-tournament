@@ -369,20 +369,11 @@
 
 }
 
-@media (max-width: 415px) {
+@media (max-width: 410px) {
 
     .fighter img.fullBody {
         height: 11rem;
-        top: 5.5rem;
-    }
-
-}
-
-@media (max-width: 390px) {
-
-
-    .fighter img.fullBody {
-        top: 4.5rem;
+        top: 5rem;
     }
 
     .fighter1 img.fullBody {
@@ -395,6 +386,11 @@
 
     .fighter {
         height: 42%;
+    }
+
+
+    .attributes strong {
+        font-size: 14px;
     }
 
 }
