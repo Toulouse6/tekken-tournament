@@ -151,6 +151,21 @@ body {
     top: 6.5rem;
 }
 
+.display.fight-active .battle {
+    transition: transform 0.5s ease-in-out;
+    position: absolute;
+    width: 80%;
+    left: 50%;
+    top: 16rem;
+    display: flex;
+    justify-content: center;
+    margin: auto 0;
+    padding: 0;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+}
+
+
 .display.fight-active .fighter1 img.fullBody,
 .display.fight-active .fighter2 img.fullBody {
     transform: scale(1.2);
@@ -172,7 +187,6 @@ body {
     height: 20rem;
     position: absolute;
     bottom: 0.5rem;
-    z-index: 9999;
     transition: filter 0.3s ease-in-out;
 }
 

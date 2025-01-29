@@ -50,7 +50,6 @@
     padding: 0.5rem;
     border-radius: 0.5rem;
     width: 90%;
-    z-index: 3;
     animation: fadeIn 0.5s ease-in-out;
 }
 
@@ -123,7 +122,7 @@
 .attributes,
 .vsText {
     position: relative;
-    z-index: 9999;
+    z-index: 9998;
 }
 
 .fighter:hover {
@@ -160,7 +159,6 @@
     left: 50%;
     transform: translate(-50%, -50%);
     font-weight: bold;
-    z-index: 4;
     display: flex;
     width: 100%;
     justify-content: center;
@@ -168,6 +166,23 @@
     gap: 1.5rem;
 }
 
+.battle {
+    display: none;
+}
+
+.battle img {
+    width: 22rem;
+    padding: 0;
+    margin: 0;
+}
+
+.battle img.hit1 {
+    margin-right: -3rem !important;
+}
+
+.battle img.hit2 {
+    margin-left: -3rem !important;
+}
 
 /* Responsive adjustments */
 @media (max-width: 1200px) {
@@ -277,6 +292,19 @@
     }
 
 
+    .battle img {
+        width: 20rem;
+        padding: 0;
+        margin: 0;
+    }
+
+    .battle img.hit1 {
+        margin-right: -2.5rem !important;
+    }
+
+    .battle img.hit2 {
+        margin-left: -2.5rem !important;
+    }
 
 }
 
@@ -327,6 +355,21 @@
         left: 0;
     }
 
+    .battle img {
+        width: 14rem;
+        padding: 0;
+        margin: 0;
+    }
+
+    .battle img.hit1 {
+        margin-right: -2rem !important;
+    }
+
+    .battle img.hit2 {
+        margin-left: -2rem !important;
+    }
+
+
 
 }
 
@@ -365,7 +408,22 @@
         font-size: 8px;
     }
 
+    .battle img {
+        width: 12rem;
+        padding: 0;
+        margin: 0;
+    }
+
+    .battle img.hit1 {
+        margin-right: -2rem !important;
+    }
+
+    .battle img.hit2 {
+        margin-left: -2rem !important;
+    }
+
 }
+
 
 @media (max-width: 410px) {
 

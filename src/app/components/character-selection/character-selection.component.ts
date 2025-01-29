@@ -121,7 +121,7 @@ export class CharacterSelectionComponent implements OnInit {
             // Reset fight
             setTimeout(() => {
                 this.resetFight();
-            }, 6000);
+            }, 4000);
         }
     }
 
