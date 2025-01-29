@@ -110,7 +110,7 @@
     {
         "id": 10,
         "name": "Devil Jin",
-        "fightingStyle": "Advanced Mishima Style Karate",
+        "fightingStyle": "Ancient Mishima Karate",
         "bornIn": "1979",
         "nationality": "Oyashima",
         "images": {
@@ -122,7 +122,7 @@
     {
         "id": 11,
         "name": "Devil Kazuya",
-        "fightingStyle": "Advanced Mishima Style Karate",
+        "fightingStyle": "Ancient Mishima Karate",
         "bornIn": "1968",
         "nationality": "Oyashima",
         "images": {
