@@ -92,17 +92,14 @@ body {
 
 .display.fight-active .fighter::before {
     background: transparent !important;
-    animation: fadeIn 1.5s ease-in;
 }
 
 .display.fight-active .vsText {
     display: none;
-    animation: fadeIn 1.5s ease-in;
 }
 
 .display.fight-active .attributes {
     display: none;
-    animation: fadeIn 1.5s ease-in;
 }
 
 .display.fight-active .fighter img.fullBody {
