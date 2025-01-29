@@ -1,6 +1,18 @@
 [
     {
         "id": 1,
+        "name": "Bryan Fury",
+        "fightingStyle": "Kickboxing",
+        "bornIn": "1985",
+        "nationality": "United States",
+        "images": {
+            "fullBody": "./assets/images/fighters/fullbody/bryan.png",
+            "background": "./assets/images/fighters/backgrounds/bryan-bg.png",
+            "headshot": "./assets/images/fighters/headshots/bryan-headshot.png"
+        }
+    },
+    {
+        "id": 2,
         "name": "Kazuya Mishima",
         "fightingStyle": "Traditional Martial Arts",
         "bornIn": "1968",
@@ -12,19 +24,19 @@
         }
     },
     {
-        "id": 2,
+        "id": 3,
         "name": "Jin Kazama",
         "fightingStyle": "Mishima Style Karate",
         "bornIn": "1979",
         "nationality": "Japan",
         "images": {
-            "fullBody": "./assets/images/fighters/fullbody/jin2.png",
+            "fullBody": "./assets/images/fighters/fullbody/jin3.png",
             "background": "./assets/images/fighters/backgrounds/jin-bg.png",
             "headshot": "./assets/images/fighters/headshots/jin-headshot.png"
         }
     },
     {
-        "id": 3,
+        "id": 4,
         "name": "Heihachi Mishima",
         "fightingStyle": "Traditional Martial Arts",
         "bornIn": "1946",
@@ -33,18 +45,6 @@
             "fullBody": "./assets/images/fighters/fullbody/heihachi.png",
             "background": "./assets/images/fighters/backgrounds/heihachi-bg.png",
             "headshot": "./assets/images/fighters/headshots/heihachi-headshot.png"
-        }
-    },
-    {
-        "id": 4,
-        "name": "Bryan Fury",
-        "fightingStyle": "Kickboxing",
-        "bornIn": "1985",
-        "nationality": "United States",
-        "images": {
-            "fullBody": "./assets/images/fighters/fullbody/bryan.png",
-            "background": "./assets/images/fighters/backgrounds/bryan-bg.png",
-            "headshot": "./assets/images/fighters/headshots/bryan-headshot.png"
         }
     },
     {
@@ -61,6 +61,18 @@
     },
     {
         "id": 6,
+        "name": "Steve Fox",
+        "fightingStyle": "Boxing",
+        "bornIn": "1983",
+        "nationality": "United Kingdom",
+        "images": {
+            "fullBody": "./assets/images/fighters/fullbody/steve.png",
+            "background": "./assets/images/fighters/backgrounds/steve-bg.png",
+            "headshot": "./assets/images/fighters/headshots/steve-headshot.png"
+        }
+    },
+    {
+        "id": 7,
         "name": "Eddy Gordo",
         "fightingStyle": "Capoeira",
         "bornIn": "1976",
@@ -72,7 +84,7 @@
         }
     },
     {
-        "id": 7,
+        "id": 8,
         "name": "Armor King",
         "fightingStyle": "Professional Wrestling",
         "bornIn": "1970",
@@ -84,7 +96,7 @@
         }
     },
     {
-        "id": 8,
+        "id": 9,
         "name": "Fahkumram",
         "fightingStyle": "Muay Thai Art",
         "bornIn": "1985",
@@ -96,7 +108,7 @@
         }
     },
     {
-        "id": 9,
+        "id": 10,
         "name": "Raven",
         "fightingStyle": "Manji Ninjutsu",
         "bornIn": "1980",
@@ -108,19 +120,19 @@
         }
     },
     {
-        "id": 10,
+        "id": 11,
         "name": "Devil Jin",
         "fightingStyle": "Ancient Mishima Karate",
         "bornIn": "1979",
         "nationality": "Oyashima",
         "images": {
-            "fullBody": "./assets/images/fighters/fullbody/devil-jin.png",
+            "fullBody": "./assets/images/fighters/fullbody/devil-jin2.png",
             "background": "./assets/images/fighters/backgrounds/devil-jin-bg.png",
             "headshot": "./assets/images/fighters/headshots/devil-jin-headshot.png"
         }
     },
     {
-        "id": 11,
+        "id": 12,
         "name": "Jinpachi Mishima",
         "fightingStyle": "Ancient Mishima Karate",
         "bornIn": "1937",
@@ -130,9 +142,21 @@
             "background": "./assets/images/fighters/backgrounds/jinpachi-bg.png",
             "headshot": "./assets/images/fighters/headshots/jinpachi-headshot.png"
         }
-    },    
+    },
     {
-        "id": 12,
+        "id": 13,
+        "name": "Akuma",
+        "fightingStyle": "Ansatsuken",
+        "bornIn": "Unknown",
+        "nationality": "Japan",
+        "images": {
+            "fullBody": "./assets/images/fighters/fullbody/akuma.png",
+            "background": "./assets/images/fighters/backgrounds/akuma-bg.png",
+            "headshot": "./assets/images/fighters/headshots/akuma-headshot.png"
+        }
+    },
+    {
+        "id": 14,
         "name": "Devil Kazuya",
         "fightingStyle": "Ancient Mishima Karate",
         "bornIn": "1968",
@@ -144,7 +168,7 @@
         }
     },
     {
-        "id": 13,
+        "id": 15,
         "name": "True Ogre",
         "fightingStyle": "Ancient Assassination Arts",
         "bornIn": "Unknown",
@@ -154,18 +178,5 @@
             "background": "./assets/images/fighters/backgrounds/ogre-bg.png",
             "headshot": "./assets/images/fighters/headshots/ogre-headshot.png"
         }
-    },
-    {
-        "id": 14,
-        "name": "Azazel",
-        "fightingStyle": "Ancient Fighting Style",
-        "bornIn": "Unknown",
-        "nationality": "Unknown",
-        "images": {
-            "fullBody": "./assets/images/fighters/fullbody/azazel.png",
-            "background": "./assets/images/fighters/backgrounds/azazel-bg.png",
-            "headshot": "./assets/images/fighters/headshots/azazel-headshot.png"
-        }
     }
-    
 ]

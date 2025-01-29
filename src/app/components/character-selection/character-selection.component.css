@@ -26,8 +26,8 @@
     margin: auto 0;
     text-align: center;
     font-size: 1rem;
-    border: 2px solid #a48025;
-    color: #a48025;
+    border: 2px solid #ba892d;
+    color: #ba892d;
     background-color: transparent;
     padding: 0.8em 3em;
     letter-spacing: 0.08em;
@@ -87,13 +87,13 @@ button:hover:before {
 
 .character-tile:hover {
     transform: scale(1.1);
-    border-color: #a48025;
+    border-color: #ba892d;
     animation: shiny-effect 3s infinite linear;
 }
 
 .character-tile.selected {
     transform: scale(1.1);
-    border-color: #a48025;
+    border-color: #ba892d;
     box-shadow: 0 0 5px rgba(215, 187, 3, 0.8), 0 0 15px rgba(226, 162, 40, 0.6), 0 0 20px rgba(255, 215, 0, 0.5);
 }
 
@@ -166,7 +166,7 @@ button:hover:before {
 .arena-nav:hover {
     transform: scale(1.1);
     background-color: none;
-    color: #a48025;
+    color: #ba892d;
 }
 
 .arena-display {
