@@ -121,6 +121,18 @@
     },
     {
         "id": 11,
+        "name": "Jinpachi Mishima",
+        "fightingStyle": "Ancient Mishima Karate",
+        "bornIn": "1937",
+        "nationality": "Japan",
+        "images": {
+            "fullBody": "./assets/images/fighters/fullbody/jinpachi.png",
+            "background": "./assets/images/fighters/backgrounds/jinpachi-bg.png",
+            "headshot": "./assets/images/fighters/headshots/jinpachi-headshot.png"
+        }
+    },    
+    {
+        "id": 12,
         "name": "Devil Kazuya",
         "fightingStyle": "Ancient Mishima Karate",
         "bornIn": "1968",
@@ -132,7 +144,7 @@
         }
     },
     {
-        "id": 12,
+        "id": 13,
         "name": "True Ogre",
         "fightingStyle": "Ancient Assassination Arts",
         "bornIn": "Unknown",
@@ -142,5 +154,18 @@
             "background": "./assets/images/fighters/backgrounds/ogre-bg.png",
             "headshot": "./assets/images/fighters/headshots/ogre-headshot.png"
         }
+    },
+    {
+        "id": 14,
+        "name": "Azazel",
+        "fightingStyle": "Ancient Fighting Style",
+        "bornIn": "Unknown",
+        "nationality": "Unknown",
+        "images": {
+            "fullBody": "./assets/images/fighters/fullbody/azazel.png",
+            "background": "./assets/images/fighters/backgrounds/azazel-bg.png",
+            "headshot": "./assets/images/fighters/headshots/azazel-headshot.png"
+        }
     }
+    
 ]

@@ -263,9 +263,8 @@ body {
 
 
 @media (max-width: 390px) {
-
     .display.fight-active .battle {
-        top: 25rem;
+        top: 28rem;
     }
 
 }

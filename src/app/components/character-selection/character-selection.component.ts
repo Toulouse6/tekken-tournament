@@ -115,7 +115,6 @@ export class CharacterSelectionComponent implements OnInit {
                 displayElement.classList.add('fight-active');
             }
 
-            // Optionally disable UI
             this.isFightActive = true;
 
             // Reset fight
@@ -126,9 +125,27 @@ export class CharacterSelectionComponent implements OnInit {
     }
 
     resetFight(): void {
-        // Reload & reset all states
-        window.location.reload();
+        // Reset fighter & fight state
+        this.fighter1 = null;
+        this.fighter2 = null;
+        this.isFightActive = false;
+
+        const displayElement = document.querySelector('.display') as HTMLElement;
+        if (displayElement) {
+            displayElement.classList.remove('fight-active');
+        }
+
+        // Reset arena 
+        this.arena = null;
+
+        // Emit 
+        this.selectionChange.emit({
+            fighter1: this.fighter1,
+            fighter2: this.fighter2,
+            arena: this.arena,
+        });
     }
+
 
 
 }
