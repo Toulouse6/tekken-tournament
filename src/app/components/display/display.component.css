@@ -402,11 +402,15 @@
     }
 
     .fighter img.fullBody {
-        top: 4rem;
+        top: 5.5rem;
     }
 
     .vsFrame {
         height: 85%;
+    }
+
+    .fighter {
+        height: 60%;
     }
 
 }
