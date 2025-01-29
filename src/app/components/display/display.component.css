@@ -181,7 +181,7 @@
     }
 
     .fighter img.fullBody {
-        max-height: 31vh;
+        max-height: 30vh;
     }
 
     .fighter1 img.fullBody {
@@ -277,10 +277,6 @@
         left: 0.5rem;
     }
 
-    .fight-button {
-        margin-top: 0;
-    }
-
 }
 
 @media (max-width: 610px) {
@@ -316,12 +312,9 @@
 
 @media (max-width: 500px) {
 
-    .display {
-        background-size: 400%;
-    }
 
     .arena-selection {
-        width: 100%;
+        width: 80%;
         gap: 5rem;
     }
 
@@ -399,6 +392,20 @@
         height: 42%;
     }
 
+}
 
+@media (max-width: 390px) {
+
+    .fighter img.fullBody {
+        height: 9rem;
+    }
+
+    .fighter img.fullBody {
+        top: 4rem;
+    }
+
+    .vsFrame {
+        height: 85%;
+    }
 
 }
