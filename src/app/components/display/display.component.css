@@ -395,7 +395,7 @@
 
 }
 
-@media (max-width: 375px) {
+@media (max-width: 390px) {
 
     .attributes strong {
         font-size: 12px;
@@ -410,7 +410,7 @@
     }
 
     .fighter img.fullBody {
-        top: 5.5rem;
+        top: 5.2rem;
     }
 
     .vsFrame {
