@@ -359,11 +359,12 @@
 
 
     .attributes strong {
-        font-size: 0.7rem
+        font-size: 0.8rem
     }
 
     .attributes p {
-        font-size: 0.4rem;
+        font-size: 0.5rem;
+        width: 105%;
     }
 
     .fighter img.fullBody {
@@ -397,7 +398,7 @@
 @media (max-width: 390px) {
 
     .fighter img.fullBody {
-        height: 9rem;
+        height: 10rem;
     }
 
     .fighter img.fullBody {
