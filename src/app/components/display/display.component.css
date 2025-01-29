@@ -399,16 +399,6 @@
         height: 42%;
     }
 
-}
 
-@media (max-width: 390px) {
-
-    .fighter img.fullBody {
-        height: 9rem;
-    }
-
-    .fighter img.fullBody {
-        top: 4rem;
-    }
 
 }
