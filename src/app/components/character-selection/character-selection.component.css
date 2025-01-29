@@ -143,6 +143,7 @@ button:hover:before {
 
 
 .arena-nav {
+    font-size: 1rem;
     font-family: 'tekken', sans-serif;
     background-color: transparent;
     border: none;
@@ -154,12 +155,12 @@ button:hover:before {
 .arena-nav,
 .arena-display {
     white-space: nowrap;
-    font-size: 1.2rem;
     line-height: 1.5;
 }
 
 .arena-display {
     margin: 0;
+    font-size: 1.2rem;
 }
 
 .arena-nav:hover {
@@ -179,10 +180,12 @@ button:hover:before {
 
 @media (max-width: 1200px) {
 
-    .arena-nav,
+    .arena-nav {
+        font-size: 0.9rem;
+    }
+
     .arena-display {
         font-size: 1rem;
-        line-height: 1.5;
     }
 
 }
@@ -190,10 +193,13 @@ button:hover:before {
 
 @media (max-width: 1024px) {
 
-    .arena-nav,
+
+    .arena-nav {
+        font-size: 0.8rem;
+    }
+
     .arena-display {
         font-size: 0.9rem;
-        line-height: 1.5;
     }
 
 }
@@ -209,13 +215,6 @@ button:hover:before {
     .character-tile p {
         font-size: 0.7rem;
     }
-
-    .arena-nav,
-    .arena-display {
-        font-size: 0.8rem;
-        line-height: 1.5;
-    }
-
 
     .controls-con {
         margin-top: 3.5rem;
