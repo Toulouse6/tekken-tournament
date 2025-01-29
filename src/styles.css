@@ -20,6 +20,17 @@
     font-weight: normal;
 }
 
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+
 html,
 body {
     font-family: 'tekken', sans-serif;
@@ -30,6 +41,7 @@ body {
     overflow-x: hidden;
     background-color: #131313;
     color: white;
+    animation: fadeIn 1s ease-in-out;
 }
 
 .title h1 {
