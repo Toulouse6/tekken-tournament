@@ -40,6 +40,37 @@
     }
 }
 
+@keyframes flipToBottom {
+    0% {
+        transform: perspective(600px) rotateX(0deg);
+    }
+    50% {
+        transform: perspective(600px) rotateX(90deg);
+    }
+    100% {
+        transform: perspective(600px) rotateX(180deg);
+    }
+}
+
+@keyframes fallBackward {
+    0% {
+        transform: perspective(1000px) rotateX(0deg) translateY(0);
+        opacity: 1;
+    }
+    60% {
+        transform: perspective(1000px) rotateX(60deg) translateY(80%);
+        opacity: 0.3;
+    }
+    80% {
+        transform: perspective(1000px) rotateX(50deg) translateY(90%);
+        opacity: 0.2;
+    }
+    100% {
+        transform: perspective(1000px) rotateX(70deg) translateY(100%);
+        opacity: 0;
+    }
+}
+
 html,
 body {
     font-family: 'tekken', sans-serif;
@@ -83,6 +114,11 @@ body {
     transition: filter 1s ease-in-out, background 1s ease-in-out;
 }
 
+.display.fight-active .fighter-background {
+    animation: fadeOut 3s ease-in-out forwards;
+    backface-visibility: hidden;
+}
+
 .display.fight-active::before {
     background: rgba(255, 255, 255, 0.1);
     backdrop-filter: none;
@@ -112,7 +148,10 @@ body {
 }
 
 .display.fight-active .fighter::before {
-    background: transparent !important;
+    animation: flipToBottom 1.2s ease-in-out forwards;
+    transform-origin: top;
+    backface-visibility: hidden;
+
 }
 
 .display.fight-active .vsText {
