@@ -352,14 +352,6 @@
         top: 5rem;
     }
 
-    .fighter1 img.fullBody {
-        right: 0;
-    }
-
-    .fighter2 img.fullBody {
-        left: 0;
-    }
-
     .attributes strong {
         font-size: 15px;
     }
