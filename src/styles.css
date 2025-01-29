@@ -149,6 +149,7 @@ body {
     bottom: 1rem;
     filter: brightness(1.2) contrast(1.1);
     transition: filter 1s ease-in-out;
+    top: 6rem;
 }
 
 .display.fight-active .fighter1 img.fullBody,
@@ -193,5 +194,9 @@ body {
         font-size: 1.2rem;
         letter-spacing: 1px;
         margin: 2rem auto -0.2rem;
+    }
+
+    .display.fight-active .fighter img.fullBody {
+        top: 12rem !important;
     }
 }
