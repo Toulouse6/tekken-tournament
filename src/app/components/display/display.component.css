@@ -171,7 +171,7 @@
 }
 
 .battle img {
-    width: 22rem;
+    width: 25rem;
     padding: 0;
     margin: 0;
 }
@@ -207,6 +207,9 @@
         left: 3rem;
     }
 
+    .battle img {
+        width: 22rem;
+    }
 
 }
 
@@ -227,6 +230,10 @@
 
     .fighter2 img.fullBody {
         left: 2.5rem;
+    }
+
+    .battle img {
+        width: 20rem;
     }
 }
 
@@ -293,7 +300,7 @@
 
 
     .battle img {
-        width: 20rem;
+        width: 16rem;
         padding: 0;
         margin: 0;
     }
@@ -357,8 +364,6 @@
 
     .battle img {
         width: 14rem;
-        padding: 0;
-        margin: 0;
     }
 
     .battle img.hit1 {
@@ -410,8 +415,6 @@
 
     .battle img {
         width: 12rem;
-        padding: 0;
-        margin: 0;
     }
 
     .battle img.hit1 {
@@ -447,6 +450,10 @@
 
     .attributes strong {
         font-size: 14px;
+    }
+
+    .battle img {
+        width: 10rem;
     }
 
 }

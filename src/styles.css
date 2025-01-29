@@ -190,7 +190,17 @@ body {
     transition: filter 0.3s ease-in-out;
 }
 
-@media(max-width: 1024px) {
+
+@media (max-width: 1200px) {
+
+    .display.fight-active .battle {
+        top: 24rem;
+    }
+}
+
+
+@media (max-width: 1024px) {
+
 
     .fighter1 img.fullBody {
         right: 7vw;
@@ -198,6 +208,35 @@ body {
 
     .fighter2 img.fullBody {
         left: 7vh;
+    }
+
+    .display.fight-active .battle {
+        top: 22rem;
+    }
+}
+
+
+@media (max-width: 780px) {
+
+    .display.fight-active .battle {
+        top: 19rem;
+    }
+}
+
+
+@media (max-width: 1200px) {
+
+    .display.fight-active .battle {
+        width: 22rem;
+    }
+}
+
+
+
+@media (max-width: 610px) {
+
+    .display.fight-active .battle {
+        top: 25rem;
     }
 }
 
@@ -212,4 +251,21 @@ body {
     .display.fight-active .fighter img.fullBody {
         top: 12rem !important;
     }
+}
+
+
+@media (max-width: 415px) {
+
+    .display.fight-active .battle {
+        top: 28rem;
+    }
+}
+
+
+@media (max-width: 390px) {
+
+    .display.fight-active .battle {
+        top: 25rem;
+    }
+
 }
