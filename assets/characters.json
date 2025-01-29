@@ -54,7 +54,7 @@
         "bornIn": "1975",
         "nationality": "Japan",
         "images": {
-            "fullBody": "./assets/images/fighters/fullbody/yoshimitsu2.png",
+            "fullBody": "./assets/images/fighters/fullbody/yoshimitsu.png",
             "background": "./assets/images/fighters/backgrounds/yoshimitsu-bg.png",
             "headshot": "./assets/images/fighters/headshots/yoshimitsu-headshot.png"
         }
