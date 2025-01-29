@@ -59,7 +59,7 @@
 }
 
 .fighter1 .attributes {
-    text-align: right;
+    text-align: right !important;
 }
 
 .attributes p {
@@ -301,11 +301,11 @@
     }
 
     .attributes strong {
-        font-size: 1.2rem;
+        font-size: 22px;
     }
 
     .attributes p {
-        font-size: 0.6rem;
+        font-size: 12px;
     }
 
     .fighter img.fullBody {
@@ -335,11 +335,6 @@
 
     .attributes {
         margin-top: -22vh;
-    }
-
-
-    .attributes strong {
-        font-size: 1rem;
     }
 
     .fighter {
@@ -396,7 +391,15 @@
 
 }
 
-@media (max-width: 390px) {
+@media (max-width: 375px) {
+
+    .attributes strong {
+        font-size: 12px;
+    }
+
+    .attributes p {
+        font-size: 6px;
+    }
 
     .fighter img.fullBody {
         height: 10rem;
