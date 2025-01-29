@@ -334,7 +334,7 @@
     }
 
     .attributes {
-        margin-top: -22vh;
+        margin-top: -21vh;
     }
 
     .fighter {
@@ -347,7 +347,7 @@
     }
 
     .fighter img.fullBody {
-        height: 13rem;
+        height: 12.5rem;
         top: 5rem;
     }
 
@@ -357,6 +357,14 @@
 
     .fighter2 img.fullBody {
         left: 0;
+    }
+
+    .attributes strong {
+        font-size: 15px;
+    }
+
+    .attributes p {
+        font-size: 8px;
     }
 
 }
