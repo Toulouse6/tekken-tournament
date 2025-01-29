@@ -149,7 +149,7 @@ body {
     bottom: 1rem;
     filter: brightness(1.2) contrast(1.1);
     transition: filter 1s ease-in-out;
-    top: 6rem;
+    top: 6.5rem;
 }
 
 .display.fight-active .fighter1 img.fullBody,
