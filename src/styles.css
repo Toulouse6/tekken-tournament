@@ -92,14 +92,17 @@ body {
 
 .display.fight-active .fighter::before {
     background: transparent !important;
+    animation: fadeIn 1.5s ease-in;
 }
 
 .display.fight-active .vsText {
     display: none;
+    animation: fadeIn 1.5s ease-in;
 }
 
 .display.fight-active .attributes {
     display: none;
+    animation: fadeIn 1.5s ease-in;
 }
 
 .display.fight-active .fighter img.fullBody {
@@ -119,11 +122,11 @@ body {
 }
 
 .fighter1 img.fullBody {
-    right: 15vw;
+    bottom: 0;
 }
 
 .fighter2 img.fullBody {
-    left: 15vh;
+    bottom: 0;
 }
 
 .fighter img.fullBody {

@@ -24,5 +24,4 @@ export class CharacterService {
         return of(this.arenas);
     }
 
-
 }

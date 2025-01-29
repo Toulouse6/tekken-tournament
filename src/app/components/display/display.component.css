@@ -13,6 +13,7 @@
     background-position: center bottom !important;
     background-size: cover;
     background-repeat: no-repeat;
+    animation: fadeIn 1.5s ease-in;
 }
 
 .display.default-arena {
