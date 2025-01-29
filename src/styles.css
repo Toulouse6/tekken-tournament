@@ -144,11 +144,11 @@ body {
 
 .display.fight-active .fighter {
     background-image: none !important;
-    transition: filter 1s ease-in-out, background 1s ease-in-out;
+    transition: filter 0.5s ease-in-out;
 }
 
 .display.fight-active .fighter::before {
-    animation: flipToBottom 1.2s ease-in-out forwards;
+    animation: flipToBottom 2s ease-in-out forwards;
     transform-origin: top;
     backface-visibility: hidden;
 
