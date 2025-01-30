@@ -129,6 +129,11 @@ body {
     filter: brightness(1.2);
 }
 
+.display.fight-active .fighter:hover {
+    transform: none !important;
+    filter: none !important;
+}
+
 .display.fight-active .fighter::before {
     animation: fallBackward 2s ease-in-out forwards;
     transform-origin: top;

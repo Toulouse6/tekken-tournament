@@ -128,12 +128,9 @@
 .fighter:hover {
     transform: scale(1.05);
     filter: brightness(1.1);
+    
 }
 
-.fighter::before:hover {
-    transform: scale(1.5);
-    background: rgba(0, 0, 0, 0.2);
-}
 
 .fighter::before {
     content: '';
