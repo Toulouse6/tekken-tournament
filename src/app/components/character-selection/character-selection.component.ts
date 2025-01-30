@@ -63,7 +63,7 @@ export class CharacterSelectionComponent implements OnInit {
 
             setTimeout(() => {
                 displayElement.classList.remove('slide-right');
-            }, 500);
+            }, 1000);
         }
     }
 
@@ -120,7 +120,7 @@ export class CharacterSelectionComponent implements OnInit {
             // Reset fight
             setTimeout(() => {
                 this.resetFight();
-            }, 4000);
+            }, 6000);
         }
     }
 
