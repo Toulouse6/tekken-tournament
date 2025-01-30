@@ -13,6 +13,18 @@
     },
     {
         "id": 2,
+        "name": "Feng Wei",
+        "fightingStyle": "Chinese Martial Arts",
+        "bornIn": "Unknown",
+        "nationality": "China",
+        "images": {
+            "fullBody": "./assets/images/fighters/fullbody/feng.png",
+            "background": "./assets/images/fighters/backgrounds/feng-bg.png",
+            "headshot": "./assets/images/fighters/headshots/feng-headshot.png"
+        }
+    },
+    {
+        "id": 3,
         "name": "Kazuya Mishima",
         "fightingStyle": "Traditional Martial Arts",
         "bornIn": "1968",
@@ -24,7 +36,7 @@
         }
     },
     {
-        "id": 3,
+        "id": 4,
         "name": "Jin Kazama",
         "fightingStyle": "Mishima Style Karate",
         "bornIn": "1979",
@@ -36,7 +48,7 @@
         }
     },
     {
-        "id": 4,
+        "id": 5,
         "name": "Heihachi Mishima",
         "fightingStyle": "Traditional Martial Arts",
         "bornIn": "1946",
@@ -48,7 +60,7 @@
         }
     },
     {
-        "id": 5,
+        "id": 6,
         "name": "Yoshimitsu",
         "fightingStyle": "Manji Ninjutsu",
         "bornIn": "1975",
@@ -60,7 +72,7 @@
         }
     },
     {
-        "id": 6,
+        "id": 7,
         "name": "Steve Fox",
         "fightingStyle": "Boxing",
         "bornIn": "1983",
@@ -72,19 +84,19 @@
         }
     },
     {
-        "id": 7,
+        "id": 8,
         "name": "Eddy Gordo",
         "fightingStyle": "Capoeira",
         "bornIn": "1976",
         "nationality": "Brazil",
         "images": {
-            "fullBody": "./assets/images/fighters/fullbody/eddy.png",
+            "fullBody": "./assets/images/fighters/fullbody/eddy2.png",
             "background": "./assets/images/fighters/backgrounds/eddy-bg2.png",
             "headshot": "./assets/images/fighters/headshots/eddy-headshot.png"
         }
     },
     {
-        "id": 8,
+        "id": 9,
         "name": "Armor King",
         "fightingStyle": "Professional Wrestling",
         "bornIn": "1970",
@@ -96,7 +108,7 @@
         }
     },
     {
-        "id": 9,
+        "id": 10,
         "name": "Fahkumram",
         "fightingStyle": "Muay Thai Art",
         "bornIn": "1985",
@@ -108,7 +120,7 @@
         }
     },
     {
-        "id": 10,
+        "id": 11,
         "name": "Raven",
         "fightingStyle": "Manji Ninjutsu",
         "bornIn": "1980",
@@ -120,7 +132,7 @@
         }
     },
     {
-        "id": 11,
+        "id": 12,
         "name": "Devil Jin",
         "fightingStyle": "Ancient Mishima Karate",
         "bornIn": "1979",
@@ -132,7 +144,7 @@
         }
     },
     {
-        "id": 12,
+        "id": 13,
         "name": "Jinpachi Mishima",
         "fightingStyle": "Ancient Mishima Karate",
         "bornIn": "1937",
@@ -144,7 +156,7 @@
         }
     },
     {
-        "id": 13,
+        "id": 14,
         "name": "Akuma",
         "fightingStyle": "Ansatsuken",
         "bornIn": "Unknown",
@@ -156,7 +168,7 @@
         }
     },
     {
-        "id": 14,
+        "id": 15,
         "name": "Devil Kazuya",
         "fightingStyle": "Ancient Mishima Karate",
         "bornIn": "1968",
@@ -168,7 +180,7 @@
         }
     },
     {
-        "id": 15,
+        "id": 16,
         "name": "True Ogre",
         "fightingStyle": "Ancient Assassination Arts",
         "bornIn": "Unknown",
