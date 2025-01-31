@@ -30,7 +30,7 @@
         "bornIn": "1968",
         "nationality": "Japan",
         "images": {
-            "fullBody": "./assets/images/fighters/fullbody/kazuya2.png",
+            "fullBody": "./assets/images/fighters/fullbody/kazuya.png",
             "background": "./assets/images/fighters/backgrounds/kazuya-bg.png",
             "headshot": "./assets/images/fighters/headshots/kazuya-headshot.png"
         }
