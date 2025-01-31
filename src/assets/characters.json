@@ -138,7 +138,7 @@
         "bornIn": "1937",
         "nationality": "Japan",
         "images": {
-            "fullBody": "./assets/images/fighters/fullbody/jinpachi.png",
+            "fullBody": "./assets/images/fighters/fullbody/Jinpachi.png",
             "background": "./assets/images/fighters/backgrounds/jinpachi-bg.png",
             "headshot": "./assets/images/fighters/headshots/jinpachi-headshot.png"
         }
@@ -162,7 +162,7 @@
         "bornIn": "1968",
         "nationality": "Oyashima",
         "images": {
-            "fullBody": "./assets/images/fighters/fullbody/devil-kazuya3.png",
+            "fullBody": "./assets/images/fighters/fullbody/devil-kazuya6.png",
             "background": "./assets/images/fighters/backgrounds/devil-kazuya-bg.png",
             "headshot": "./assets/images/fighters/headshots/devil-kazuya-headshot.png"
         }
