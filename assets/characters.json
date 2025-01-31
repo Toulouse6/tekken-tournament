@@ -78,7 +78,7 @@
         "bornIn": "1976",
         "nationality": "Brazil",
         "images": {
-            "fullBody": "./assets/images/fighters/fullbody/eddy2.png",
+            "fullBody": "./assets/images/fighters/fullbody/eddy.png",
             "background": "./assets/images/fighters/backgrounds/eddy-bg2.png",
             "headshot": "./assets/images/fighters/headshots/eddy-headshot.png"
         }
@@ -162,7 +162,7 @@
         "bornIn": "1968",
         "nationality": "Oyashima",
         "images": {
-            "fullBody": "./assets/images/fighters/fullbody/devil-kazuya6.png",
+            "fullBody": "./assets/images/fighters/fullbody/devil-kazuya.png",
             "background": "./assets/images/fighters/backgrounds/devil-kazuya-bg.png",
             "headshot": "./assets/images/fighters/headshots/devil-kazuya-headshot.png"
         }
