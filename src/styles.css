@@ -196,11 +196,21 @@ body {
 }
 
 
+
 @media (max-width: 1200px) {
+
+    .display.fight-active .battle {
+        width: 22rem;
+    }
 
     .display.fight-active .battle {
         top: 24rem;
     }
+
+    .display.fight-active .fighter img.fullBody {
+        top: 8rem !important;
+    }
+
 }
 
 
@@ -218,24 +228,25 @@ body {
     .display.fight-active .battle {
         top: 22rem;
     }
+
+    .display.fight-active .fighter img.fullBody {
+        top: 13rem !important;
+    }
+
 }
 
-
 @media (max-width: 780px) {
+
+    .display.fight-active .fighter img.fullBody {
+        top: 10rem !important;
+    }
 
     .display.fight-active .battle {
         top: 19rem;
     }
+
+
 }
-
-
-@media (max-width: 1200px) {
-
-    .display.fight-active .battle {
-        width: 22rem;
-    }
-}
-
 
 
 @media (max-width: 610px) {
@@ -243,6 +254,13 @@ body {
     .display.fight-active .battle {
         top: 25rem;
     }
+
+
+    .display.fight-active .fighter img.fullBody {
+        top: 14rem !important;
+    }
+
+
 }
 
 @media(max-width: 560px) {
@@ -252,10 +270,6 @@ body {
         letter-spacing: 1px;
         margin: 2rem auto -0.2rem;
     }
-
-    .display.fight-active .fighter img.fullBody {
-        top: 12rem !important;
-    }
 }
 
 
@@ -264,12 +278,4 @@ body {
     .display.fight-active .battle {
         top: 28rem;
     }
-}
-
-
-@media (max-width: 390px) {
-    .display.fight-active .battle {
-        top: 28rem;
-    }
-
 }
