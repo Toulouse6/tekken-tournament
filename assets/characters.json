@@ -43,7 +43,7 @@
         "bornIn": "1979",
         "nationality": "Japan",
         "images": {
-            "fullBody": "./assets/images/fighters/fullbody/jin3.png",
+            "fullBody": "./assets/images/fighters/fullbody/jin.png",
             "background": "./assets/images/fighters/backgrounds/jin-bg.png",
             "headshot": "./assets/images/fighters/headshots/jin-headshot.png"
         }
@@ -80,7 +80,7 @@
         "nationality": "Brazil",
         "images": {
             "fullBody": "./assets/images/fighters/fullbody/eddy.png",
-            "background": "./assets/images/fighters/backgrounds/eddy-bg2.png",
+            "background": "./assets/images/fighters/backgrounds/eddy-bg.png",
             "headshot": "./assets/images/fighters/headshots/eddy-headshot.png"
         }
     },
@@ -139,7 +139,7 @@
         "bornIn": "1979",
         "nationality": "Oyashima",
         "images": {
-            "fullBody": "./assets/images/fighters/fullbody/devil-jin2.png",
+            "fullBody": "./assets/images/fighters/fullbody/devil-jin.png",
             "background": "./assets/images/fighters/backgrounds/devil-jin-bg.png",
             "headshot": "./assets/images/fighters/headshots/devil-jin-headshot.png"
         }
