@@ -15,7 +15,6 @@ export class CharacterSelectionComponent implements OnInit {
 
     @Input() arenas: { name: string; image: string }[] = [];
 
-
     @Output() selectionChange = new EventEmitter<{
         fighter1: Character | null;
         fighter2: Character | null;
@@ -26,126 +25,60 @@ export class CharacterSelectionComponent implements OnInit {
     fighter1: Character | null = null;
     fighter2: Character | null = null;
     arena: string | null = "";
-
     activeArenaIndex: number = 0;
     isFightActive: boolean = false;
-
 
     constructor(private characterService: CharacterService) { }
 
     ngOnInit(): void {
-        this.characterService.getCharacters().subscribe((data) => {
-            this.characters = data;
-        });
+        this.characterService.getCharacters().subscribe((data) => this.characters = data);
+        this.characterService.getArenas().subscribe((data) => this.arenas = data);
     }
 
     onSelectionChange(): void {
-        this.selectionChange.emit({
-            fighter1: this.fighter1,
-            fighter2: this.fighter2,
-            arena: this.arena,
-        });
+        this.characterService.emitSelection(this.fighter1, this.fighter2, this.arena, this.selectionChange);
     }
 
     updateArena(): void {
-        const selectedArena = this.arenas[this.activeArenaIndex];
-        this.arena = selectedArena ? selectedArena.name : null;
-
-        this.selectionChange.emit({
-            fighter1: this.fighter1,
-            fighter2: this.fighter2,
-            arena: this.arena,
+        this.characterService.updateArena(this.arenas, this.activeArenaIndex, (updatedArena) => {
+            this.arena = updatedArena;
+            this.onSelectionChange();
         });
-
-        const displayElement = document.querySelector('.display');
-        if (displayElement) {
-            displayElement.classList.add('slide-right');
-
-            setTimeout(() => {
-                displayElement.classList.remove('slide-right');
-            }, 1000);
-        }
     }
 
     nextArena(): void {
-        if (this.arenas.length > 0) {
-            this.activeArenaIndex = (this.activeArenaIndex + 1) % this.arenas.length; // Loop to the beginning
-            this.updateArena();
-        }
+        this.activeArenaIndex = this.characterService.getNextArenaIndex(this.activeArenaIndex, this.arenas.length);
+        this.updateArena();
     }
 
     previousArena(): void {
-        if (this.arenas.length > 0) {
-            this.activeArenaIndex =
-                (this.activeArenaIndex - 1 + this.arenas.length) % this.arenas.length; // Loop to the end
-            this.updateArena();
-        }
+        this.activeArenaIndex = this.characterService.getPreviousArenaIndex(this.activeArenaIndex, this.arenas.length);
+        this.updateArena();
     }
 
     toggleFighterSelection(character: Character): void {
-        if (this.fighter1 === character) {
-            this.fighter1 = null;
-        } else if (this.fighter2 === character) {
-            this.fighter2 = null;
-        } else if (!this.fighter1) {
-            this.fighter1 = character;
-        } else if (!this.fighter2) {
-            this.fighter2 = character;
-        }
-        this.onSelectionChange(); // Emit changes
+        const fighters = this.characterService.toggleFighterSelection(character, this.fighter1, this.fighter2);
+        this.fighter1 = fighters.fighter1;
+        this.fighter2 = fighters.fighter2;
+        this.onSelectionChange();
     }
 
-
     isDisabled(character: Character): boolean {
-        return (
-            this.fighter1 !== null &&
-            this.fighter2 !== null &&
-            character !== this.fighter1 &&
-            character !== this.fighter2
-        );
+        return this.characterService.isDisabled(character, this.fighter1, this.fighter2);
     }
 
     startFight(): void {
         if (this.fighter1 && this.fighter2) {
-            console.log(`${this.fighter1.name} is fighting ${this.fighter2.name}!`);
-
-            // Activate fight state
-            const displayElement = document.querySelector('.display') as HTMLElement;
-            if (displayElement) {
-                displayElement.classList.add('fight-active');
-            }
-
             this.isFightActive = true;
-
-            // Reset fight
-            setTimeout(() => {
-                this.resetFight();
-            }, 6000);
+            this.characterService.startFight(this.fighter1, this.fighter2, () => this.resetFight());
         }
-    }
+    }    
 
     resetFight(): void {
-        // Reset fighter & fight state
         this.fighter1 = null;
         this.fighter2 = null;
         this.isFightActive = false;
-
-        const displayElement = document.querySelector('.display') as HTMLElement;
-        if (displayElement) {
-            displayElement.classList.remove('fight-active');
-        }
-
-        // Reset arena 
         this.arena = null;
-
-        // Emit 
-        this.selectionChange.emit({
-            fighter1: this.fighter1,
-            fighter2: this.fighter2,
-            arena: this.arena,
-        });
+        this.onSelectionChange();
     }
-
-
-
 }
