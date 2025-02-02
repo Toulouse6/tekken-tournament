@@ -278,4 +278,15 @@ body {
     .display.fight-active .battle {
         top: 28rem;
     }
+
+    .display.fight-active .fighter img.fullBody {
+        top: 14rem !important;
+    }
+}
+
+@media (max-width: 380px) {
+
+    .display.fight-active .fighter img.fullBody {
+        top: 10.5rem !important;
+    }
 }
