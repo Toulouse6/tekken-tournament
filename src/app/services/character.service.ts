@@ -8,13 +8,11 @@ import charactersData from '../../assets/characters.json';
 })
 export class CharacterService {
     private arenas = [
-        { name: "Crystal Palace", image: './assets/images/arenas/crystal-palace.png' },
-        { name: "Olympus", image: './assets/images/arenas/olympus.png' },
-        { name: "Paradise", image: './assets/images/arenas/paradise.png' },
-        { name: "Snow Sanctuary", image: './assets/images/arenas/snow-sanctuary.png' },
-        { name: "Street of Carnage", image: './assets/images/arenas/street-of-carnage.png' },
-        { name: "Street Walk", image: './assets/images/arenas/street-walk.png' },
-        { name: "The Farm", image: './assets/images/arenas/the-farm.png' },
+        { name: "Crystal Valley", image: './assets/images/arenas/crystal.png' },
+        { name: "Olympus Gates", image: './assets/images/arenas/olympus.png' },
+        { name: "Pure Land", image: './assets/images/arenas/pure-land.png' },
+        { name: "Street Walk", image: './assets/images/arenas/street.png' },
+        { name: "The Farm", image: './assets/images/arenas/farm.png' },
     ];
 
     getCharacters(): Observable<Character[]> {
