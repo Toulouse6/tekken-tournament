@@ -122,7 +122,6 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(255, 255, 255, 0.08);
     animation: pulseShiny 2.5s infinite ease-in-out;
     z-index: 1;
     transition: background 0.5s ease-in-out;
@@ -133,12 +132,9 @@ body {
     animation: pulseShiny 2s infinite alternate;
 }
 
-.display.fight-active .controls-con .fight-button {
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
+.display.fight-active .overlay {
+    background: rgba(255, 255, 255, 0.1);
 }
-
 
 /* Hide Controls in Active */
 .display.fight-active+.controls-con .arena-selection {
@@ -146,6 +142,13 @@ body {
     visibility: hidden;
     transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
 }
+
+.display.fight-active .controls-con .fight-button {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
+}
+
 
 /* Hide Backgrounds in Active + Disable hover */
 .display.fight-active .fighter {
