@@ -12,14 +12,14 @@ import { DisplayComponent } from './components/display/display.component';
     styleUrls: ['./app.component.css'],
 })
 export class AppComponent implements OnInit {
-    title = 'tekken-fighters';
+
+    title = 'Tekken Tournament';
 
     fighter1: Character | null = null;
     fighter2: Character | null = null;
     arena: string | null = null;
 
     arenas: { name: string; image: string }[] = [];
-    arenasNames: string[] = [];
 
     constructor(private characterService: CharacterService) { }
 
@@ -30,6 +30,7 @@ export class AppComponent implements OnInit {
         });
     }
 
+    // On Select Changes
     onSelectionChange(selection: {
         fighter1: Character | null;
         fighter2: Character | null;
@@ -40,16 +41,18 @@ export class AppComponent implements OnInit {
         this.arena = selection.arena;
     }
 
+
+    // Get Arenas
     getArenasImage(): string {
         const selectedArena = this.arenas.find((s) => s.name === this.arena);
         return selectedArena ? selectedArena.image : './assets/images/arenas/default-arena-bg.png'; // Fallback image
     }
 
+    // Arenas position
     getBackgroundPosition(): string {
-
-        const selectedArena = this.arenas.find((s) => s.name === this.arena);
-        return selectedArena?.name === 'Default Arena' || !selectedArena ? 'center' : 'center bottom';
+        return this.arena ? 'center bottom' : 'center';
     }
+
 
 
 }

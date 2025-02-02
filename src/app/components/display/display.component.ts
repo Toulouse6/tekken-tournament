@@ -10,6 +10,7 @@ import { CommonModule } from '@angular/common';
     imports: [CommonModule],
 })
 export class DisplayComponent {
+    
     @Input() fighter1: Character | null = null;
     @Input() fighter2: Character | null = null;
     @Input() backgroundImage: string | null = null;

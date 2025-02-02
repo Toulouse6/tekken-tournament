@@ -35,10 +35,24 @@ export class CharacterSelectionComponent implements OnInit {
         this.characterService.getArenas().subscribe((data) => this.arenas = data);
     }
 
+    // Character Selection
     onSelectionChange(): void {
         this.characterService.emitSelection(this.fighter1, this.fighter2, this.arena, this.selectionChange);
     }
 
+
+    toggleFighterSelection(character: Character): void {
+        const fighters = this.characterService.toggleFighterSelection(character, this.fighter1, this.fighter2);
+        this.fighter1 = fighters.fighter1;
+        this.fighter2 = fighters.fighter2;
+        this.onSelectionChange();
+    }
+
+    isDisabled(character: Character): boolean {
+        return this.characterService.isDisabled(character, this.fighter1, this.fighter2);
+    }
+
+    // Arena Selection
     updateArena(): void {
         this.characterService.updateArena(this.arenas, this.activeArenaIndex, (updatedArena) => {
             this.arena = updatedArena;
@@ -56,23 +70,13 @@ export class CharacterSelectionComponent implements OnInit {
         this.updateArena();
     }
 
-    toggleFighterSelection(character: Character): void {
-        const fighters = this.characterService.toggleFighterSelection(character, this.fighter1, this.fighter2);
-        this.fighter1 = fighters.fighter1;
-        this.fighter2 = fighters.fighter2;
-        this.onSelectionChange();
-    }
-
-    isDisabled(character: Character): boolean {
-        return this.characterService.isDisabled(character, this.fighter1, this.fighter2);
-    }
-
+    // Fight
     startFight(): void {
         if (this.fighter1 && this.fighter2) {
             this.isFightActive = true;
             this.characterService.startFight(this.fighter1, this.fighter2, () => this.resetFight());
         }
-    }    
+    }
 
     resetFight(): void {
         this.fighter1 = null;

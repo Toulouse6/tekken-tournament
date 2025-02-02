@@ -1,3 +1,5 @@
+/* Background */
+
 .display {
     display: flex;
     flex-direction: column;
@@ -45,6 +47,15 @@
     z-index: 1;
 }
 
+/* VS Frame */
+
+.fullBody,
+.attributes,
+.vsText {
+    position: relative;
+    z-index: 9998;
+}
+
 .vsFrame {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -89,6 +100,9 @@
     color: #ba892d;
 }
 
+
+/* Fighters Full Body */
+
 .fighter img.fullBody {
     height: auto;
     max-height: 38vh;
@@ -104,6 +118,8 @@
     left: 12rem;
 }
 
+
+/* Fighters Backgrounds */
 .fighter {
     display: flex;
     flex-direction: column;
@@ -132,19 +148,11 @@
     border-radius: 1rem;
 }
 
-.fullBody,
-.attributes,
-.vsText {
-    position: relative;
-    z-index: 9998;
-}
-
 .fighter:hover {
     transform: scale(1.05);
     filter: brightness(1.1);
-    
-}
 
+}
 
 .fighter::before {
     content: '';
@@ -158,6 +166,8 @@
     border-radius: 1rem;
 }
 
+
+/* VS Text */
 .vsText h3 {
     font-family: 'tekken', sans-serif;
     font-size: 2.5rem;
@@ -177,6 +187,9 @@
     gap: 1.5rem;
 }
 
+
+
+/* Battel */
 .battle {
     display: none;
 }
@@ -194,6 +207,7 @@
 .battle img.hit2 {
     margin-left: -3rem !important;
 }
+
 
 /* Responsive */
 @media (max-width: 1200px) {
@@ -326,6 +340,7 @@
 
 }
 
+
 @media (max-width: 700px) {
 
     .fighter img.fullBody {
@@ -345,6 +360,7 @@
     }
 
 }
+
 
 @media (max-width: 610px) {
 
@@ -457,7 +473,6 @@
     .fighter {
         height: 42%;
     }
-
 
     .attributes strong {
         font-size: 14px;

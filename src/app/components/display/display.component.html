@@ -1,8 +1,10 @@
 <div class="display" [ngClass]="{'default-arena': backgroundPosition === 'center'}"
     [style.backgroundImage]="'url(' + backgroundImage + ')'" [style.backgroundPosition]="backgroundPosition"
     [style.backgroundSize]="'cover'" [style.backgroundRepeat]="'no-repeat'">
+
     <div class="overlay"></div>
 
+    <!-- vsFrame -->
     <div class="vsFrame">
         <!-- Fighter 1 -->
         <div class="fighter fighter1" *ngIf="fighter1">

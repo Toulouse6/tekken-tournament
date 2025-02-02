@@ -20,6 +20,7 @@
     font-weight: normal;
 }
 
+/* Key Frames */
 @keyframes fadeOut {
     from {
         opacity: 1;
@@ -93,6 +94,8 @@ body {
     animation: fadeIn 1s ease-in-out;
 }
 
+
+/* Title */
 .title h1 {
     font-family: 'tekken', sans-serif;
     text-transform: capitalize;
@@ -103,6 +106,7 @@ body {
     letter-spacing: 2px;
 }
 
+/* Fight Active */
 .display.fight-active {
     transition: filter 1s ease-in-out;
 }
@@ -119,10 +123,10 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(255, 255, 255, 0.08);  
+    background: rgba(255, 255, 255, 0.08);
     backdrop-filter: saturate(2);
     -webkit-backdrop-filter: saturate(2);
-    animation: pulseShiny 2.5s infinite ease-in-out; 
+    animation: pulseShiny 2.5s infinite ease-in-out;
     z-index: 1;
     transition: background 0.5s ease-in-out;
 }
@@ -138,12 +142,15 @@ body {
     transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
 }
 
+
+/* Hide Controls in Active */
 .display.fight-active+.controls-con .arena-selection {
     opacity: 0;
     visibility: hidden;
     transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
 }
 
+/* Hide Backgrounds in Active + Disable hover */
 .display.fight-active .fighter {
     background-image: none !important;
     transition: filter 0.5s ease-in-out;
@@ -161,6 +168,8 @@ body {
     backface-visibility: hidden;
 }
 
+/* Hide Text in Active */
+
 .display.fight-active .vsText {
     display: none;
 }
@@ -169,26 +178,14 @@ body {
     display: none;
 }
 
+
+/* Full Body in Active */
 .display.fight-active .fighter img.fullBody {
     filter: inherit !important;
     transform: scale(1.2);
     bottom: 1rem;
     transition: filter 1s ease-in-out;
     top: 6.5rem;
-}
-
-.display.fight-active .battle {
-    transition: transform 0.5s ease-in-out;
-    position: absolute;
-    width: 80%;
-    left: 50%;
-    top: 16rem;
-    display: flex;
-    justify-content: center;
-    margin: auto 0;
-    padding: 0;
-    transform: translate(-50%, -50%);
-    z-index: 9999;
 }
 
 
@@ -216,6 +213,20 @@ body {
     transition: filter 0.3s ease-in-out;
 }
 
+/* Battle in Active */
+.display.fight-active .battle {
+    transition: transform 0.5s ease-in-out;
+    position: absolute;
+    width: 80%;
+    left: 50%;
+    top: 16rem;
+    display: flex;
+    justify-content: center;
+    margin: auto 0;
+    padding: 0;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+}
 
 
 @media (max-width: 1200px) {
@@ -231,12 +242,10 @@ body {
     .display.fight-active .fighter img.fullBody {
         top: 8rem !important;
     }
-
 }
 
 
 @media (max-width: 1024px) {
-
 
     .fighter1 img.fullBody {
         right: 7vw;
@@ -253,8 +262,8 @@ body {
     .display.fight-active .fighter img.fullBody {
         top: 13rem !important;
     }
-
 }
+
 
 @media (max-width: 780px) {
 
@@ -265,8 +274,6 @@ body {
     .display.fight-active .battle {
         top: 19rem;
     }
-
-
 }
 
 
@@ -276,13 +283,11 @@ body {
         top: 25rem;
     }
 
-
     .display.fight-active .fighter img.fullBody {
         top: 14rem !important;
     }
-
-
 }
+
 
 @media(max-width: 560px) {
 
@@ -304,6 +309,7 @@ body {
         top: 14rem !important;
     }
 }
+
 
 @media (max-width: 380px) {
 

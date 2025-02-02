@@ -1,3 +1,5 @@
+/* Fighters Grid */
+
 .selection-container {
     display: flex;
     flex-direction: column;
@@ -19,49 +21,6 @@
     width: 90%;
     margin: auto 0;
     animation: fadeIn 0.5s ease-in-out;
-}
-
-.fight-button {
-    display: block;
-    margin: auto 0;
-    text-align: center;
-    font-size: 1rem;
-    border: 2px solid #ba892d;
-    color: #ba892d;
-    background-color: transparent;
-    padding: 0.8em 3em;
-    letter-spacing: 0.08em;
-    position: relative;
-    border-radius: 0.6em;
-    overflow: hidden;
-    font-family: 'tekken', sans-serif;
-    z-index: 3;
-    transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
-    line-height: 1.4em;
-    margin-top: 1rem;
-    box-shadow: inset 0 0 10px rgba(0, 76, 104, 0.4), 0 0 9px 3px rgba(0, 76, 104, 0.1);
-    animation: fadeIn 0.5s ease-in-out forwards
-}
-
-.fight-button:hover {
-    border-color: white;
-    color: white;
-}
-
-button:before {
-    content: "";
-    height: 100%;
-    top: 0;
-    transition: transform .4s ease-in-out;
-}
-
-button:hover:before {
-    transform: translateX(15em);
-}
-
-.fight-button:disabled {
-    display: none;
-    transition: transform 1s ease;
 }
 
 .character-tile {
@@ -117,15 +76,8 @@ button:hover:before {
     text-transform: uppercase;
 }
 
-.arena-selection {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 2rem;
-    text-align: center;
-    position: relative;
-    width: 45%;
-}
+
+/* Arenas Selection */
 
 .controls-con {
     display: flex;
@@ -139,8 +91,18 @@ button:hover:before {
     left: 50%;
     transform: translate(-50%, -50%);
     animation: fadeIn 0.5s ease-in-out forwards;
+    z-index: 9999;
 }
 
+.arena-selection {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    text-align: center;
+    position: relative;
+    width: 45%;
+}
 
 .arena-nav {
     font-size: 1rem;
@@ -177,6 +139,51 @@ button:hover:before {
     text-align: center;
 }
 
+/* Fight Button */
+.fight-button {
+    display: block;
+    margin: auto 0;
+    text-align: center;
+    font-size: 1rem;
+    border: 2px solid #ba892d;
+    color: #ba892d;
+    background-color: transparent;
+    padding: 0.8em 3em;
+    letter-spacing: 0.08em;
+    position: relative;
+    border-radius: 0.6em;
+    overflow: hidden;
+    font-family: 'tekken', sans-serif;
+    z-index: 3;
+    transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
+    line-height: 1.4em;
+    margin-top: 1rem;
+    box-shadow: inset 0 0 10px rgba(0, 76, 104, 0.4), 0 0 9px 3px rgba(0, 76, 104, 0.1);
+    animation: fadeIn 0.5s ease-in-out forwards
+}
+
+.fight-button:hover {
+    border-color: white;
+    color: white;
+}
+
+button:before {
+    content: "";
+    height: 100%;
+    top: 0;
+    transition: transform .4s ease-in-out;
+}
+
+button:hover:before {
+    transform: translateX(15em);
+}
+
+.fight-button:disabled {
+    display: none;
+    transition: transform 1s ease;
+}
+
+/* Responsive */
 
 @media (max-width: 1200px) {
 
@@ -257,7 +264,6 @@ button:hover:before {
     }
 
 }
-
 
 @media (max-width: 390px) {
 

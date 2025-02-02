@@ -1,9 +1,11 @@
 <div class="selection-container">
 
+    <!-- Title -->
     <div class="title">
         <h1>Select Your Warriors</h1>
     </div>
 
+    <!-- Character Grid -->
     <div class="character-grid">
         <!-- Display Fighters -->
         <div class="character-tile" *ngFor="let character of characters" (click)="toggleFighterSelection(character)"
@@ -13,7 +15,7 @@
         </div>
     </div>
 
-    <!-- Arena Selection and Controls -->
+    <!-- Arena Selection Controls -->
     <div class="controls-con" *ngIf="!isFightActive">
 
         <!-- Arena Navigation -->
@@ -29,7 +31,6 @@
         <button class="fight-button" [disabled]="!fighter1 || !fighter2 || !arena" (click)="startFight()">
             Start Fight
         </button>
-
 
     </div>
 
