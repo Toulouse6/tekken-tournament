@@ -1,6 +1,18 @@
 [
     {
         "id": 1,
+        "name": "Kazuya Mishima",
+        "fightingStyle": "Traditional Martial Arts",
+        "bornIn": "1968",
+        "nationality": "Japan",
+        "images": {
+            "fullBody": "./assets/images/fighters/fullbody/kazuya.png",
+            "background": "./assets/images/fighters/backgrounds/kazuya-bg.png",
+            "headshot": "./assets/images/fighters/headshots/kazuya-headshot.png"
+        }
+    },
+    {
+        "id": 2,
         "name": "Bryan Fury",
         "fightingStyle": "Kickboxing",
         "bornIn": "1985",
@@ -12,7 +24,7 @@
         }
     },
     {
-        "id": 2,
+        "id": 3,
         "name": "Feng Wei",
         "fightingStyle": "Chinese Martial Arts",
         "bornIn": "Unknown",
@@ -23,18 +35,7 @@
             "headshot": "./assets/images/fighters/headshots/feng-headshot.png"
         }
     },
-    {
-        "id": 3,
-        "name": "Kazuya Mishima",
-        "fightingStyle": "Traditional Martial Arts",
-        "bornIn": "1968",
-        "nationality": "Japan",
-        "images": {
-            "fullBody": "./assets/images/fighters/fullbody/kazuya.png",
-            "background": "./assets/images/fighters/backgrounds/kazuya-bg.png",
-            "headshot": "./assets/images/fighters/headshots/kazuya-headshot.png"
-        }
-    },
+
     {
         "id": 4,
         "name": "Jin Kazama",
@@ -60,7 +61,7 @@
         }
     },
     {
-        "id": 7,
+        "id": 6,
         "name": "Steve Fox",
         "fightingStyle": "Boxing",
         "bornIn": "1983",
@@ -72,7 +73,7 @@
         }
     },
     {
-        "id": 8,
+        "id": 7,
         "name": "Eddy Gordo",
         "fightingStyle": "Capoeira",
         "bornIn": "1976",
@@ -84,7 +85,7 @@
         }
     },
     {
-        "id": 9,
+        "id": 8,
         "name": "Armor King",
         "fightingStyle": "Professional Wrestling",
         "bornIn": "1970",
@@ -96,7 +97,7 @@
         }
     },
     {
-        "id": 10,
+        "id": 9,
         "name": "Fahkumram",
         "fightingStyle": "Muay Thai Art",
         "bornIn": "1985",
@@ -108,7 +109,7 @@
         }
     },
     {
-        "id": 11,
+        "id": 10,
         "name": "Raven",
         "fightingStyle": "Manji Ninjutsu",
         "bornIn": "1980",
@@ -117,6 +118,18 @@
             "fullBody": "./assets/images/fighters/fullbody/raven.png",
             "background": "./assets/images/fighters/backgrounds/raven-bg.png",
             "headshot": "./assets/images/fighters/headshots/raven-headshot.png"
+        }
+    },
+    {
+        "id": 11,
+        "name": "Jinpachi Mishima",
+        "fightingStyle": "Ancient Mishima Karate",
+        "bornIn": "1937",
+        "nationality": "Japan",
+        "images": {
+            "fullBody": "./assets/images/fighters/fullbody/Jinpachi.png",
+            "background": "./assets/images/fighters/backgrounds/jinpachi-bg.png",
+            "headshot": "./assets/images/fighters/headshots/jinpachi-headshot.png"
         }
     },
     {
@@ -133,14 +146,14 @@
     },
     {
         "id": 13,
-        "name": "Jinpachi Mishima",
+        "name": "Devil Kazuya",
         "fightingStyle": "Ancient Mishima Karate",
-        "bornIn": "1937",
-        "nationality": "Japan",
+        "bornIn": "1968",
+        "nationality": "Oyashima",
         "images": {
-            "fullBody": "./assets/images/fighters/fullbody/Jinpachi.png",
-            "background": "./assets/images/fighters/backgrounds/jinpachi-bg.png",
-            "headshot": "./assets/images/fighters/headshots/jinpachi-headshot.png"
+            "fullBody": "./assets/images/fighters/fullbody/devil-kazuya.png",
+            "background": "./assets/images/fighters/backgrounds/devil-kazuya-bg.png",
+            "headshot": "./assets/images/fighters/headshots/devil-kazuya-headshot.png"
         }
     },
     {
@@ -157,18 +170,6 @@
     },
     {
         "id": 15,
-        "name": "Devil Kazuya",
-        "fightingStyle": "Ancient Mishima Karate",
-        "bornIn": "1968",
-        "nationality": "Oyashima",
-        "images": {
-            "fullBody": "./assets/images/fighters/fullbody/devil-kazuya.png",
-            "background": "./assets/images/fighters/backgrounds/devil-kazuya-bg.png",
-            "headshot": "./assets/images/fighters/headshots/devil-kazuya-headshot.png"
-        }
-    },
-    {
-        "id": 16,
         "name": "Ancient Ogre",
         "fightingStyle": "Ancient Assassination Arts",
         "bornIn": "Unknown",
