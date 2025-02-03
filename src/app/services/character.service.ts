@@ -24,6 +24,11 @@ export class CharacterService {
 
     // Get Arenas
     getArenas(): Observable<{ name: string; image: string }[]> {
+        // Shuffle
+        for (let i = this.arenas.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [this.arenas[i], this.arenas[j]] = [this.arenas[j], this.arenas[i]];
+        }
         return of(this.arenas);
     }
 
