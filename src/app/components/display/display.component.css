@@ -10,7 +10,7 @@
     margin: auto;
     z-index: 0;
     padding: 0;
-    filter: brightness(1); 
+    filter: brightness(1);
     overflow: hidden;
     color: white;
     position: relative;
@@ -192,7 +192,7 @@
 }
 
 .fight-gif {
-  text-align: center;
+    text-align: center;
     content: '';
     position: absolute;
     top: 0;
@@ -201,7 +201,7 @@
     bottom: 0;
     margin: 0;
     width: 100%;
-    height: 100%;
+    height: auto;
     opacity: 0.85;
     z-index: 9999;
     pointer-events: none;
@@ -402,6 +402,10 @@
 
     .attributes p {
         font-size: 8px;
+    }
+
+    .fight-gif {
+        top: 50%;
     }
 
 }
