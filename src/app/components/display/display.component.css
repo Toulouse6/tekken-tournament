@@ -316,14 +316,9 @@
     }
 
     .arena-selection {
-        gap: 1rem;
+        gap: 3rem;
         justify-content: center;
         align-items: center;
-    }
-
-    .arena-selection {
-        gap: 1rem;
-        text-align: center;
     }
 
     .fight-gif {
@@ -358,7 +353,7 @@
 @media (max-width: 610px) {
 
     .display {
-        height: 70vh;
+        height: 75vh;
     }
 
     .attributes strong {
@@ -389,7 +384,7 @@
 
     .fight-gif {
         margin-top: 50%;
-        width: 95%;
+        width: 100%;
     }
 }
 
@@ -398,7 +393,7 @@
 
     .arena-selection {
         width: 80%;
-        gap: 5rem;
+        gap: 3rem;
     }
 
     .attributes {
@@ -441,11 +436,11 @@
     }
 
     .fighter1 img.fullBody {
-        right: 0;
+        right: -20px;
     }
 
     .fighter2 img.fullBody {
-        left: 0;
+        left: -20px;
     }
 
     .fighter {
@@ -481,11 +476,11 @@
     }
 
     .vsFrame {
-        height: 85%;
+        height: 90%;
     }
 
     .fighter {
-        height: 60%;
+        height: 45%;
     }
 
 }
