@@ -71,23 +71,60 @@ export class CharacterService {
         return (currentIndex - 1 + length) % length;
     }
 
+
     // Start Fight
     startFight(fighter1: Character, fighter2: Character, resetCallback: () => void): void {
-        console.log(`${fighter1.name} is fighting ${fighter2.name}!`);
 
-        // Fight Active
         const displayElement = document.querySelector('.display') as HTMLElement;
+        const fighter1Element = document.querySelector('.fighter1') as HTMLElement;
+        const fighter2Element = document.querySelector('.fighter2') as HTMLElement;
+        const winnerTextElement = document.querySelector('.winner-text h3') as HTMLElement;
+
+        // Add 'fight-active' class
         if (displayElement) {
             displayElement.classList.add('fight-active');
         }
 
-        // Reset fight
+
         setTimeout(() => {
+            const winner = Math.random() < 0.5 ? fighter1 : fighter2;
+            const loser = winner === fighter1 ? fighter2 : fighter1;
+
+            // Apply loser effect
+            if (loser === fighter1 && fighter1Element) {
+                fighter1Element.style.filter = 'grayscale(100%)';
+            } else if (loser === fighter2 && fighter2Element) {
+                fighter2Element.style.filter = 'grayscale(100%)';
+            }
+
+            // Show winner
+            if (winnerTextElement) {
+                winnerTextElement.textContent = `${winner.name} wins!`;
+                winnerTextElement.style.opacity = '1';
+                winnerTextElement.style.visibility = 'visible';
+            }
+
+        }, 4000);
+
+        setTimeout(() => {
+
+            if (fighter1Element) {
+                fighter1Element.style.filter = ''; // Reset fighter1
+            }
+            if (fighter2Element) {
+                fighter2Element.style.filter = ''; // Reset fighter2
+            }
+
+            // Clear the winner text
+            if (winnerTextElement) {
+                winnerTextElement.textContent = ''; // Reset winner
+            }
             if (displayElement) {
                 displayElement.classList.remove('fight-active');
             }
             resetCallback();
-        }, 6000);
+
+        }, 8000);
     }
 
 }

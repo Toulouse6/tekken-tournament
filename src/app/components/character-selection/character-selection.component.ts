@@ -3,6 +3,7 @@ import { Character } from '../../models/character.model';
 import { CharacterService } from '../../services/character.service';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
+import { Subscription } from 'rxjs';
 
 @Component({
     selector: 'app-character-selection',
@@ -11,10 +12,10 @@ import { FormsModule } from '@angular/forms';
     standalone: true,
     imports: [CommonModule, FormsModule],
 })
+
 export class CharacterSelectionComponent implements OnInit {
 
     @Input() arenas: { name: string; image: string }[] = [];
-
     @Output() selectionChange = new EventEmitter<{
         fighter1: Character | null;
         fighter2: Character | null;
@@ -28,18 +29,19 @@ export class CharacterSelectionComponent implements OnInit {
     activeArenaIndex: number = 0;
     isFightActive: boolean = false;
 
+    private fightStateSubscription?: Subscription;
+
     constructor(private characterService: CharacterService) { }
 
     ngOnInit(): void {
         this.characterService.getCharacters().subscribe((data) => this.characters = data);
         this.characterService.getArenas().subscribe((data) => this.arenas = data);
-    }
+    };
 
     // Character Selection
     onSelectionChange(): void {
         this.characterService.emitSelection(this.fighter1, this.fighter2, this.arena, this.selectionChange);
     }
-
 
     toggleFighterSelection(character: Character): void {
         const fighters = this.characterService.toggleFighterSelection(character, this.fighter1, this.fighter2);
@@ -47,6 +49,11 @@ export class CharacterSelectionComponent implements OnInit {
         this.fighter2 = fighters.fighter2;
         this.onSelectionChange();
     }
+
+    ngOnDestroy(): void {
+        this.fightStateSubscription?.unsubscribe();
+    }
+
 
     isDisabled(character: Character): boolean {
         return this.characterService.isDisabled(character, this.fighter1, this.fighter2);
@@ -71,18 +78,36 @@ export class CharacterSelectionComponent implements OnInit {
     }
 
     // Fight
-    startFight(): void {
+    startFight(fighter1: Character, fighter2: Character): void {
+
+        // Fight Active
+        const displayElement = document.querySelector('.display') as HTMLElement;
+        if (displayElement) {
+            displayElement.classList.add('fight-active');
+        }
+
         if (this.fighter1 && this.fighter2) {
             this.isFightActive = true;
-            this.characterService.startFight(this.fighter1, this.fighter2, () => this.resetFight());
+            this.characterService.startFight(this.fighter1, this.fighter2, () => this.onFightReset());
+        }
+
+        if (!this.isFightActive && fighter1 && fighter2) {
+            try {
+                this.characterService.startFight(fighter1, fighter2, () => this.onFightReset());
+            } catch (error) {
+                console.error('Error starting fight:', error);
+                this.onFightReset();
+            }
         }
     }
 
-    resetFight(): void {
+    private onFightReset(): void {
         this.fighter1 = null;
         this.fighter2 = null;
+        this.arena = "";
+        this.activeArenaIndex = 0;
         this.isFightActive = false;
-        this.arena = null;
         this.onSelectionChange();
     }
+
 }

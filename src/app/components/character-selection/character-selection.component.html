@@ -28,9 +28,13 @@
         </div>
 
         <!-- Fight Button -->
-        <button class="fight-button" [disabled]="!fighter1 || !fighter2 || !arena" (click)="startFight()">
+        <button class="fight-button" [disabled]="!fighter1 || !fighter2 || !arena"
+            (click)="startFight(fighter1!, fighter2!)">
             Start Fight
         </button>
+
+
+
 
     </div>
 
