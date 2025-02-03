@@ -124,7 +124,7 @@ export class CharacterService {
             }
             resetCallback();
 
-        }, 8000);
+        }, 8500);
     }
 
 }

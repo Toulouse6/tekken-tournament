@@ -65,15 +65,15 @@
     }
     40% {
         background-size: 110% 110%;
-        filter: brightness(1.2);
+        filter: brightness(1.15);
     }
     60% {
         background-size: 115% 115%;
-        filter: brightness(1.3);
+        filter: brightness(1.2);
     }
     80% {
         background-size: 110% 110%;
-        filter: brightness(1.2);
+        filter: brightness(1.1);
     }
     100% {
         background-size: 100% 100%;
@@ -155,7 +155,7 @@ body {
 .display.fight-active .fighter {
     background-image: none !important;
     transition: filter 0.5s ease-in-out;
-    filter: brightness(1.2);
+    filter: brightness(1.15);
 }
 
 .display.fight-active .fighter:hover {
