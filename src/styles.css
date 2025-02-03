@@ -320,9 +320,16 @@ body {
 }
 
 
-@media (max-width: 384px) {
+@media (max-width: 385px) {
 
     .display.fight-active .fighter img.fullBody {
-        top: 6rem !important;
+        top: 10rem !important;
+    }
+
+    @media (max-width: 375px) {
+
+        .display.fight-active .fighter img.fullBody {
+            top: 7rem !important;
+        }
     }
 }

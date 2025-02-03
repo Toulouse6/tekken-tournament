@@ -415,15 +415,23 @@
     }
 
     .attributes strong {
-        font-size: 15px;
+        font-size: 18px;
     }
 
     .attributes p {
-        font-size: 8px;
+        font-size: 10px;
     }
 
     .fight-gif {
         margin-top: 65%;
+    }
+
+    .fighter1 img.fullBody {
+        right: -10px;
+    }
+
+    .fighter2 img.fullBody {
+        left: -10px;
     }
 
 }
@@ -435,14 +443,6 @@
         top: 5rem;
     }
 
-    .fighter1 img.fullBody {
-        right: -20px;
-    }
-
-    .fighter2 img.fullBody {
-        left: -20px;
-    }
-
     .fighter {
         height: 42%;
     }
@@ -451,12 +451,16 @@
         gap: 0;
     }
 
-    .attributes strong {
-        font-size: 14px;
-    }
-
     .fight-gif {
         margin-top: 60%;
+    }
+
+    .fighter1 img.fullBody {
+        right: -15px;
+    }
+
+    .fighter2 img.fullBody {
+        left: -15px;
     }
 
 }
@@ -464,11 +468,11 @@
 @media (max-width: 390px) {
 
     .attributes strong {
-        font-size: 12px;
+        font-size: 16px;
     }
 
     .attributes p {
-        font-size: 6px;
+        font-size: 9px;
     }
 
     .fighter img.fullBody {
