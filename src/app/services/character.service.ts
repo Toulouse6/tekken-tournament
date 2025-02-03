@@ -94,7 +94,7 @@ export class CharacterService {
                 gifElement.style.display = 'block';
             }
 
-            // hIde the GIF and show winner's name
+            // Hide GIF & show winner's name
             setTimeout(() => {
                 if (gifElement) {
                     gifElement.style.display = 'none';
@@ -136,7 +136,7 @@ export class CharacterService {
             }
             resetCallback();
 
-        }, 8000);  // Reset fight
+        }, 8500);  // Reset fight
 
     }
 }
