@@ -284,7 +284,7 @@ button:hover:before {
 @media (max-width: 390px) {
 
     .controls-con {
-        margin-top: 6.5rem;
+        margin-top: 6em;
         width: 70% !important;
     }
 
