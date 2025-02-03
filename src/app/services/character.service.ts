@@ -78,7 +78,7 @@ export class CharacterService {
         const displayElement = document.querySelector('.display') as HTMLElement;
         const fighter1Element = document.querySelector('.fighter1') as HTMLElement;
         const fighter2Element = document.querySelector('.fighter2') as HTMLElement;
-        const winnerTextElement = document.querySelector('.winner-text h3') as HTMLElement;
+        const winnerTextElement = document.querySelector('.winner-text h1') as HTMLElement;
 
         // Add 'fight-active' class
         if (displayElement) {

@@ -192,7 +192,7 @@ body {
 .display.fight-active .fighter1 img.fullBody,
 .display.fight-active .fighter2 img.fullBody {
     transform: scale(1.2);
-    filter: brightness(1.1) contrast(1.1);
+    filter: brightness(1.1);
     transition: transform 2.5s ease-in-out, filter 2.5s ease-in-out;
     bottom: 10%;
 }
@@ -213,6 +213,14 @@ body {
     transition: filter 0.3s ease-in-out;
 }
 
+.display.fight-active .fighter {
+    transform: none !important;
+}
+
+.display.fight-active .fighter img.fullBody {
+    transition: filter 0.5s ease-in-out;
+}
+
 /* Battle in Active */
 .display.fight-active .battle {
     transition: transform 0.5s ease-in-out;
@@ -228,6 +236,7 @@ body {
     z-index: 9999;
 }
 
+/* Winner Text */
 .winner-text {
     position: absolute;
     top: 50%;
@@ -239,29 +248,18 @@ body {
     text-align: center;
 }
 
-.display.winner-text h3 {
+.display.winner-text h1 {
     opacity: 0;
     visibility: hidden;
-    transition: opacity 0.3s ease-in-out;
-    margin: 0;
-    padding: 1rem;
-    color: #fff;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    font-size: 3rem;
 }
 
-.display.winner-text h3.visible {
+.display.winner-text h1.visible {
     opacity: 1;
     visibility: visible;
-}
-
-/* Fight active states */
-.display.fight-active .fighter {
-    transform: none !important;
-}
-
-.display.fight-active .fighter img.fullBody {
-    transition: filter 0.5s ease-in-out;
+    text-transform: uppercase;
+    transition: opacity 0.3s ease-in-out;
+    margin: 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 
