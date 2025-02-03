@@ -56,26 +56,27 @@
 
 @keyframes pulseShiny {
     0% {
+        background-size: 100% 100%;
         filter: brightness(1);
     }
-
     20% {
+        background-size: 105% 105%;
         filter: brightness(1.1);
     }
-
     40% {
+        background-size: 110% 110%;
         filter: brightness(1.2);
     }
-
     60% {
+        background-size: 115% 115%;
         filter: brightness(1.3);
     }
-
     80% {
+        background-size: 110% 110%;
         filter: brightness(1.2);
     }
-
     100% {
+        background-size: 100% 100%;
         filter: brightness(1);
     }
 }
@@ -108,6 +109,8 @@ body {
 /* Fight Active */
 .display.fight-active {
     transition: filter 1s ease-in-out;
+    animation: pulseShiny 2s infinite alternate;
+    animation: pulseShiny 2s infinite alternate;
 }
 
 .display.fight-active .fighter-background {
@@ -122,18 +125,16 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    animation: pulseShiny 2.5s infinite ease-in-out;
     z-index: 1;
+    pointer-events: none;
     transition: background 0.5s ease-in-out;
-}
-
-.display.fight-active {
-    transition: filter 1s ease-in-out;
     animation: pulseShiny 2s infinite alternate;
+    background: inherit;
 }
 
 .display.fight-active .overlay {
     background: rgba(255, 255, 255, 0.2);
+    z-index: 2;
 }
 
 /* Hide Controls in Active */
