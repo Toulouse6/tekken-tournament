@@ -1,5 +1,5 @@
 import { Injectable, EventEmitter } from '@angular/core';
-import { Observable, of } from 'rxjs';
+import { Observable, of, zip } from 'rxjs';
 import { Character } from '../models/character.model';
 import charactersData from '../../assets/characters.json';
 
@@ -71,7 +71,6 @@ export class CharacterService {
         return (currentIndex - 1 + length) % length;
     }
 
-
     // Start Fight
     startFight(fighter1: Character, fighter2: Character, resetCallback: () => void): void {
 
@@ -79,35 +78,48 @@ export class CharacterService {
         const fighter1Element = document.querySelector('.fighter1') as HTMLElement;
         const fighter2Element = document.querySelector('.fighter2') as HTMLElement;
         const winnerTextElement = document.querySelector('.winner-text h1') as HTMLElement;
+        const gifElement = document.querySelector('.fight-gif') as HTMLElement;  // Element for the GIF
 
         // Add 'fight-active' class
         if (displayElement) {
             displayElement.classList.add('fight-active');
         }
 
-
         setTimeout(() => {
             const winner = Math.random() < 0.5 ? fighter1 : fighter2;
             const loser = winner === fighter1 ? fighter2 : fighter1;
 
-            // Apply loser effect
-            if (loser === fighter1 && fighter1Element) {
-                fighter1Element.style.filter = 'grayscale(60%)';
-            } else if (loser === fighter2 && fighter2Element) {
-                fighter2Element.style.filter = 'grayscale(60%)';
+            // Show fight GIF
+            if (gifElement) {
+                gifElement.style.display = 'block';
             }
 
-            // Show winner
-            if (winnerTextElement) {
-                winnerTextElement.textContent = `${winner.name} wins!`;
-                winnerTextElement.style.opacity = '1';
-                winnerTextElement.style.visibility = 'visible';
-            }
+            // hIde the GIF and show winner's name
+            setTimeout(() => {
+                if (gifElement) {
+                    gifElement.style.display = 'none';
+                }
 
-        }, 4500);
+                // Show winner text
+                if (winnerTextElement) {
+                    winnerTextElement.textContent = `${winner.name} wins!`;
+                    winnerTextElement.style.opacity = '1';
+                    winnerTextElement.style.visibility = 'visible';
+                }
+
+                // Apply loser effect
+                if (loser === fighter1 && fighter1Element) {
+                    fighter1Element.style.filter = 'grayscale(60%)';
+                } else if (loser === fighter2 && fighter2Element) {
+                    fighter2Element.style.filter = 'grayscale(60%)';
+                }
+
+            }, 2000);
+
+        }, 3000);
 
         setTimeout(() => {
-
+            // Reset all effects
             if (fighter1Element) {
                 fighter1Element.style.filter = ''; // Reset fighter1
             }
@@ -124,7 +136,7 @@ export class CharacterService {
             }
             resetCallback();
 
-        }, 8500);
-    }
+        }, 8000);  // Reset fight
 
+    }
 }

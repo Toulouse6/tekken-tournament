@@ -191,27 +191,21 @@
     gap: 1.5rem;
 }
 
-
-
-/* Battel */
-.battle {
-    display: none;
-}
-
-.battle img {
-    width: 25rem;
-    padding: 0;
+.fight-gif {
+  text-align: center;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
     margin: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.85;
+    z-index: 9999;
+    pointer-events: none;
 }
-
-.battle img.hit1 {
-    margin-right: -3rem !important;
-}
-
-.battle img.hit2 {
-    margin-left: -3rem !important;
-}
-
 
 /* Responsive */
 @media (max-width: 1200px) {
@@ -236,9 +230,6 @@
         left: 3rem;
     }
 
-    .battle img {
-        width: 22rem;
-    }
 
 }
 
@@ -261,9 +252,6 @@
         left: 2.5rem;
     }
 
-    .battle img {
-        width: 20rem;
-    }
 }
 
 
@@ -328,20 +316,6 @@
     }
 
 
-    .battle img {
-        width: 16rem;
-        padding: 0;
-        margin: 0;
-    }
-
-    .battle img.hit1 {
-        margin-right: -2.5rem !important;
-    }
-
-    .battle img.hit2 {
-        margin-left: -2.5rem !important;
-    }
-
 }
 
 
@@ -393,20 +367,6 @@
         left: 0;
     }
 
-    .battle img {
-        width: 14rem;
-    }
-
-    .battle img.hit1 {
-        margin-right: -2rem !important;
-    }
-
-    .battle img.hit2 {
-        margin-left: -2rem !important;
-    }
-
-
-
 }
 
 
@@ -444,18 +404,6 @@
         font-size: 8px;
     }
 
-    .battle img {
-        width: 12rem;
-    }
-
-    .battle img.hit1 {
-        margin-right: -2rem !important;
-    }
-
-    .battle img.hit2 {
-        margin-left: -2rem !important;
-    }
-
 }
 
 
@@ -482,9 +430,6 @@
         font-size: 14px;
     }
 
-    .battle img {
-        width: 10rem;
-    }
 
 }
 
