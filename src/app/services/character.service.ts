@@ -104,7 +104,7 @@ export class CharacterService {
                 winnerTextElement.style.visibility = 'visible';
             }
 
-        }, 4000);
+        }, 4500);
 
         setTimeout(() => {
 
@@ -124,7 +124,7 @@ export class CharacterService {
             }
             resetCallback();
 
-        }, 8000);
+        }, 6500);
     }
 
 }

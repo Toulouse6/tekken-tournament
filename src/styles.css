@@ -239,12 +239,14 @@ body {
 /* Winner Text */
 .winner-text {
     position: absolute;
-    top: 50%;
+    top: 25%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 100;
     pointer-events: none;
     width: 100%;
+    display: flex;
+    justify-content: center;
     text-align: center;
 }
 
@@ -254,6 +256,7 @@ body {
 }
 
 .display.winner-text h1.visible {
+    position: absolute;
     opacity: 1;
     visibility: visible;
     text-transform: uppercase;
@@ -333,6 +336,15 @@ body {
 }
 
 
+@media(max-width: 500px) {
+
+    .display.fight-active .fighter img.fullBody {
+        top: 12rem !important;
+    }
+
+}
+
+
 @media (max-width: 415px) {
 
     .display.fight-active .battle {
@@ -348,6 +360,6 @@ body {
 @media (max-width: 380px) {
 
     .display.fight-active .fighter img.fullBody {
-        top: 10rem !important;
+        top: 15rem !important;
     }
 }
