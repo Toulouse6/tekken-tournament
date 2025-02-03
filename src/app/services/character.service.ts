@@ -141,7 +141,7 @@ export class CharacterService {
             }
             resetCallback();
 
-        }, 8500);  // Reset fight
+        }, 9000);  // Reset fight
 
     }
 }
