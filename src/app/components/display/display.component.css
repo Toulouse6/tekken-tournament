@@ -210,7 +210,7 @@
     width: 75%;
     max-width: 90%;
     height: auto;
-    opacity: 0.6;
+    opacity: 0.8;
 }
 
 /* Responsive */
@@ -452,7 +452,7 @@
     }
 
     .fight-gif {
-        margin-top: 60%;
+        margin-top: 40%;
     }
 
     .fighter1 img.fullBody {
