@@ -191,20 +191,24 @@
     gap: 1.5rem;
 }
 
-.fight-gif {
-    text-align: center;
-    content: '';
+.fight-gif-con {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    margin: 0;
-    width: 100%;
-    height: auto;
-    opacity: 0.85;
     z-index: 9999;
     pointer-events: none;
+}
+
+.fight-gif {
+    width: 75%;
+    max-width: 90%;
+    height: auto;
+    opacity: 0.7;
 }
 
 /* Responsive */
@@ -250,6 +254,11 @@
 
     .fighter2 img.fullBody {
         left: 2.5rem;
+    }
+
+    .fight-gif {
+        margin-top: 5%;
+        width: 80%;
     }
 
 }
@@ -315,6 +324,10 @@
         text-align: center;
     }
 
+    .fight-gif {
+        margin-top: 10%;
+        width: 90%;
+    }
 
 }
 
@@ -336,6 +349,9 @@
     .fighter2 img.fullBody {
         left: 0.5rem;
     }
+
+  
+
 
 }
 
@@ -367,6 +383,10 @@
         left: 0;
     }
 
+    .fight-gif {
+        margin-top: 45%;
+        width: 95%;
+    }
 }
 
 
@@ -404,10 +424,6 @@
         font-size: 8px;
     }
 
-    .fight-gif {
-        top: 50%;
-    }
-
 }
 
 
@@ -434,6 +450,10 @@
         font-size: 14px;
     }
 
+    .fight-gif {
+        margin-top: 60%;
+        width: 95%;
+    }
 
 }
 
