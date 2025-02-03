@@ -92,9 +92,9 @@ export class CharacterService {
 
             // Apply loser effect
             if (loser === fighter1 && fighter1Element) {
-                fighter1Element.style.filter = 'grayscale(100%)';
+                fighter1Element.style.filter = 'grayscale(60%)';
             } else if (loser === fighter2 && fighter2Element) {
-                fighter2Element.style.filter = 'grayscale(100%)';
+                fighter2Element.style.filter = 'grayscale(60%)';
             }
 
             // Show winner
@@ -124,7 +124,7 @@ export class CharacterService {
             }
             resetCallback();
 
-        }, 6500);
+        }, 8000);
     }
 
 }
