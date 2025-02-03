@@ -114,9 +114,9 @@ export class CharacterService {
                     fighter2Element.style.filter = 'grayscale(60%)';
                 }
 
-            }, 2000);
+            }, 1850);
 
-        }, 3000);
+        }, 2500);
 
         setTimeout(() => {
             // Reset all effects

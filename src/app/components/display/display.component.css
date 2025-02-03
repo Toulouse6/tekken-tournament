@@ -273,7 +273,7 @@
     }
 
     .vsFrame {
-        gap: 1rem;
+        gap: 0.5rem;
         height: 100%;
     }
 
@@ -365,6 +365,11 @@
         font-size: 22px;
     }
 
+
+    .vsFrame {
+        gap: 0.5rem;
+    }
+
     .attributes p {
         font-size: 12px;
     }
@@ -410,7 +415,7 @@
     }
 
     .fighter img.fullBody {
-        height: 12.5rem;
+        height: 14rem;
         top: 5rem;
     }
 
@@ -432,7 +437,6 @@
 @media (max-width: 410px) {
 
     .fighter img.fullBody {
-        height: 11rem;
         top: 5rem;
     }
 
@@ -446,6 +450,10 @@
 
     .fighter {
         height: 42%;
+    }
+
+    .vsFrame {
+        gap: 0;
     }
 
     .attributes strong {
@@ -466,10 +474,6 @@
 
     .attributes p {
         font-size: 6px;
-    }
-
-    .fighter img.fullBody {
-        height: 10rem;
     }
 
     .fighter img.fullBody {
