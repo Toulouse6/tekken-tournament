@@ -315,14 +315,14 @@ body {
 @media (max-width: 415px) {
 
     .display.fight-active .fighter img.fullBody {
-        top: 8rem !important;
+        top: 12rem !important;
     }
 }
 
 
-@media (max-width: 380px) {
+@media (max-width: 384px) {
 
     .display.fight-active .fighter img.fullBody {
-        top: 5.5rem !important;
+        top: 6rem !important;
     }
 }
