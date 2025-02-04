@@ -257,6 +257,11 @@
         left: 2.5rem;
     }
 
+    .fight-gif {
+        margin-top: 10%;
+        width: 40%;
+    }
+
 }
 
 
@@ -317,6 +322,7 @@
 
     .fight-gif {
         margin-top: 10%;
+        width: 45%;
     }
 
 }
