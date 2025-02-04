@@ -80,6 +80,10 @@ export class CharacterSelectionComponent implements OnInit {
     // Fight
     startFight(fighter1: Character, fighter2: Character): void {
 
+        // Play fight sound
+        const fightSound = new Audio('./assets/audio/three-two-one.mp3');
+        fightSound.play();
+
         // Fight Active
         const displayElement = document.querySelector('.display') as HTMLElement;
         if (displayElement) {
