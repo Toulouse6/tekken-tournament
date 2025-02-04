@@ -10,10 +10,13 @@ export class CharacterService {
 
     // All Arenas
     private arenas = [
-        { name: "Crystal Valley", image: './assets/images/arenas/crystal.png' },
+        { name: "Cursed Desert", image: './assets/images/arenas/desert.png' },
+        { name: "Cherry blossom", image: './assets/images/arenas/blossom.png' },
         { name: "Pure Land", image: './assets/images/arenas/pure-land.png' },
+        { name: "Winter Cabin", image: './assets/images/arenas/snow.png' },
+        { name: "Holy Water", image: './assets/images/arenas/water.png' },
         { name: "Street Walk", image: './assets/images/arenas/street.png' },
-        { name: "The Farm", image: './assets/images/arenas/farm.png' },
+
     ];
 
     // Get Characters

@@ -57,22 +57,22 @@
 
     20% {
         background-size: 105% 105%;
-        filter: brightness(1.1);
+        filter: brightness(1.05);
     }
 
     40% {
         background-size: 110% 110%;
-        filter: brightness(1.15);
+        filter: brightness(1.1);
     }
 
     60% {
         background-size: 115% 115%;
-        filter: brightness(1.2);
+        filter: brightness(1.1);
     }
 
     80% {
         background-size: 110% 110%;
-        filter: brightness(1.1);
+        filter: brightness(1.05);
     }
 
     100% {
@@ -131,7 +131,7 @@ body {
 }
 
 .display.fight-active .overlay {
-    background: rgba(255, 255, 255, 0.1);
+    background: none;
     z-index: 2;
 }
 
