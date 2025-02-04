@@ -188,6 +188,10 @@ button:hover:before {
 
 @media (max-width: 1200px) {
 
+    .character-grid {
+        width: 90%;
+    }
+
     .arena-nav {
         font-size: 0.9rem;
     }
