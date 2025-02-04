@@ -14,7 +14,6 @@ export class CharacterService {
         { name: "Cherry blossom", image: './assets/images/arenas/blossom.png' },
         { name: "Pure Land", image: './assets/images/arenas/pure-land.png' },
         { name: "Winter Cabin", image: './assets/images/arenas/snow.png' },
-        { name: "Holy Water", image: './assets/images/arenas/water.png' },
         { name: "Street Walk", image: './assets/images/arenas/street.png' },
 
     ];
@@ -116,9 +115,9 @@ export class CharacterService {
 
                 // Apply loser effect
                 if (loser === fighter1 && fighter1Element) {
-                    fighter1Element.style.filter = 'grayscale(60%)';
+                    fighter1Element.style.filter = 'grayscale(70%)';
                 } else if (loser === fighter2 && fighter2Element) {
-                    fighter2Element.style.filter = 'grayscale(60%)';
+                    fighter2Element.style.filter = 'grayscale(70%)';
                 }
 
             }, 6200);
