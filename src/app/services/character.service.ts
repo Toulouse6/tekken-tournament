@@ -107,7 +107,7 @@ export class CharacterService {
 
                 // Show winner text
                 if (winnerTextElement) {
-                    winnerTextElement.textContent = `${winner.name} wins!`;
+                    winnerTextElement.textContent = `${winner.name} wins`;
                     winnerTextElement.style.opacity = '1';
                     winnerTextElement.style.visibility = 'visible';
                 }

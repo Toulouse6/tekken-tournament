@@ -73,7 +73,7 @@
 
 .attributes {
     white-space: nowrap;
-    margin-top: -17rem;
+    margin-top: -20rem;
     color: white;
     padding: 0.5rem;
     border-radius: 0.5rem;
@@ -90,15 +90,15 @@
 }
 
 .attributes p {
-    font-family: "stats", sans-serif;
+    font-family: "sub-title", sans-serif;
     margin: 0.3rem 0;
-    line-height: 1.4;
-    font-size: 1rem;
+    line-height: 1.2;
+    font-size: 2rem;
 }
 
 .attributes strong {
     margin: 0;
-    font-family: 'tekken', sans-serif;
+    font-family: 'title', sans-serif;
     font-size: 2.8rem;
     color: #ba892d;
 }
@@ -174,7 +174,7 @@
 
 /* VS Text */
 .vsText h3 {
-    font-family: 'tekken', sans-serif;
+    font-family: 'title', sans-serif;
     font-size: 2.5rem;
     color: #ba892d;
 }
@@ -221,7 +221,7 @@
     }
 
     .attributes p {
-        font-size: 0.8rem;
+        font-size: 1.5rem;
     }
 
     .fighter img.fullBody {
@@ -282,11 +282,11 @@
     }
 
     .attributes strong {
-        font-size: 1.5rem;
+        font-size: 2rem;
     }
 
     .attributes p {
-        line-height: 1.3;
+        font-size: 1.2rem;
     }
 
     .fighter img.fullBody {
@@ -340,6 +340,14 @@
         left: 0.5rem;
     }
 
+    .attributes strong {
+        font-size: 1.3rem;
+    }
+
+    .attributes p {
+        font-size: 1rem;
+    }
+
     .fight-gif {
         margin-top: 20%;
         width: 50%;
@@ -354,17 +362,8 @@
         height: 75vh;
     }
 
-    .attributes strong {
-        font-size: 22px;
-    }
-
-
     .vsFrame {
         gap: 0.5rem;
-    }
-
-    .attributes p {
-        font-size: 12px;
     }
 
     .fighter img.fullBody {
@@ -409,11 +408,11 @@
     }
 
     .attributes strong {
-        font-size: 18px;
+        font-size: 1.1rem;
     }
 
     .attributes p {
-        font-size: 10px;
+        font-size: 1rem;
     }
 
     .fighter1 img.fullBody {
@@ -453,16 +452,16 @@
         left: -15px;
     }
 
+    .attributes strong {
+        font-size: 1rem;
+    }
+
 }
 
 @media (max-width: 390px) {
 
-    .attributes strong {
-        font-size: 16px;
-    }
-
     .attributes p {
-        font-size: 9px;
+        font-size: 1rem;
     }
 
     .fighter img.fullBody {

@@ -1,24 +1,19 @@
 /* Font Face */
+
 @font-face {
-    font-family: "tekken";
-    src: url("./assets/fonts/misaki.ttf") format("truetype");
+    font-family: "title";
+    src: url("./assets/fonts/romaji.otf") format("truetype");
     font-style: normal;
     font-weight: normal;
 }
 
 @font-face {
-    font-family: "vs";
-    src: url("./assets/fonts/dosis.ttf") format("truetype");
+    font-family: "sub-title";
+    src: url("./assets/fonts/masmuseh.otf") format("truetype");
     font-style: normal;
     font-weight: normal;
 }
 
-@font-face {
-    font-family: "stats";
-    src: url("./assets/fonts/elite.ttf") format("truetype");
-    font-style: normal;
-    font-weight: normal;
-}
 
 /* Key Frames */
 @keyframes fadeOut {
@@ -88,7 +83,6 @@
 
 html,
 body {
-    font-family: 'tekken', sans-serif;
     height: 100vh;
     width: 100%;
     margin: 0;
@@ -101,7 +95,7 @@ body {
 
 /* Title */
 .title h1 {
-    font-family: 'tekken', sans-serif;
+    font-family: 'title', sans-serif;
     text-transform: capitalize;
     margin: 2rem auto -0.5rem;
     text-align: center;
@@ -229,6 +223,7 @@ body {
 /* Winner Text */
 .winner-text {
     color: white;
+    font-family: 'title', sans-serif;
     font-size: xx-large;
     position: absolute;
     top: 30%;

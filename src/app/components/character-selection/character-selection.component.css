@@ -63,6 +63,7 @@
 }
 
 .character-tile p {
+    font-family: 'sub-title', sans-serif;
     background-color: rgb(229, 229, 229);
     color: #3d3d3d;
     padding: 0.2rem 0.5rem;
@@ -106,7 +107,6 @@
 
 .arena-nav {
     font-size: 1rem;
-    font-family: 'tekken', sans-serif;
     background-color: transparent;
     border: none;
     cursor: pointer;
@@ -115,6 +115,7 @@
 
 .arena-nav,
 .arena-display {
+    font-family: 'title', sans-serif;
     white-space: nowrap;
     line-height: 1.5;
     color: white;
@@ -153,7 +154,7 @@
     position: relative;
     border-radius: 0.6em;
     overflow: hidden;
-    font-family: 'tekken', sans-serif;
+    font-family: 'title', sans-serif;
     z-index: 3;
     transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
     line-height: 1.4em;
