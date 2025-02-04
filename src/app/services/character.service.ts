@@ -82,8 +82,8 @@ export class CharacterService {
         const displayElement = document.querySelector('.display') as HTMLElement;
         const fighter1Element = document.querySelector('.fighter1') as HTMLElement;
         const fighter2Element = document.querySelector('.fighter2') as HTMLElement;
-        const winnerTextElement = document.querySelector('.winner-text h1') as HTMLElement;
-        const gifElement = document.querySelector('.fight-gif') as HTMLElement;  // Element for the GIF
+        const winnerTextElement = document.querySelector('.winner-text h2') as HTMLElement;
+        const gifElement = document.querySelector('.fight-gif') as HTMLElement;
 
         // Add 'fight-active' class
         if (displayElement) {
@@ -121,7 +121,7 @@ export class CharacterService {
 
             }, 1500);
 
-        }, 1500);
+        }, 2500);
 
         setTimeout(() => {
             // Reset all effects
@@ -141,7 +141,7 @@ export class CharacterService {
             }
             resetCallback();
 
-        }, 6000);  // Reset fight
+        }, 7000);  // Reset fight
 
     }
 }

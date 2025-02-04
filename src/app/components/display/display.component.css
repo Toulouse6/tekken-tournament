@@ -196,19 +196,18 @@
 .fight-gif-con {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: end;
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
-    bottom: 0;
+    bottom: -3rem;
     z-index: 9999;
     pointer-events: none;
 }
 
 .fight-gif {
-    width: 75%;
-    max-width: 90%;
+    width: 40%;
     height: auto;
     opacity: 0.7;
 }
@@ -236,6 +235,9 @@
         left: 3rem;
     }
 
+    .fight-gif {
+        width: 60%;
+    }
 
 }
 
@@ -259,9 +261,9 @@
     }
 
     .fight-gif {
-        margin-top: 5%;
-        width: 80%;
+        width: 75%;
     }
+
 
 }
 
@@ -321,10 +323,11 @@
         align-items: center;
     }
 
+
     .fight-gif {
-        margin-top: 10%;
-        width: 90%;
+        width: 80%;
     }
+
 
 }
 
@@ -383,9 +386,9 @@
     }
 
     .fight-gif {
-        margin-top: 50%;
-        width: 100%;
+        width: 90%;
     }
+
 }
 
 
@@ -422,10 +425,6 @@
         font-size: 10px;
     }
 
-    .fight-gif {
-        margin-top: 65%;
-    }
-
     .fighter1 img.fullBody {
         right: -10px;
     }
@@ -449,10 +448,6 @@
 
     .vsFrame {
         gap: 0;
-    }
-
-    .fight-gif {
-        margin-top: 40%;
     }
 
     .fighter1 img.fullBody {

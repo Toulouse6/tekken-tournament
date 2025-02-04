@@ -90,7 +90,6 @@ body {
     padding: 0;
     overflow-x: hidden;
     background-color: #131313;
-    color: white;
     animation: fadeIn 1s ease-in-out;
 }
 
@@ -224,8 +223,10 @@ body {
 
 /* Winner Text */
 .winner-text {
+    color: white;
+    font-size: xx-large;
     position: absolute;
-    top: 25%;
+    top: 30%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 100;
@@ -239,6 +240,9 @@ body {
 .display.winner-text h1 {
     opacity: 0;
     visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .display.winner-text h1.visible {
