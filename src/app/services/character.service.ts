@@ -115,9 +115,9 @@ export class CharacterService {
 
                 // Apply loser effect
                 if (loser === fighter1 && fighter1Element) {
-                    fighter1Element.style.filter = 'grayscale(70%)';
+                    fighter1Element.style.filter = 'grayscale(75%)';
                 } else if (loser === fighter2 && fighter2Element) {
-                    fighter2Element.style.filter = 'grayscale(70%)';
+                    fighter2Element.style.filter = 'grayscale(75%)';
                 }
 
             }, 6200);
