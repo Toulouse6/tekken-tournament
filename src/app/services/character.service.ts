@@ -118,9 +118,9 @@ export class CharacterService {
                     fighter2Element.style.filter = 'grayscale(60%)';
                 }
 
-            }, 6000);
+            }, 6200);
 
-        }, 3000);
+        }, 3200);
 
         setTimeout(() => {
             // Reset all effects
@@ -140,7 +140,7 @@ export class CharacterService {
             }
             resetCallback();
 
-        }, 10000);  // Reset fight
+        }, 12000);  // Reset fight
 
     }
 }
