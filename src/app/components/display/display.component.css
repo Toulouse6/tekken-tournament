@@ -350,7 +350,7 @@
 
     .fight-gif {
         margin-top: 20%;
-        width: 40%;
+        width: 50%;
     }
 
 }
@@ -425,6 +425,7 @@
 
     .fight-gif {
         margin-top: 30%;
+        width: 50%;
     }
 
 }
@@ -454,6 +455,10 @@
 
     .attributes strong {
         font-size: 1rem;
+    }
+
+    .fight-gif {
+        width: 60%;
     }
 
 }
