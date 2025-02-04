@@ -59,22 +59,27 @@
         background-size: 100% 100%;
         filter: brightness(1);
     }
+
     20% {
         background-size: 105% 105%;
         filter: brightness(1.1);
     }
+
     40% {
         background-size: 110% 110%;
         filter: brightness(1.15);
     }
+
     60% {
         background-size: 115% 115%;
         filter: brightness(1.2);
     }
+
     80% {
         background-size: 110% 110%;
         filter: brightness(1.1);
     }
+
     100% {
         background-size: 100% 100%;
         filter: brightness(1);
@@ -293,6 +298,11 @@ body {
 
     .display.fight-active .fighter img.fullBody {
         top: 14rem !important;
+    }
+
+    .winner-text {
+        font-size: x-large;
+        top: 35%;
     }
 }
 
