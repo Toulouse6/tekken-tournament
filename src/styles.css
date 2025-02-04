@@ -326,6 +326,11 @@ body {
     .display.fight-active .fighter img.fullBody {
         top: 12rem !important;
     }
+
+    .winner-text {
+        font-size: x-large;
+        top: 25%;
+    }
 }
 
 
