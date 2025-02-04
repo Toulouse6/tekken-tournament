@@ -13,6 +13,7 @@ export class CharacterService {
         { name: "Cursed Desert", image: './assets/images/arenas/desert.png' },
         { name: "Cherry blossom", image: './assets/images/arenas/blossom.png' },
         { name: "Pure Land", image: './assets/images/arenas/pure-land.png' },
+        { name: "Holy Water", image: './assets/images/arenas/water.png' },
         { name: "Winter Cabin", image: './assets/images/arenas/snow.png' },
         { name: "Street Walk", image: './assets/images/arenas/street.png' },
 
