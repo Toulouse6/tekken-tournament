@@ -197,7 +197,7 @@
 .fight-gif-con {
     display: flex;
     justify-content: center;
-    align-items: end;
+    align-items: center;
     position: absolute;
     top: 0;
     left: 0;
@@ -208,9 +208,9 @@
 }
 
 .fight-gif {
-    width: 40%;
+    width: 30%;
     height: auto;
-    opacity: 0.7;
+    opacity: 0.8;
 }
 
 /* Responsive */
@@ -236,10 +236,6 @@
         left: 3rem;
     }
 
-    .fight-gif {
-        width: 60%;
-    }
-
 }
 
 
@@ -260,11 +256,6 @@
     .fighter2 img.fullBody {
         left: 2.5rem;
     }
-
-    .fight-gif {
-        width: 75%;
-    }
-
 
 }
 
@@ -324,11 +315,9 @@
         align-items: center;
     }
 
-
     .fight-gif {
-        width: 80%;
+        margin-top: 10%;
     }
-
 
 }
 
@@ -349,6 +338,11 @@
 
     .fighter2 img.fullBody {
         left: 0.5rem;
+    }
+
+    .fight-gif {
+        margin-top: 20%;
+        width: 50%;
     }
 
 }
@@ -384,10 +378,6 @@
 
     .fighter2 img.fullBody {
         left: 0;
-    }
-
-    .fight-gif {
-        width: 90%;
     }
 
 }
@@ -434,6 +424,10 @@
         left: -10px;
     }
 
+    .fight-gif {
+        margin-top: 30%;
+    }
+
 }
 
 
@@ -457,10 +451,6 @@
 
     .fighter2 img.fullBody {
         left: -15px;
-    }
-
-    .fight-gif {
-        width: 100%;
     }
 
 }
