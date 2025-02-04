@@ -119,7 +119,7 @@ export class CharacterService {
                     fighter2Element.style.filter = 'grayscale(60%)';
                 }
 
-            }, 5000);
+            }, 6000);
 
         }, 3000);
 

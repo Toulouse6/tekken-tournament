@@ -226,7 +226,7 @@ body {
     font-family: 'title', sans-serif;
     font-size: xx-large;
     position: absolute;
-    top: 30%;
+    top: 20%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 100;
@@ -260,6 +260,10 @@ body {
 
     .display.fight-active .fighter img.fullBody {
         top: 8rem !important;
+    }
+
+    .winner-text {
+        top: 15%;
     }
 }
 
@@ -297,7 +301,7 @@ body {
 
     .winner-text {
         font-size: x-large;
-        top: 35%;
+        top: 15%;
     }
 }
 
@@ -318,6 +322,10 @@ body {
         top: 12rem !important;
     }
 
+    .winner-text {
+        top: 20%;
+    }
+
 }
 
 
@@ -329,7 +337,7 @@ body {
 
     .winner-text {
         font-size: x-large;
-        top: 25%;
+        top: 22%;
     }
 }
 
