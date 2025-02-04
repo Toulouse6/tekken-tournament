@@ -11,7 +11,6 @@ export class CharacterService {
     // All Arenas
     private arenas = [
         { name: "Crystal Valley", image: './assets/images/arenas/crystal.png' },
-        { name: "Olympus Gates", image: './assets/images/arenas/olympus.png' },
         { name: "Pure Land", image: './assets/images/arenas/pure-land.png' },
         { name: "Street Walk", image: './assets/images/arenas/street.png' },
         { name: "The Farm", image: './assets/images/arenas/farm.png' },
