@@ -14,8 +14,7 @@ export class CharacterService {
         { name: "Cursed Dunes", image: './assets/images/arenas/cursed-dunes.png' },
         { name: "Silent Farm", image: './assets/images/arenas/silent-farm.png' },
         { name: "Moonlit Waters", image: './assets/images/arenas/moonlit-waters.png' },
-        { name: "Mystic Plaza", image: './assets/images/arenas/mystic-plaza.png' },
-        { name: "Crimson Field", image: './assets/images/arenas/crimson-field.png' },
+        { name: "Mystic Fields", image: './assets/images/arenas/mystic-fields.png' },
         { name: "Wandering Streets", image: './assets/images/arenas/wandering-streets.png' },
         { name: "Winter Cabin", image: './assets/images/arenas/winter-cabin.png' },
     ];
