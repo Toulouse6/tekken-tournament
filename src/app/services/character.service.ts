@@ -98,7 +98,9 @@ export class CharacterService {
 
             const winner = Math.random() < 0.5 ? fighter1 : fighter2;
             const loser = winner === fighter1 ? fighter2 : fighter1;
-            const fightMusic = new Audio('./assets/audio/music-loop.mp3');
+            const fightMusic = new Audio('./assets/audio/mountain-voices.mp3');
+            const youLose = new Audio('./assets/audio/you-lose.mp3');
+            const youWin = new Audio('./assets/audio/gong.mp3');
 
             // Show fight GIF
             if (gifElement) {
@@ -122,14 +124,16 @@ export class CharacterService {
 
                 // Apply loser effect
                 if (loser === fighter1 && fighter1Element) {
-                    fighter1Element.style.filter = 'grayscale(75%)';
+                    fighter1Element.style.filter = 'grayscale(80%)';
+                    youLose.play();
                 } else if (loser === fighter2 && fighter2Element) {
-                    fighter2Element.style.filter = 'grayscale(75%)';
+                    fighter2Element.style.filter = 'grayscale(80%)';
+                    youWin.play();
                 }
 
-            }, 6200);
+            }, 7500);
 
-        }, 3200);
+        }, 3500);
 
         setTimeout(() => {
             // Reset all effects
@@ -149,7 +153,7 @@ export class CharacterService {
             }
             resetCallback();
 
-        }, 12000);  // Reset fight
+        }, 15000);  // Reset fight
 
     }
 }

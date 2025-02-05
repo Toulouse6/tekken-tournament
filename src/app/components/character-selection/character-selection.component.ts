@@ -47,6 +47,9 @@ export class CharacterSelectionComponent implements OnInit {
         const fighters = this.characterService.toggleFighterSelection(character, this.fighter1, this.fighter2);
         this.fighter1 = fighters.fighter1;
         this.fighter2 = fighters.fighter2;
+        const selectSound = new Audio('./assets/audio/boom.mp3');
+
+        selectSound.play();
         this.onSelectionChange();
     }
 
