@@ -59,6 +59,15 @@ body {
     animation: fadeIn 1s ease-in-out;
 }
 
+.grayscale {
+    -webkit-filter: grayscale(100%) !important;
+    filter: grayscale(100%) !important;
+}
+
+.fighter1, .fighter2 {
+    -webkit-filter: grayscale(0%);
+    filter: grayscale(0%);
+}
 
 /* Title */
 .title h1 {

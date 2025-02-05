@@ -115,19 +115,24 @@ export class CharacterService {
                 }
 
                 // Show winner text
-                if (winnerTextElement) {
-                    winnerTextElement.textContent = `${winner.name} wins`;
-                    winnerTextElement.style.opacity = '1';
-                    winnerTextElement.style.visibility = 'visible';
-                }
-
-                // Apply loser effect
                 if (loser === fighter1 && fighter1Element) {
-                    fighter1Element.style.filter = 'grayscale(100%)';
+                    fighter1Element.style.transition = 'none'; // Disable transition
+                    fighter1Element.classList.add('grayscale');
                     youLose.play();
+                
+                    // Force a reflow
+                    void fighter1Element.offsetWidth;
+                
+                    fighter1Element.style.transition = ''; // Re-enable transitions
                 } else if (loser === fighter2 && fighter2Element) {
-                    fighter2Element.style.filter = 'grayscale(100%)';
+                    fighter2Element.style.transition = 'none';
+                    fighter2Element.classList.add('grayscale');
                     youWin.play();
+                
+                    // Force a reflow
+                    void fighter2Element.offsetWidth;
+                
+                    fighter2Element.style.transition = '';
                 }
 
             }, 7500);
