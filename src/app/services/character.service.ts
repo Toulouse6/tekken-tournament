@@ -27,7 +27,8 @@ export class CharacterService {
 
     // Get Arenas
     getArenas(): Observable<{ name: string; image: string }[]> {
-        // Shuffle
+
+        // Shuffle Arenas
         for (let i = this.arenas.length - 1; i > 0; i--) {
             const j = Math.floor(Math.random() * (i + 1));
             [this.arenas[i], this.arenas[j]] = [this.arenas[j], this.arenas[i]];
@@ -94,18 +95,22 @@ export class CharacterService {
         }
 
         setTimeout(() => {
+
             const winner = Math.random() < 0.5 ? fighter1 : fighter2;
             const loser = winner === fighter1 ? fighter2 : fighter1;
+            const fightMusic = new Audio('./assets/audio/music-loop.mp3');
 
             // Show fight GIF
             if (gifElement) {
                 gifElement.style.display = 'block';
+                fightMusic.play();
             }
 
             // Hide GIF & show winner's name
             setTimeout(() => {
                 if (gifElement) {
                     gifElement.style.display = 'none';
+                    fightMusic.pause();
                 }
 
                 // Show winner text

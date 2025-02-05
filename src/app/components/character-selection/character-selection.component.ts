@@ -70,11 +70,17 @@ export class CharacterSelectionComponent implements OnInit {
     nextArena(): void {
         this.activeArenaIndex = this.characterService.getNextArenaIndex(this.activeArenaIndex, this.arenas.length);
         this.updateArena();
+
+        const nextSound = new Audio('./assets/audio/woosh.mp3');
+        nextSound.play();
     }
 
     previousArena(): void {
         this.activeArenaIndex = this.characterService.getPreviousArenaIndex(this.activeArenaIndex, this.arenas.length);
         this.updateArena();
+
+        const nextSound = new Audio('./assets/audio/woosh.mp3');
+        nextSound.play();
     }
 
     // Fight
