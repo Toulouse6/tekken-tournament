@@ -26,13 +26,13 @@ export class CharacterService {
 
     // Get Arenas
     getArenas(): Observable<{ name: string; image: string }[]> {
-
         // Shuffle Arenas
-        for (let i = this.arenas.length - 1; i > 0; i--) {
+        const shuffledArenas = [...this.arenas];
+        for (let i = shuffledArenas.length - 1; i > 0; i--) {
             const j = Math.floor(Math.random() * (i + 1));
-            [this.arenas[i], this.arenas[j]] = [this.arenas[j], this.arenas[i]];
+            [shuffledArenas[i], shuffledArenas[j]] = [shuffledArenas[j], shuffledArenas[i]];
         }
-        return of(this.arenas);
+        return of(shuffledArenas); // Return shuffled
     }
 
     // Toggle Fighter Selection
@@ -119,29 +119,29 @@ export class CharacterService {
                     winnerTextElement.textContent = `${winner.name} wins`;
                     winnerTextElement.style.opacity = '1';
                     winnerTextElement.style.visibility = 'visible';
-                
-                // Apply loser effect 
-                if (loser === fighter1 && fighter1Element) {
 
-                    fighter1Element.style.transition = 'none'; // Disable transition
-                    fighter1Element.classList.add('grayscale');
-                    youLose.play();
+                    // Apply loser effect 
+                    if (loser === fighter1 && fighter1Element) {
 
-                    // Force a reflow
-                    void fighter1Element.offsetWidth;
+                        fighter1Element.style.transition = 'none'; // Disable transition
+                        fighter1Element.classList.add('grayscale');
+                        youLose.play();
 
-                    fighter1Element.style.transition = ''; // Re-enable transitions
-                } else if (loser === fighter2 && fighter2Element) {
-                    fighter2Element.style.transition = 'none';
-                    fighter2Element.classList.add('grayscale');
-                    youWin.play();
+                        // Force a reflow
+                        void fighter1Element.offsetWidth;
 
-                    // Force a reflow
-                    void fighter2Element.offsetWidth;
+                        fighter1Element.style.transition = ''; // Re-enable transitions
+                    } else if (loser === fighter2 && fighter2Element) {
+                        fighter2Element.style.transition = 'none';
+                        fighter2Element.classList.add('grayscale');
+                        youWin.play();
 
-                    fighter2Element.style.transition = '';
+                        // Force a reflow
+                        void fighter2Element.offsetWidth;
+
+                        fighter2Element.style.transition = '';
+                    }
                 }
-            }
 
             }, 7500);
 

@@ -62,13 +62,13 @@ export class CharacterSelectionComponent implements OnInit {
         return this.characterService.isDisabled(character, this.fighter1, this.fighter2);
     }
 
-    // Arena Selection
-    updateArena(): void {
-        this.characterService.updateArena(this.arenas, this.activeArenaIndex, (updatedArena) => {
-            this.arena = updatedArena;
-            this.onSelectionChange();
-        });
-    }
+  // Arena Selection
+ updateArena(): void {
+    this.characterService.updateArena(this.arenas, this.activeArenaIndex, (updatedArena) => {
+        this.arena = updatedArena;
+        this.onSelectionChange();
+    });
+}
 
     nextArena(): void {
         this.activeArenaIndex = this.characterService.getNextArenaIndex(this.activeArenaIndex, this.arenas.length);
