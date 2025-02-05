@@ -32,6 +32,11 @@
     z-index: -1;
     transition: filter 1s ease-in-out, background 1s ease-in-out;
     animation: pulseShiny 2s infinite alternate;
+    background: var(--winner-background);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    opacity: 0.4;
 }
 
 .display.default-arena {

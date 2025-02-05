@@ -125,15 +125,27 @@ export class CharacterService {
 
                         fighter1Element.style.transition = 'none'; // Disable transition
                         fighter1Element.classList.add('grayscale');
+
+                        const winnerFighterBackground = winner === fighter1 ? (fighter1Element.querySelector('.fighter-background') as HTMLElement) : (fighter2Element.querySelector('.fighter-background') as HTMLElement);
+                        if (winnerFighterBackground) {
+                            const backgroundUrl = winnerFighterBackground.style.backgroundImage;
+                            displayElement.style.setProperty('--winner-background', backgroundUrl);
+                        }
+
                         youLose.play();
 
                         // Force a reflow
                         void fighter1Element.offsetWidth;
-
                         fighter1Element.style.transition = ''; // Re-enable transitions
                     } else if (loser === fighter2 && fighter2Element) {
                         fighter2Element.style.transition = 'none';
                         fighter2Element.classList.add('grayscale');
+
+                        const winnerFighterBackground = winner === fighter2 ? (fighter2Element.querySelector('.fighter-background') as HTMLElement) : (fighter1Element.querySelector('.fighter-background') as HTMLElement);
+                        if (winnerFighterBackground) {
+                            const backgroundUrl = winnerFighterBackground.style.backgroundImage;
+                            displayElement.style.setProperty('--winner-background', backgroundUrl);
+                        }
                         youWin.play();
 
                         // Force a reflow
@@ -161,6 +173,7 @@ export class CharacterService {
                 winnerTextElement.textContent = ''; // Reset winner
             }
             if (displayElement) {
+                displayElement.style.setProperty('--winner-background', ''); 
                 displayElement.classList.remove('fight-active');
             }
             resetCallback();

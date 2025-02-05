@@ -295,7 +295,7 @@ body {
 @media (max-width: 385px) {
 
     .display.fight-active .fighter img.fullBody {
-        top: 10rem !important;
+        top: 9.5rem !important;
     }
 
 }
@@ -303,7 +303,7 @@ body {
 @media (max-width: 375px) {
 
     .display.fight-active .fighter img.fullBody {
-        top: 7.5rem !important;
+        top: 7rem !important;
     }
 
 }
