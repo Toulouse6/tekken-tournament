@@ -18,7 +18,6 @@ export class CharacterService {
         { name: "Crimson Field", image: './assets/images/arenas/crimson-field.png' },
         { name: "Wandering Streets", image: './assets/images/arenas/wandering-streets.png' },
         { name: "Winter Cabin", image: './assets/images/arenas/winter-cabin.png' },
-        { name: "Horizon's Edge", image: './assets/images/arenas/horizons-edge.png' }
     ];
 
     // Get Characters
