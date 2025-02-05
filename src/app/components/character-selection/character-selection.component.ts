@@ -31,7 +31,7 @@ export class CharacterSelectionComponent implements OnInit {
 
     private fightStateSubscription?: Subscription;
 
-    constructor(private characterService: CharacterService) { 
+    constructor(private characterService: CharacterService) {
         this.characterService.getArenas();
     }
 
@@ -117,12 +117,19 @@ export class CharacterSelectionComponent implements OnInit {
     }
 
     private onFightReset(): void {
+        // Reset selections
         this.fighter1 = null;
         this.fighter2 = null;
         this.arena = "";
         this.activeArenaIndex = 0;
         this.isFightActive = false;
-        this.onSelectionChange();
+
+        // Shuffle arenas
+        this.characterService.getArenas().subscribe((shuffledArenas) => {
+            this.arenas = shuffledArenas;
+            this.onSelectionChange(); // Re-emit selection after shuffling
+        });
     }
+
 
 }
