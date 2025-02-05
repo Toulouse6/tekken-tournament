@@ -286,7 +286,7 @@ body {
 @media (max-width: 385px) {
 
     .display.fight-active .fighter img.fullBody {
-        top: 12rem !important;
+        top: 10rem !important;
     }
 
 }
