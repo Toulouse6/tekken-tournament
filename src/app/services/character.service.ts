@@ -10,11 +10,15 @@ export class CharacterService {
 
     // All Arenas
     private arenas = [
-        { name: "Cursed Desert", image: './assets/images/arenas/cursed-desert.png' },
-        { name: "Holy Water", image: './assets/images/arenas/holy-water.png' },
+        { name: "Grim's Land", image: './assets/images/arenas/grims-land.png' },
+        { name: "Cursed Dunes", image: './assets/images/arenas/cursed-dunes.png' },
+        { name: "Silent Farm", image: './assets/images/arenas/silent-farm.png' },
+        { name: "Moonlit Waters", image: './assets/images/arenas/moonlit-waters.png' },
+        { name: "Mystic Plaza", image: './assets/images/arenas/mystic-plaza.png' },
+        { name: "Crimson Field", image: './assets/images/arenas/crimson-field.png' },
+        { name: "Wandering Streets", image: './assets/images/arenas/wandering-streets.png' },
         { name: "Winter Cabin", image: './assets/images/arenas/winter-cabin.png' },
-        { name: "Endless Horizon", image: './assets/images/arenas/pink-horizon.png' },
-        { name: "Street Walk", image: './assets/images/arenas/street-walk.png' },
+        { name: "Horizon's Edge", image: './assets/images/arenas/horizons-edge.png' }
     ];
 
     // Get Characters

@@ -48,39 +48,6 @@
     }
 }
 
-
-@keyframes pulseShiny {
-    0% {
-        background-size: 100% 100%;
-        filter: brightness(1);
-    }
-
-    20% {
-        background-size: 105% 105%;
-        filter: brightness(1.05);
-    }
-
-    40% {
-        background-size: 110% 110%;
-        filter: brightness(1.1);
-    }
-
-    60% {
-        background-size: 115% 115%;
-        filter: brightness(1.1);
-    }
-
-    80% {
-        background-size: 110% 110%;
-        filter: brightness(1.05);
-    }
-
-    100% {
-        background-size: 100% 100%;
-        filter: brightness(1);
-    }
-}
-
 html,
 body {
     height: 100vh;
@@ -107,8 +74,6 @@ body {
 /* Fight Active */
 .display.fight-active {
     transition: filter 1s ease-in-out;
-    animation: pulseShiny 2s infinite alternate;
-    animation: pulseShiny 2s infinite alternate;
 }
 
 .display.fight-active .fighter-background {
@@ -126,12 +91,11 @@ body {
     z-index: 1;
     pointer-events: none;
     transition: background 0.5s ease-in-out;
-    animation: pulseShiny 2s infinite alternate;
     background: inherit;
 }
 
 .display.fight-active .overlay {
-    background: rgba(255, 255, 255, 0.1);
+    background: none;
     z-index: 2;
 }
 
@@ -180,28 +144,9 @@ body {
 
 /* Full Body in Active */
 .display.fight-active .fighter img.fullBody {
-    filter: inherit !important;
     transform: scale(1.2);
-    bottom: 1rem;
-    transition: filter 1s ease-in-out;
-    top: 6.5rem;
-}
-
-
-.display.fight-active .fighter1 img.fullBody,
-.display.fight-active .fighter2 img.fullBody {
-    transform: scale(1.2);
-    filter: brightness(1.1);
     transition: transform 2.5s ease-in-out, filter 2.5s ease-in-out;
-    bottom: 10%;
-}
-
-.fighter1 img.fullBody {
-    bottom: 0;
-}
-
-.fighter2 img.fullBody {
-    bottom: 0;
+    top: 8rem !important;
 }
 
 .fighter img.fullBody {
@@ -214,10 +159,6 @@ body {
 
 .display.fight-active .fighter {
     transform: none !important;
-}
-
-.display.fight-active .fighter img.fullBody {
-    transition: filter 0.5s ease-in-out;
 }
 
 /* Winner Text */
@@ -259,7 +200,7 @@ body {
 @media (max-width: 1200px) {
 
     .display.fight-active .fighter img.fullBody {
-        top: 8rem !important;
+        top: 9.5rem !important;
     }
 
     .winner-text {
@@ -279,7 +220,7 @@ body {
     }
 
     .display.fight-active .fighter img.fullBody {
-        top: 13rem !important;
+        top: 12.5rem !important;
     }
 }
 
@@ -287,7 +228,7 @@ body {
 @media (max-width: 780px) {
 
     .display.fight-active .fighter img.fullBody {
-        top: 10rem !important;
+        top: 11rem !important;
     }
 
 }
@@ -296,7 +237,7 @@ body {
 @media (max-width: 610px) {
 
     .display.fight-active .fighter img.fullBody {
-        top: 14rem !important;
+        top: 16rem !important;
     }
 
     .winner-text {
@@ -319,7 +260,7 @@ body {
 @media(max-width: 500px) {
 
     .display.fight-active .fighter img.fullBody {
-        top: 12rem !important;
+        top: 13rem !important;
     }
 
     .winner-text {
@@ -332,7 +273,7 @@ body {
 @media (max-width: 415px) {
 
     .display.fight-active .fighter img.fullBody {
-        top: 12rem !important;
+        top: 12.5rem !important;
     }
 
     .winner-text {
@@ -345,13 +286,7 @@ body {
 @media (max-width: 385px) {
 
     .display.fight-active .fighter img.fullBody {
-        top: 8rem !important;
+        top: 13rem !important;
     }
 
-    @media (max-width: 375px) {
-
-        .display.fight-active .fighter img.fullBody {
-            top: 7rem !important;
-        }
-    }
 }
