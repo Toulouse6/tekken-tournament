@@ -92,7 +92,7 @@
         "images": {
             "fullBody": "./assets/images/fighters/fullbody/feng.png",
             "background": "./assets/images/fighters/backgrounds/feng-bg.png",
-            "headshot": "./assets/images/fighters/headshots/feng-headshot1.png"
+            "headshot": "./assets/images/fighters/headshots/feng-headshot.png"
         }
     },
     {
