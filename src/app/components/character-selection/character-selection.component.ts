@@ -91,6 +91,9 @@ export class CharacterSelectionComponent implements OnInit {
     // Fight
     startFight(fighter1: Character, fighter2: Character): void {
 
+        // Scroll to top
+        document.querySelector('.display')?.scrollIntoView({ behavior: 'smooth' });
+
         // Play fight sound
         const fightSound = new Audio('./assets/audio/three-two-one.mp3');
         fightSound.play();
