@@ -181,6 +181,18 @@
     },
     {
         "id": 16,
+        "name": "Kazumi Mishima",
+        "fightingStyle": "Hachijo Style Karate",
+        "bornIn": "1950",
+        "nationality": "Japan",
+        "images": {
+            "fullBody": "./assets/images/fighters/fullbody/kazumi.png",
+            "background": "./assets/images/fighters/backgrounds/kazumi-bg.png",
+            "headshot": "./assets/images/fighters/headshots/kazumi-headshot.png"
+        }
+    },
+    {
+        "id": 17,
         "name": "Jinpachi Mishima",
         "fightingStyle": "Ancient Mishima Karate",
         "bornIn": "1937",
@@ -192,7 +204,7 @@
         }
     },
     {
-        "id": 17,
+        "id": 18,
         "name": "Devil Jin",
         "fightingStyle": "Ancient Mishima Karate",
         "bornIn": "1979",
@@ -201,18 +213,6 @@
             "fullBody": "./assets/images/fighters/fullbody/devil-jin.png",
             "background": "./assets/images/fighters/backgrounds/devil-jin-bg.png",
             "headshot": "./assets/images/fighters/headshots/devil-jin-headshot.png"
-        }
-    },
-    {
-        "id": 18,
-        "name": "Kazumi Mishima",
-        "fightingStyle": "Hachijo Style Karate",
-        "bornIn": "1950",
-        "nationality": "Japan",
-        "images": {
-            "fullBody": "./assets/images/fighters/fullbody/kazumi.png",
-            "background": "./assets/images/fighters/backgrounds/kazumi-bg.png",
-            "headshot": "./assets/images/fighters/headshots/kazumi-headshot.png"
         }
     },
     {
@@ -249,18 +249,6 @@
             "fullBody": "./assets/images/fighters/fullbody/ogre.png",
             "background": "./assets/images/fighters/backgrounds/ogre-bg.png",
             "headshot": "./assets/images/fighters/headshots/ogre-headshot.png"
-        }
-    },
-    {
-        "id": 22,
-        "name": "Azazel",
-        "fightingStyle": "Demonic Forces",
-        "bornIn": "Unknown",
-        "nationality": "Ancient Egypt",
-        "images": {
-            "fullBody": "./assets/images/fighters/fullbody/azazel.png",
-            "background": "./assets/images/fighters/backgrounds/azazel-bg.png",
-            "headshot": "./assets/images/fighters/headshots/azazel-headshot.png"
         }
     }
 ]
