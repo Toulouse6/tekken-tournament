@@ -25,7 +25,7 @@
     },
     {
         "id": 3,
-        "name": "Armor King",
+        "name": "King",
         "fightingStyle": "Professional Wrestling",
         "bornIn": "1970",
         "nationality": "Mexico",
@@ -129,6 +129,18 @@
             "fullBody": "./assets/images/fighters/fullbody/fahkumram.png",
             "background": "./assets/images/fighters/backgrounds/fahkumram-bg.png",
             "headshot": "./assets/images/fighters/headshots/fahkumram-headshot.png"
+        }
+    },
+    {
+        "id": 18,
+        "name": "Armor King",
+        "fightingStyle": "Professional Wrestling",
+        "bornIn": "1970",
+        "nationality": "Mexico",
+        "images": {
+            "fullBody": "./assets/images/fighters/fullbody/armor-king.png",
+            "background": "./assets/images/fighters/backgrounds/armor-king-bg.png",
+            "headshot": "./assets/images/fighters/headshots/armor-king-headshot.png"
         }
     },
     {
