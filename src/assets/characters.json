@@ -26,7 +26,7 @@
     {
         "id": 3,
         "name": "King",
-        "fightingStyle": "Professional Wrestling",
+        "fightingStyle": "Lucha Libre Wrestling",
         "bornIn": "1970",
         "nationality": "Mexico",
         "images": {
@@ -87,7 +87,7 @@
         "id": 8,
         "name": "Feng Wei",
         "fightingStyle": "Chinese Martial Arts",
-        "bornIn": "Unknown",
+        "bornIn": "1979",
         "nationality": "China",
         "images": {
             "fullBody": "./assets/images/fighters/fullbody/feng.png",
@@ -121,6 +121,30 @@
     },
     {
         "id": 11,
+        "name": "Hwoarang",
+        "fightingStyle": "Taekwondo",
+        "bornIn": "1984",
+        "nationality": "South Korea",
+        "images": {
+            "fullBody": "./assets/images/fighters/fullbody/hwoarang.png",
+            "background": "./assets/images/fighters/backgrounds/hwoarang-bg.png",
+            "headshot": "./assets/images/fighters/headshots/hwoarang-headshot.png"
+        }
+    },
+    {
+        "id": 12,
+        "name": "Jack",
+        "fightingStyle": "Adaptive Combat",
+        "bornIn": "Mishima Zaibatsu",
+        "nationality": "Unknown",
+        "images": {
+            "fullBody": "./assets/images/fighters/fullbody/jack.png",
+            "background": "./assets/images/fighters/backgrounds/jack-bg.png",
+            "headshot": "./assets/images/fighters/headshots/jack-headshot.png"
+        }
+    },
+    {
+        "id": 13,
         "name": "Fahkumram",
         "fightingStyle": "Muay Thai Art",
         "bornIn": "1985",
@@ -132,9 +156,9 @@
         }
     },
     {
-        "id": 12,
+        "id": 14,
         "name": "Armor King",
-        "fightingStyle": "Professional Wrestling",
+        "fightingStyle": "Lucha Libre Wrestling",
         "bornIn": "1970",
         "nationality": "Mexico",
         "images": {
@@ -144,7 +168,19 @@
         }
     },
     {
-        "id": 13,
+        "id": 15,
+        "name": "Wang Jinrei",
+        "fightingStyle": "Hakkyoku-ken",
+        "bornIn": "1936",
+        "nationality": "China",
+        "images": {
+            "fullBody": "./assets/images/fighters/fullbody/wang.png",
+            "background": "./assets/images/fighters/backgrounds/wang-bg.png",
+            "headshot": "./assets/images/fighters/headshots/wang-headshot.png"
+        }
+    },
+    {
+        "id": 16,
         "name": "Jinpachi Mishima",
         "fightingStyle": "Ancient Mishima Karate",
         "bornIn": "1937",
@@ -156,7 +192,19 @@
         }
     },
     {
-        "id": 14,
+        "id": 17,
+        "name": "Devil Jin",
+        "fightingStyle": "Ancient Mishima Karate",
+        "bornIn": "1979",
+        "nationality": "Japan",
+        "images": {
+            "fullBody": "./assets/images/fighters/fullbody/devil-jin.png",
+            "background": "./assets/images/fighters/backgrounds/devil-jin-bg.png",
+            "headshot": "./assets/images/fighters/headshots/devil-jin-headshot.png"
+        }
+    },
+    {
+        "id": 18,
         "name": "Kazumi Mishima",
         "fightingStyle": "Hachijo Style Karate",
         "bornIn": "1950",
@@ -168,35 +216,11 @@
         }
     },
     {
-        "id": 15,
-        "name": "Devil Jin",
-        "fightingStyle": "Ancient Mishima Karate",
-        "bornIn": "1979",
-        "nationality": "Oyashima",
-        "images": {
-            "fullBody": "./assets/images/fighters/fullbody/devil-jin.png",
-            "background": "./assets/images/fighters/backgrounds/devil-jin-bg.png",
-            "headshot": "./assets/images/fighters/headshots/devil-jin-headshot.png"
-        }
-    },
-    {
-        "id": 16,
-        "name": "Devil Kazuya",
-        "fightingStyle": "Ancient Mishima Karate",
-        "bornIn": "1968",
-        "nationality": "Oyashima",
-        "images": {
-            "fullBody": "./assets/images/fighters/fullbody/devil-kazuya2.png",
-            "background": "./assets/images/fighters/backgrounds/devil-kazuya-bg.png",
-            "headshot": "./assets/images/fighters/headshots/devil-kazuya-headshot.png"
-        }
-    },
-    {
-        "id": 17,
+        "id": 19,
         "name": "Akuma",
         "fightingStyle": "Ansatsuken",
         "bornIn": "Unknown",
-        "nationality": "Japan",
+        "nationality": "Oyashima",
         "images": {
             "fullBody": "./assets/images/fighters/fullbody/akuma.png",
             "background": "./assets/images/fighters/backgrounds/akuma-bg.png",
@@ -204,15 +228,39 @@
         }
     },
     {
-        "id": 18,
+        "id": 20,
+        "name": "Devil Kazuya",
+        "fightingStyle": "Ancient Mishima Karate",
+        "bornIn": "1968",
+        "nationality": "Japan",
+        "images": {
+            "fullBody": "./assets/images/fighters/fullbody/devil-kazuya2.png",
+            "background": "./assets/images/fighters/backgrounds/devil-kazuya-bg.png",
+            "headshot": "./assets/images/fighters/headshots/devil-kazuya-headshot.png"
+        }
+    },
+    {
+        "id": 21,
         "name": "Ancient Ogre",
-        "fightingStyle": "Ancient Assassination Arts",
+        "fightingStyle": "Dark Magic",
         "bornIn": "Unknown",
-        "nationality": "Ancient Egypt",
+        "nationality": "Unknown",
         "images": {
             "fullBody": "./assets/images/fighters/fullbody/ogre.png",
             "background": "./assets/images/fighters/backgrounds/ogre-bg.png",
             "headshot": "./assets/images/fighters/headshots/ogre-headshot.png"
+        }
+    },
+    {
+        "id": 22,
+        "name": "Azazel",
+        "fightingStyle": "Demonic Forces",
+        "bornIn": "Unknown",
+        "nationality": "Ancient Egypt",
+        "images": {
+            "fullBody": "./assets/images/fighters/fullbody/azazel.png",
+            "background": "./assets/images/fighters/backgrounds/azazel-bg.png",
+            "headshot": "./assets/images/fighters/headshots/azazel-headshot.png"
         }
     }
 ]
