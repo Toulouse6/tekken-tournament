@@ -92,7 +92,7 @@
         "images": {
             "fullBody": "./assets/images/fighters/fullbody/feng.png",
             "background": "./assets/images/fighters/backgrounds/feng-bg.png",
-            "headshot": "./assets/images/fighters/headshots/feng-headshot.png"
+            "headshot": "./assets/images/fighters/headshots/feng-headshot1.png"
         }
     },
     {
@@ -132,7 +132,7 @@
         }
     },
     {
-        "id": 18,
+        "id": 12,
         "name": "Armor King",
         "fightingStyle": "Professional Wrestling",
         "bornIn": "1970",
@@ -144,7 +144,7 @@
         }
     },
     {
-        "id": 12,
+        "id": 13,
         "name": "Jinpachi Mishima",
         "fightingStyle": "Ancient Mishima Karate",
         "bornIn": "1937",
@@ -156,31 +156,7 @@
         }
     },
     {
-        "id": 13,
-        "name": "Devil Jin",
-        "fightingStyle": "Ancient Mishima Karate",
-        "bornIn": "1979",
-        "nationality": "Oyashima",
-        "images": {
-            "fullBody": "./assets/images/fighters/fullbody/devil-jin.png",
-            "background": "./assets/images/fighters/backgrounds/devil-jin-bg.png",
-            "headshot": "./assets/images/fighters/headshots/devil-jin-headshot.png"
-        }
-    },
-    {
         "id": 14,
-        "name": "Devil Kazuya",
-        "fightingStyle": "Ancient Mishima Karate",
-        "bornIn": "1968",
-        "nationality": "Oyashima",
-        "images": {
-            "fullBody": "./assets/images/fighters/fullbody/devil-kazuya2.png",
-            "background": "./assets/images/fighters/backgrounds/devil-kazuya-bg.png",
-            "headshot": "./assets/images/fighters/headshots/devil-kazuya-headshot.png"
-        }
-    },
-    {
-        "id": 15,
         "name": "Kazumi Mishima",
         "fightingStyle": "Hachijo Style Karate",
         "bornIn": "1950",
@@ -192,7 +168,31 @@
         }
     },
     {
+        "id": 15,
+        "name": "Devil Jin",
+        "fightingStyle": "Ancient Mishima Karate",
+        "bornIn": "1979",
+        "nationality": "Oyashima",
+        "images": {
+            "fullBody": "./assets/images/fighters/fullbody/devil-jin.png",
+            "background": "./assets/images/fighters/backgrounds/devil-jin-bg.png",
+            "headshot": "./assets/images/fighters/headshots/devil-jin-headshot.png"
+        }
+    },
+    {
         "id": 16,
+        "name": "Devil Kazuya",
+        "fightingStyle": "Ancient Mishima Karate",
+        "bornIn": "1968",
+        "nationality": "Oyashima",
+        "images": {
+            "fullBody": "./assets/images/fighters/fullbody/devil-kazuya2.png",
+            "background": "./assets/images/fighters/backgrounds/devil-kazuya-bg.png",
+            "headshot": "./assets/images/fighters/headshots/devil-kazuya-headshot.png"
+        }
+    },
+    {
+        "id": 17,
         "name": "Akuma",
         "fightingStyle": "Ansatsuken",
         "bornIn": "Unknown",
@@ -204,7 +204,7 @@
         }
     },
     {
-        "id": 17,
+        "id": 18,
         "name": "Ancient Ogre",
         "fightingStyle": "Ancient Assassination Arts",
         "bornIn": "Unknown",
