@@ -161,7 +161,6 @@ body {
 
 /* Full Body in Active */
 .display.fight-active .fighter img.fullBody {
-    transform: scale(1.2);
     transition: transform 2.5s ease-in-out, filter 2.5s ease-in-out;
     margin-top: 5rem !important; 
 }
@@ -301,7 +300,7 @@ body {
 @media (max-width: 385px) {
    
     .display.fight-active .fighter img.fullBody {
-     margin-top: 2rem !important; 
+     margin-top: 6.6rem !important; 
     }
 
 
@@ -309,6 +308,9 @@ body {
 
 @media (max-width: 375px) {
 
-
+    .display.fight-active .fighter img.fullBody {
+        margin-top: 4rem !important; 
+       }
+   
 
 }
