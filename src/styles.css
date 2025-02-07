@@ -163,6 +163,7 @@ body {
 .display.fight-active .fighter img.fullBody {
     transform: scale(1.2);
     transition: transform 2.5s ease-in-out, filter 2.5s ease-in-out;
+    margin-top: 5rem !important; 
 }
 
 .fighter img.fullBody {
@@ -225,19 +226,6 @@ body {
     }
 }
 
-
-@media (max-width: 1024px) {
-
-
-}
-
-
-@media (max-width: 780px) {
-
-
-}
-
-
 @media (max-width: 610px) {
 
 
@@ -246,12 +234,33 @@ body {
         top: 15%;
     }
 
+}
+
+
+@media (max-width: 780px) {
+
     .display.fight-active .fighter img.fullBody {
-        top: 12rem !important;
-    }
+        margin-top: 2rem !important; 
+       }
 
 }
 
+@media (max-width: 700px) {
+
+    .display.fight-active .fighter img.fullBody {
+        margin-top: 0 !important; 
+       }
+
+}
+
+
+@media (max-width: 610px) {
+
+.display.fight-active .fighter img.fullBody {
+    margin-top: 6rem !important; 
+   }
+
+}
 
 @media(max-width: 560px) {
 
@@ -269,6 +278,10 @@ body {
         top: 20%;
     }
 
+    .display.fight-active .fighter img.fullBody {
+        margin-top: 7.5rem !important; 
+       }
+
 }
 
 
@@ -278,10 +291,18 @@ body {
         font-size: x-large;
         top: 22%;
     }
+
+    .display.fight-active .fighter img.fullBody {
+        margin-top: 7.5rem !important; 
+       }
 }
 
 
 @media (max-width: 385px) {
+   
+    .display.fight-active .fighter img.fullBody {
+     margin-top: 2rem !important; 
+    }
 
 
 }
