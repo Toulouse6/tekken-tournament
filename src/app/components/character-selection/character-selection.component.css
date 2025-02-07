@@ -107,7 +107,8 @@
 }
 
 .arena-nav {
-    font-size: 1rem;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    font-size: 1.5rem;
     background-color: transparent;
     border: none;
     cursor: pointer;
@@ -116,7 +117,7 @@
 
 .arena-nav,
 .arena-display {
-    font-family: 'title', sans-serif;
+    font-family: 'sub-title', sans-serif;
     white-space: nowrap;
     line-height: 1.5;
     color: white;
@@ -124,7 +125,13 @@
 
 .arena-display {
     margin: 0;
-    font-size: 1.2rem;
+    font-size: 2rem;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+    text-align: center;
 }
 
 .arena-nav:hover {
@@ -133,13 +140,6 @@
     color: #ba892d;
 }
 
-.arena-display {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 0;
-    text-align: center;
-}
 
 /* Fight Button */
 .fight-button {
@@ -149,7 +149,7 @@
     font-size: 1rem;
     border: 2px solid #ba892d;
     color: #ba892d;
-    background-color: transparent;
+    background-color: rgb(255, 255, 255, 0.1);
     padding: 0.8em 3em;
     letter-spacing: 0.08em;
     position: relative;
@@ -191,28 +191,6 @@ button:hover:before {
 
     .character-grid {
         width: 90%;
-    }
-
-    .arena-nav {
-        font-size: 0.9rem;
-    }
-
-    .arena-display {
-        font-size: 1rem;
-    }
-
-}
-
-
-@media (max-width: 1024px) {
-
-
-    .arena-nav {
-        font-size: 0.8rem;
-    }
-
-    .arena-display {
-        font-size: 0.9rem;
     }
 
 }

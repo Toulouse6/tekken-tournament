@@ -14,6 +14,13 @@
     font-weight: normal;
 }
 
+@font-face {
+    font-family: "tekken-bold";
+    src: url("./assets/fonts/waom.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
 
 /* Key Frames */
 @keyframes fadeOut {
