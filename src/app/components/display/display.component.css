@@ -423,7 +423,7 @@
     }
 
     .fighter img.fullBody {
-        top: 5.2rem;
+        top: 5.2rem !important;
         height: 13rem;
     }
 
