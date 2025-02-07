@@ -179,9 +179,10 @@ body {
 
 /* Winner Text */
 .winner-text {
-    color: white;
-    font-family: 'title', sans-serif;
+    color: #901e12;
+    font-family: 'sub-title', sans-serif;
     font-size: xx-large;
+    text-transform: uppercase;
     position: absolute;
     top: 20%;
     left: 50%;
@@ -206,7 +207,7 @@ body {
     position: absolute;
     opacity: 1;
     visibility: visible;
-    text-transform: uppercase;
+    text-transform: capitalize;
     transition: opacity 0.3s ease-in-out;
     margin: 0;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
