@@ -264,6 +264,10 @@ button:hover:before {
         gap: 1.5rem;
     }
 
+    .fight-button {
+        margin-top: -0.5rem;
+    }
+
 }
 
 
