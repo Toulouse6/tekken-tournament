@@ -181,10 +181,10 @@ body {
 .winner-text {
     color: #901e12;
     font-family: 'sub-title', sans-serif;
-    font-size: xx-large;
-    text-transform: uppercase;
+    font-size: 5rem;
+    text-transform: capitalize;
     position: absolute;
-    top: 20%;
+    top: 25%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 100;
@@ -222,18 +222,9 @@ body {
     }
 
     .winner-text {
-        top: 15%;
+        top: 20%;
+        font-size: 4rem;
     }
-}
-
-@media (max-width: 610px) {
-
-
-    .winner-text {
-        font-size: x-large;
-        top: 15%;
-    }
-
 }
 
 
@@ -242,6 +233,11 @@ body {
     .display.fight-active .fighter img.fullBody {
         margin-top: 2rem !important; 
        }
+
+       .winner-text {
+        top: 20%;
+        font-size: 3rem !important;
+    }
 
 }
 
@@ -260,6 +256,11 @@ body {
     margin-top: 6rem !important; 
    }
 
+   .winner-text {
+    top: 25%;
+    font-size: 3.5em;
+}
+
 }
 
 @media(max-width: 560px) {
@@ -269,14 +270,15 @@ body {
         letter-spacing: 1px;
         margin: 2rem auto -0.2rem;
     }
+
+    .winner-text {
+        top: 20%;
+        font-size: 2.5rem !important;
+    }
 }
 
 
 @media(max-width: 500px) {
-
-    .winner-text {
-        top: 20%;
-    }
 
     .display.fight-active .fighter img.fullBody {
         margin-top: 7.5rem !important; 
@@ -288,8 +290,8 @@ body {
 @media (max-width: 415px) {
 
     .winner-text {
-        font-size: x-large;
         top: 22%;
+        font-size: 2.2rem !important;
     }
 
     .display.fight-active .fighter img.fullBody {

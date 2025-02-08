@@ -146,7 +146,7 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    text-transform: uppercase;
+    text-transform: capitalize;
     white-space: nowrap;
     font-size: 1.5rem;
     border: 2px solid #ba892d;
@@ -162,7 +162,8 @@
     margin-top: 0.5rem;
     box-shadow: 0 0 5px rgba(215, 187, 3, 0.8), 0 0 15px rgba(226, 162, 40, 0.6), 0 0 20px rgba(255, 215, 0, 0.5);
     animation: fadeIn 0.5s ease-in-out forwards;
-    padding: 0.8rem 2rem 0.4rem 2rem;
+    padding: 0.8rem 2rem 0.6rem 2rem;
+    height: 60px;
 }
 
 
@@ -228,7 +229,7 @@ button:hover:before {
 @media (max-width: 650px) {
 
     .controls-con {
-        margin-top: 8rem;
+        margin-top: 6.5rem;
     }
 
 }
@@ -246,12 +247,17 @@ button:hover:before {
         width: 3.5rem;
     }
 
+    .character-grid {
+        max-height: 35vh;
+        overflow-y: auto;
+    }
+
 }
 
 @media (max-width: 415px) {
 
     .controls-con {
-        margin-top: 9rem;
+        margin-top: 6.5rem;
     }
 
     .arena-selection {
@@ -265,7 +271,7 @@ button:hover:before {
 
     .controls-con {
         width: 30% !important;
-        margin-top: 7.5rem;
+        margin-top: 6rem;
     }
 
     .character-tile {
