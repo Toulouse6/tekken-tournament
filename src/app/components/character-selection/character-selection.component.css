@@ -266,6 +266,7 @@ button:hover:before {
 
     .fight-button {
         margin-top: -0.5rem;
+        height: 50px;
     }
 
 }
