@@ -102,6 +102,7 @@ export class CharacterSelectionComponent implements OnInit {
         const displayElement = document.querySelector('.display') as HTMLElement;
         if (displayElement) {
             displayElement.classList.add('fight-active');
+            document.body.style.overflow = 'hidden';
         }
 
         if (this.fighter1 && this.fighter2) {
@@ -126,11 +127,12 @@ export class CharacterSelectionComponent implements OnInit {
         this.arena = "";
         this.activeArenaIndex = 0;
         this.isFightActive = false;
+        document.body.style.overflow = 'auto';
 
         // Shuffle arenas
         this.characterService.getArenas().subscribe((shuffledArenas) => {
             this.arenas = shuffledArenas;
-            this.onSelectionChange(); // Re-emit selection after shuffling
+            this.onSelectionChange(); // Re-emit after shuffle
         });
     }
 

@@ -80,11 +80,12 @@
 
 html,
 body {
-    height: 100vh;
+    height: 100%;
     width: 100%;
     margin: 0;
     padding: 0;
     overflow-x: hidden;
+    overflow-y: auto;
     background-color: #131313;
     animation: fadeIn 1s ease-in-out;
 }
@@ -112,6 +113,12 @@ body {
 }
 
 /* Fight Active */
+
+html.fight-active,
+body.fight-active {
+    overflow-y: hidden !important;
+}
+
 .display.fight-active {
     transition: filter 1s ease-in-out;
     animation: shine 0.8s 14;
