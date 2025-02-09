@@ -257,7 +257,7 @@ button:hover:before {
 @media (max-width: 415px) {
 
     .controls-con {
-        margin-top: 6.5rem;
+        margin-top: 5.5rem;
     }
 
     .arena-selection {
@@ -275,7 +275,7 @@ button:hover:before {
 
     .controls-con {
         width: 30% !important;
-        margin-top: 6rem;
+        margin-top: 4.5em;
     }
 
     .character-tile {
