@@ -55,25 +55,25 @@
     }
 }
 
-@keyframes colorMix {
+@keyframes shine {
     0% {
-        filter: hue-rotate(0deg);
+        filter: brightness(1);
     }
 
     25% {
-        filter: hue-rotate(180deg);
+        filter: brightness(1.1);
     }
 
     50% {
-        filter: hue-rotate(360deg);
+        filter: brightness(1.2);
     }
 
     75% {
-        filter: hue-rotate(180deg);
+        filter: brightness(1.1);
     }
 
     100% {
-        filter: hue-rotate(0deg);
+        filter: brightness(1);
     }
 }
 
@@ -114,7 +114,7 @@ body {
 /* Fight Active */
 .display.fight-active {
     transition: filter 1s ease-in-out;
-    animation: colorMix 4s;
+    animation: shine 0.8s 14;
 }
 
 .display.fight-active .fighter-background {
