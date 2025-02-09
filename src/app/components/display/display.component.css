@@ -17,7 +17,6 @@
     background-position: center bottom !important;
     background-size: cover;
     background-repeat: no-repeat;
-    animation: fadeIn 0.5s ease-in-out forwards;
 }
 
 .display::before {
