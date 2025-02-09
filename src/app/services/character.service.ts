@@ -10,7 +10,7 @@ export class CharacterService {
 
     // All Arenas
     private arenas = [
-        { name: "Silent Swamp", image: './assets/images/arenas/lotus-swamp.png' },
+        { name: "Silent Swamp", image: './assets/images/arenas/silent-swamp.png' },
         { name: "Grim's Land", image: './assets/images/arenas/grims-land.png' },
         { name: "Cursed Dunes", image: './assets/images/arenas/cursed-dunes.png' },
         { name: "Moonlit Waters", image: './assets/images/arenas/moonlit-waters.png' },
