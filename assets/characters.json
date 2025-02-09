@@ -96,18 +96,6 @@
         }
     },
     {
-        "id": 9,
-        "name": "Steve Fox",
-        "fightingStyle": "Boxing",
-        "bornIn": "1983",
-        "nationality": "United Kingdom",
-        "images": {
-            "fullBody": "./assets/images/fighters/fullbody/steve.png",
-            "background": "./assets/images/fighters/backgrounds/steve-bg.png",
-            "headshot": "./assets/images/fighters/headshots/steve-headshot.png"
-        }
-    },
-    {
         "id": 10,
         "name": "Raven",
         "fightingStyle": "Manji Ninjutsu",
