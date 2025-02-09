@@ -101,6 +101,16 @@ body {
     filter: grayscale(0%);
 }
 
+
+
+.fighter1 {
+margin-right: 0vw;
+}
+
+.fighter2 {
+    margin-left: 0vw;
+    }
+
 /* Title */
 .title h1 {
     font-family: 'sub-title', sans-serif;
@@ -194,6 +204,16 @@ body.fight-active {
 .display.fight-active .fighter img.fullBody {
     transition: transform 2.5s ease-in-out, filter 2.5s ease-in-out;
     margin-top: 5rem !important;
+}
+
+.display.fight-active .fighter.fighter1 img.fullBody {
+    transition: transform 3s ease-in-out;
+    transform: translateX(5vw)
+}
+
+.display.fight-active .fighter.fighter2 img.fullBody {
+    transition: transform 3s ease-in-out;
+    transform: translateX(-5vw); 
 }
 
 .fighter img.fullBody {

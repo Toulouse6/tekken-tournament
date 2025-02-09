@@ -10,6 +10,9 @@ export class CharacterService {
 
     // All Arenas
     private arenas = [
+        { name: "Shadow Alley", image: './assets/images/arenas/shadow-alley.png' },
+        { name: "Hellfire District", image: './assets/images/arenas/hellfire-district.png' },
+        { name: "Lotus Swamp", image: './assets/images/arenas/lotus-swamp.png' },
         { name: "Grim's Land", image: './assets/images/arenas/grims-land.png' },
         { name: "Cursed Dunes", image: './assets/images/arenas/cursed-dunes.png' },
         { name: "Silent Farm", image: './assets/images/arenas/silent-farm.png' },
