@@ -129,7 +129,7 @@ body.fight-active {
     overflow-y: hidden !important;
 }
 
-.display.fight-active {
+.display.shine-active {
     transition: filter 1s ease-in-out;
     animation: shine 0.8s 14;
 }

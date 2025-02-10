@@ -103,6 +103,7 @@ export class CharacterService {
 
             // Show fight GIF
             if (gifElement) {
+                displayElement.classList.add('shine-active');
                 gifElement.style.display = 'block';
                 fightMusic.play();
             }
@@ -110,6 +111,7 @@ export class CharacterService {
             // Hide GIF & show winner's name
             setTimeout(() => {
                 if (gifElement) {
+                    displayElement.classList.remove('shine-active');
                     gifElement.style.display = 'none';
                     fightMusic.pause();
                 }
