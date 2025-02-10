@@ -31,7 +31,7 @@
         "fightingStyle": "Lucha Libre Wrestling",
         "bornIn": "1970",
         "nationality": "Mexico",
-        "level": "Ultimate Fighter",     
+        "level": "Elite",     
         "images": {
             "fullBody": "./assets/images/fighters/fullbody/king.png",
             "background": "./assets/images/fighters/backgrounds/king-bg.png",
@@ -96,7 +96,7 @@
         "fightingStyle": "Chinese Martial Arts",
         "bornIn": "1979",
         "nationality": "China",
-        "level": "Ultimate Fighter",
+        "level": "Elite",
         "images": {
             "fullBody": "./assets/images/fighters/fullbody/feng.png",
             "background": "./assets/images/fighters/backgrounds/feng-bg.png",
@@ -109,7 +109,7 @@
         "fightingStyle": "Manji Ninjutsu",
         "bornIn": "1980",
         "nationality": "United Kingdom",
-        "level": "Ultimate Fighter",
+        "level": "Elite",
         "images": {
             "fullBody": "./assets/images/fighters/fullbody/raven.png",
             "background": "./assets/images/fighters/backgrounds/raven-bg.png",
@@ -122,7 +122,7 @@
         "fightingStyle": "Taekwondo",
         "bornIn": "1984",
         "nationality": "South Korea",
-        "level": "Ultimate Fighter",
+        "level": "Elite",
         "images": {
             "fullBody": "./assets/images/fighters/fullbody/hwoarang.png",
             "background": "./assets/images/fighters/backgrounds/hwoarang-bg.png",
@@ -148,7 +148,7 @@
         "fightingStyle": "Muay Thai Art",
         "bornIn": "1985",
         "nationality": "United States",
-        "level": "Ultimate Fighter",
+        "level": "Elite",
         "images": {
             "fullBody": "./assets/images/fighters/fullbody/fahkumram.png",
             "background": "./assets/images/fighters/backgrounds/fahkumram-bg.png",
