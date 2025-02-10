@@ -97,7 +97,7 @@ export class CharacterService {
 
             const winner = Math.random() < 0.5 ? fighter1 : fighter2;
             const loser = winner === fighter1 ? fighter2 : fighter1;
-            const fightMusic = new Audio('./assets/audio/ongaku.mp3');
+            const fightMusic = new Audio('./assets/audio/samurai-lofium.mp3');
             const youLose = new Audio('./assets/audio/you-lose.mp3');
             const youWin = new Audio('./assets/audio/gong.mp3');
 
@@ -157,7 +157,7 @@ export class CharacterService {
 
             }, 7500);
 
-        }, 3500);
+        }, 4000);
 
         setTimeout(() => {
             // Reset all effects

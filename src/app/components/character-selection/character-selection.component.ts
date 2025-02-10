@@ -101,7 +101,7 @@ export class CharacterSelectionComponent implements OnInit {
         setTimeout(() => {
             const fightSound = new Audio('./assets/audio/three-two-one.mp3');
             fightSound.play();
-        }, 600);
+        }, 500);
 
         // Fight Active
         const displayElement = document.querySelector('.display') as HTMLElement;
