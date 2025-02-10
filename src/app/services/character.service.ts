@@ -216,7 +216,7 @@ export class CharacterService {
             }
             resetCallback();
 
-        }, 15000);  // Reset fight
+        }, 16000);  // Reset fight
 
     }
 }
