@@ -95,7 +95,7 @@ export class CharacterSelectionComponent implements OnInit {
         document.querySelector('.display')?.scrollIntoView({ behavior: 'smooth' });
 
         // Play fight sound
-        const landing = new Audio('./assets/audio/boom-spooky.mp3');
+        const landing = new Audio('./assets/audio/giant.mp3');
         landing.play();
 
         setTimeout(() => {
