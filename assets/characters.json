@@ -31,7 +31,7 @@
         "fightingStyle": "Lucha Libre Wrestling",
         "bornIn": "1970",
         "nationality": "Mexico",
-        "level": "Ultimate Fighter",     
+        "level": "Supreme",     
         "images": {
             "fullBody": "./assets/images/fighters/fullbody/king.png",
             "background": "./assets/images/fighters/backgrounds/king-bg.png",
@@ -57,7 +57,7 @@
         "fightingStyle": "Assassination Arts",
         "bornIn": "1964",
         "nationality": "Ireland",
-        "level": "Ultimate Fighter",
+        "level": "Supreme",
         "images": {
             "fullBody": "./assets/images/fighters/fullbody/nina.png",
             "background": "./assets/images/fighters/backgrounds/nina-bg.png",
@@ -70,7 +70,7 @@
         "fightingStyle": "Kickboxing",
         "bornIn": "1985",
         "nationality": "United States",
-        "level": "Ultimate Fighter",
+        "level": "Supreme",
         "images": {
             "fullBody": "./assets/images/fighters/fullbody/bryan.png",
             "background": "./assets/images/fighters/backgrounds/bryan-bg.png",
@@ -83,7 +83,7 @@
         "fightingStyle": "Capoeira",
         "bornIn": "1976",
         "nationality": "Brazil",
-        "level": "Ultimate Fighter",
+        "level": "Supreme",
         "images": {
             "fullBody": "./assets/images/fighters/fullbody/eddy.png",
             "background": "./assets/images/fighters/backgrounds/eddy-bg.png",
@@ -213,7 +213,7 @@
         "fightingStyle": "Ancient Mishima Karate",
         "bornIn": "1979",
         "nationality": "Japan",
-        "level": "Legendary",
+        "level": "Titan",
         "images": {
             "fullBody": "./assets/images/fighters/fullbody/devil-jin.png",
             "background": "./assets/images/fighters/backgrounds/devil-jin-bg.png",
@@ -226,7 +226,7 @@
         "fightingStyle": "Ansatsuken",
         "bornIn": "Unknown",
         "nationality": "Oyashima",
-        "level": "Legendary",
+        "level": "Titan",
         "images": {
             "fullBody": "./assets/images/fighters/fullbody/akuma.png",
             "background": "./assets/images/fighters/backgrounds/akuma-bg.png",
@@ -239,7 +239,7 @@
         "fightingStyle": "Ancient Mishima Karate",
         "bornIn": "1968",
         "nationality": "Japan",
-        "level": "Legendary",
+        "level": "Titan",
         "images": {
             "fullBody": "./assets/images/fighters/fullbody/devil-kazuya.png",
             "background": "./assets/images/fighters/backgrounds/devil-kazuya-bg.png",
@@ -252,7 +252,7 @@
         "fightingStyle": "Dark Magic",
         "bornIn": "Unknown",
         "nationality": "Unknown",
-        "level": "Legendary",
+        "level": "Titan",
         "images": {
             "fullBody": "./assets/images/fighters/fullbody/ogre.png",
             "background": "./assets/images/fighters/backgrounds/ogre-bg.png",
