@@ -134,6 +134,9 @@ export class CharacterSelectionComponent implements OnInit {
         this.isFightActive = false;
         document.body.style.overflow = 'auto';
 
+        const nextSound = new Audio('./assets/audio/intro.mp3');
+        nextSound.play();
+
         // Shuffle arenas
         this.characterService.getArenas().subscribe((shuffledArenas) => {
             this.arenas = shuffledArenas;
