@@ -135,7 +135,7 @@ export class CharacterService {
 
             const fightMusic = new Audio('./assets/audio/samurai-lofium.mp3');
             const youLose = new Audio('./assets/audio/you-lose.mp3');
-            const youWin = new Audio('./assets/audio/gong.mp3');
+            const youWin = new Audio('./assets/audio/you-win.mp3');
 
             // Show fight GIF
             if (gifElement) {
