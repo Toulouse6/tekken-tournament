@@ -1,11 +1,12 @@
 import { Injectable, EventEmitter } from '@angular/core';
 import { Observable, of, zip } from 'rxjs';
-import { Character } from '../models/character.model';
+import { Character, FighterLevel } from '../models/character.model';
 import charactersData from '../../assets/characters.json';
 
 @Injectable({
     providedIn: 'root',
 })
+
 export class CharacterService {
 
     // All Arenas
@@ -79,6 +80,39 @@ export class CharacterService {
         return (currentIndex - 1 + length) % length;
     }
 
+    // Win chance based on levels
+    getWinChance(level1: FighterLevel, level2: FighterLevel): number {
+        const chances = {
+            "Legendary": {
+                "Legendary": 0.5,
+                "Tekken Lord": 0.6,
+                "Ultimate Fighter": 0.8,
+                "Elite": 0.9
+            },
+            "Tekken Lord": {
+                "Legendary": 0.4,
+                "Tekken Lord": 0.5,
+                "Ultimate Fighter": 0.6,
+                "Elite": 0.8
+            },
+            "Ultimate Fighter": {
+                "Legendary": 0.2,
+                "Tekken Lord": 0.4,
+                "Ultimate Fighter": 0.5,
+                "Elite": 0.6
+            },
+            "Elite": {
+                "Legendary": 0.1,
+                "Tekken Lord": 0.2,
+                "Ultimate Fighter": 0.4,
+                "Elite": 0.5
+            }
+        };
+    
+        return chances[level1][level2];
+    }
+    
+
     // Start Fight
     startFight(fighter1: Character, fighter2: Character, resetCallback: () => void): void {
 
@@ -94,9 +128,11 @@ export class CharacterService {
         }
 
         setTimeout(() => {
+            // Win chances
+            const winChance = this.getWinChance(fighter1.level, fighter2.level);
+            const winner = Math.random() < winChance ? fighter1 : fighter2;
+            const loser = winner === fighter1 ? fighter2 : fighter1; 
 
-            const winner = Math.random() < 0.5 ? fighter1 : fighter2;
-            const loser = winner === fighter1 ? fighter2 : fighter1;
             const fightMusic = new Audio('./assets/audio/samurai-lofium.mp3');
             const youLose = new Audio('./assets/audio/you-lose.mp3');
             const youWin = new Audio('./assets/audio/gong.mp3');

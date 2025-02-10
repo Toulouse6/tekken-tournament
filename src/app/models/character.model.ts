@@ -1,7 +1,9 @@
+export type FighterLevel = "Legendary" | "Tekken Lord" | "Ultimate Fighter" | "Elite";
+
 export interface Character {
     id: number;
     name: string;
-    level: string;
+    level: FighterLevel; 
     fightingStyle: string;
     nationality: string;
     bornIn: any;
@@ -10,5 +12,4 @@ export interface Character {
       background: string;
       headshot: string;
     };
-  }
-  
+}
