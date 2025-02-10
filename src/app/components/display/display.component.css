@@ -1,4 +1,11 @@
-/* Background */
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 90%;
+    }
+}
 
 .display {
     display: flex;
@@ -74,21 +81,23 @@
 }
 
 .attributes {
+    width: 90%;
     white-space: nowrap;
     margin-top: -20rem;
     color: white;
     padding: 0.5rem;
     border-radius: 0.5rem;
-    width: 90%;
     animation: fadeIn 0.5s ease-in-out;
-}
-
-.fighter2 .attributes {
-    text-align: left;
 }
 
 .fighter1 .attributes {
     text-align: right !important;
+    direction: rtl;
+}
+
+.fighter2 .attributes {
+    text-align: left;
+    direction: ltr;
 }
 
 .attributes p {
@@ -96,6 +105,11 @@
     margin: 0.2rem 0;
     line-height: 1.1;
     font-size: 1.6rem;
+    display: block;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typing 3s steps(30) 1s forwards;
+    width: 0;
 }
 
 .attributes h4 {
@@ -103,6 +117,7 @@
     font-family: 'title', sans-serif;
     font-size: 2.8rem;
     color: #ba892d;
+    width: 90%;
 }
 
 
@@ -266,7 +281,7 @@
 
     .attributes h4 {
         font-size: 2rem;
-            margin: 3rem 0 0.5rem 0;
+        margin: 3rem 0 0.5rem 0;
     }
 
     .attributes p {
@@ -308,7 +323,7 @@
 
     .attributes h4 {
         font-size: 1.8rem;
-     }
+    }
 
     .fight-gif {
         margin-top: -30%;

@@ -24,6 +24,11 @@ export class AppComponent implements OnInit {
     constructor(private characterService: CharacterService) { }
 
     ngOnInit(): void {
+        // Intro sound
+        if (typeof window !== 'undefined' && typeof Audio !== 'undefined') {
+            const introSound = new Audio('./assets/audio/intro.mp3');
+            introSound.play();
+        }
         // Load arenas
         this.characterService.getArenas().subscribe((data) => {
             this.arenas = data;
@@ -46,7 +51,7 @@ export class AppComponent implements OnInit {
     getArenasImage(): string {
         const selectedArena = this.arenas.find((s) => s.name === this.arena);
 
-        
+
         return selectedArena ? selectedArena.image : './assets/images/arenas/default-arena-bg.png'; // Fallback image
     }
 

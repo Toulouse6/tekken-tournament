@@ -83,28 +83,28 @@ export class CharacterService {
     // Win chance based on levels
     getWinChance(level1: FighterLevel, level2: FighterLevel): number {
         const chances = {
-            "Legendary": {
-                "Legendary": 0.5,
+            "Titan": {
+                "Titan": 0.5,
                 "Tekken Lord": 0.6,
-                "Ultimate Fighter": 0.8,
+                "Supreme": 0.8,
                 "Elite": 0.9
             },
             "Tekken Lord": {
-                "Legendary": 0.4,
+                "Titan": 0.4,
                 "Tekken Lord": 0.5,
-                "Ultimate Fighter": 0.6,
+                "Supreme": 0.6,
                 "Elite": 0.8
             },
-            "Ultimate Fighter": {
-                "Legendary": 0.2,
+            "Supreme": {
+                "Titan": 0.2,
                 "Tekken Lord": 0.4,
-                "Ultimate Fighter": 0.5,
+                "Supreme": 0.5,
                 "Elite": 0.6
             },
             "Elite": {
-                "Legendary": 0.1,
+                "Titan": 0.1,
                 "Tekken Lord": 0.2,
-                "Ultimate Fighter": 0.4,
+                "Supreme": 0.4,
                 "Elite": 0.5
             }
         };
@@ -135,7 +135,7 @@ export class CharacterService {
 
             const fightMusic = new Audio('./assets/audio/samurai-lofium.mp3');
             const youLose = new Audio('./assets/audio/you-lose.mp3');
-            const youWin = new Audio('./assets/audio/you-win.mp3');
+            const youWin = new Audio('./assets/audio/gong.mp3');
 
             // Show fight GIF
             if (gifElement) {

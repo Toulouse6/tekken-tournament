@@ -1,4 +1,4 @@
-export type FighterLevel = "Legendary" | "Tekken Lord" | "Ultimate Fighter" | "Elite";
+export type FighterLevel = "Titan" | "Tekken Lord" | "Supreme" | "Elite";
 
 export interface Character {
     id: number;
