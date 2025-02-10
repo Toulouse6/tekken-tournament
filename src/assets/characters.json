@@ -31,7 +31,7 @@
         "fightingStyle": "Lucha Libre Wrestling",
         "bornIn": "1970",
         "nationality": "Mexico",
-        "level": "Elite",     
+        "level": "Ultimate Fighter",     
         "images": {
             "fullBody": "./assets/images/fighters/fullbody/king.png",
             "background": "./assets/images/fighters/backgrounds/king-bg.png",
