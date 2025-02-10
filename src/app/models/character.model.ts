@@ -1,6 +1,7 @@
 export interface Character {
     id: number;
     name: string;
+    level: string;
     fightingStyle: string;
     nationality: string;
     bornIn: any;
