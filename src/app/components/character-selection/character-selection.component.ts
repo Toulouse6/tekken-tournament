@@ -36,8 +36,11 @@ export class CharacterSelectionComponent implements OnInit {
     }
 
     ngOnInit(): void {
+        const introSound = new Audio('./assets/audio/intro.mp3');
         this.characterService.getCharacters().subscribe((data) => this.characters = data);
         this.characterService.getArenas().subscribe((data) => this.arenas = data);
+      
+        introSound.play();
     };
 
     // Character Selection
@@ -134,8 +137,8 @@ export class CharacterSelectionComponent implements OnInit {
         this.isFightActive = false;
         document.body.style.overflow = 'auto';
 
-        const nextSound = new Audio('./assets/audio/intro.mp3');
-        nextSound.play();
+        const introSound = new Audio('./assets/audio/intro.mp3');
+        introSound.play();
 
         // Shuffle arenas
         this.characterService.getArenas().subscribe((shuffledArenas) => {
