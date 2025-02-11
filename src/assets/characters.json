@@ -31,7 +31,7 @@
         "fightingStyle": "Lucha Libre Wrestling",
         "bornIn": "1970",
         "nationality": "Mexico",
-        "level": "Supreme",     
+        "level": "Supreme",
         "images": {
             "fullBody": "./assets/images/fighters/fullbody/king.png",
             "background": "./assets/images/fighters/backgrounds/king-bg.png",
@@ -129,6 +129,13 @@
             "headshot": "./assets/images/fighters/headshots/hwoarang-headshot.png"
         }
     },
+    {
+        "id": 0,
+        "name": "Chicken",
+        "images": {
+            "headshot": "./assets/images/fighters/headshots/chicken-headshot.png"
+        }
+    },    
     {
         "id": 11,
         "name": "Jack",

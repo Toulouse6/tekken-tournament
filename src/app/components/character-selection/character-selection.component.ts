@@ -46,6 +46,13 @@ export class CharacterSelectionComponent implements OnInit {
     }
 
     toggleFighterSelection(character: Character): void {
+
+        if (character.images.headshot.includes('chicken-headshot.png')) {
+            const chickenSound = new Audio('./assets/audio/chicken.mp3');
+            chickenSound.play();
+            return;
+        }
+
         const fighters = this.characterService.toggleFighterSelection(character, this.fighter1, this.fighter2);
         this.fighter1 = fighters.fighter1;
         this.fighter2 = fighters.fighter2;
