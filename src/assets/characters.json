@@ -151,6 +151,19 @@
     },
     {
         "id": 12,
+        "name": "Steve Fox",
+        "fightingStyle": "Boxing",
+        "bornIn": "United Kingdom",
+        "nationality": "British",
+        "level": "Elite",
+        "images": {
+            "fullBody": "./assets/images/fighters/fullbody/steve.png",
+            "background": "./assets/images/fighters/backgrounds/steve-bg.png",
+            "headshot": "./assets/images/fighters/headshots/steve-headshot.png"
+        }
+    },    
+    {
+        "id": 13,
         "name": "Fahkumram",
         "fightingStyle": "Muay Thai Art",
         "bornIn": "1985",
@@ -163,7 +176,7 @@
         }
     },
     {
-        "id": 13,
+        "id": 14,
         "name": "Armor King",
         "fightingStyle": "Lucha Libre Wrestling",
         "bornIn": "1970",
@@ -176,7 +189,7 @@
         }
     },
     {
-        "id": 14,
+        "id": 15,
         "name": "Wang Jinrei",
         "fightingStyle": "Hakkyoku-ken",
         "bornIn": "1936",
@@ -189,7 +202,7 @@
         }
     },
     {
-        "id": 15,
+        "id": 16,
         "name": "Kazumi Mishima",
         "fightingStyle": "Hachijo Style Karate",
         "bornIn": "1950",
@@ -202,7 +215,7 @@
         }
     },
     {
-        "id": 16,
+        "id": 17,
         "name": "Jinpachi Mishima",
         "fightingStyle": "Ancient Mishima Karate",
         "bornIn": "1937",
@@ -215,7 +228,7 @@
         }
     },
     {
-        "id": 17,
+        "id": 18,
         "name": "Devil Jin",
         "fightingStyle": "Ancient Mishima Karate",
         "bornIn": "1979",
@@ -228,7 +241,7 @@
         }
     },
     {
-        "id": 18,
+        "id": 19,
         "name": "Akuma",
         "fightingStyle": "Ansatsuken",
         "bornIn": "Unknown",
@@ -241,7 +254,7 @@
         }
     },
     {
-        "id": 19,
+        "id": 20,
         "name": "Devil Kazuya",
         "fightingStyle": "Ancient Mishima Karate",
         "bornIn": "1968",
@@ -254,7 +267,7 @@
         }
     },
     {
-        "id": 20,
+        "id": 21,
         "name": "Ancient Ogre",
         "fightingStyle": "Dark Magic",
         "bornIn": "Unknown",
