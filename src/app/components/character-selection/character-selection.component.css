@@ -67,6 +67,7 @@
 .character-tile.chicken-effect:hover {
     border-color: silver !important;
     box-shadow: 0 0 8px rgba(192, 192, 192, 0.8), 0 0 18px rgba(211, 211, 211, 0.6), 0 0 28px rgba(220, 220, 220, 0.5);
+    transform: scale(1);
 }
 
 .character-tile p {
