@@ -46,21 +46,27 @@
 }
 
 .character-tile:hover {
+    border-color: silver !important;
+    box-shadow: 0 0 8px rgba(192, 192, 192, 0.8), 0 0 18px rgba(211, 211, 211, 0.6), 0 0 28px rgba(220, 220, 220, 0.5);
     transform: scale(1.1);
-    border-color: #ba892d;
-    animation: shiny-effect 3s infinite linear;
 }
 
 .character-tile.selected {
     transform: scale(1.1);
     border-color: #ba892d;
-    box-shadow: 0 0 5px rgba(215, 187, 3, 0.8), 0 0 15px rgba(226, 162, 40, 0.6), 0 0 20px rgba(255, 215, 0, 0.5);
+    box-shadow: 0 0 10px rgba(215, 187, 3, 0.8), 0 0 20px rgba(226, 162, 40, 0.6), 0 0 30px rgba(255, 215, 0, 0.5);
 }
 
 .character-tile.disabled {
     filter: grayscale(100%);
     pointer-events: none;
     opacity: 0.7;
+}
+
+/* For Chicken */
+.character-tile.chicken-effect:hover {
+    border-color: #ba892d;
+    box-shadow: 0 0 10px rgba(215, 187, 3, 0.8), 0 0 20px rgba(226, 162, 40, 0.6), 0 0 30px rgba(255, 215, 0, 0.5);
 }
 
 .character-tile p {
