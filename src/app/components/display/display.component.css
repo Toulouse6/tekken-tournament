@@ -2,6 +2,7 @@
     from {
         width: 0;
     }
+
     to {
         width: 90%;
     }
@@ -62,7 +63,6 @@
 /* VS Frame */
 
 .fullBody,
-.attributes,
 .vsText {
     position: relative;
     z-index: 9997;
@@ -88,6 +88,7 @@
     padding: 0.5rem;
     border-radius: 0.5rem;
     animation: fadeIn 0.5s ease-in-out;
+    z-index: 9996;
 }
 
 .fighter1 .attributes {
@@ -220,6 +221,8 @@
     height: auto;
     opacity: 0.9;
 }
+
+
 
 /* Responsive */
 @media (max-width: 1200px) {
@@ -397,53 +400,6 @@
     .fight-gif {
         margin-top: -32%;
         width: 55%;
-    }
-
-}
-
-
-@media (max-width: 410px) {
-
-    .fighter img.fullBody {
-        top: 6rem;
-    }
-
-    .fighter {
-        height: 42%;
-    }
-
-    .vsFrame {
-        gap: 0;
-    }
-
-    .attributes h4 {
-        font-size: 1rem;
-    }
-
-    .fight-gif {
-        margin-top: -25%;
-        width: 60%;
-    }
-
-}
-
-@media (max-width: 390px) {
-
-    .fighter img.fullBody {
-        top: 5.2rem !important;
-        height: 12.5rem;
-    }
-
-    .vsFrame {
-        height: 90%;
-    }
-
-    .fighter {
-        height: 45%;
-    }
-
-    .fight-gif {
-        margin-top: -40%;
     }
 
 }
