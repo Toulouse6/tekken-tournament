@@ -488,7 +488,7 @@ body.fight-active {
         flex-wrap: nowrap;
         align-items: center !important;
         justify-content: flex-start !important;
-        flex-direction: row;
+        flex-direction: column;
         gap: 1rem !important;
         height: 12vh !important;
         overflow-x: auto !important;
@@ -508,7 +508,7 @@ body.fight-active {
     .controls-con {
         margin-top: 5rem !important;
         display: flex !important;
-        flex-direction: column !important;
+        flex-direction: row !important;
         justify-content: center !important;
         align-items: center !important;
         width: 100% !important;
@@ -538,7 +538,7 @@ body.fight-active {
         border: 2px solid #ba892d !important;
         color: #ba892d !important;
         box-shadow: 0 0 5px rgba(215, 187, 3, 0.8), 0 0 15px rgba(226, 162, 40, 0.6), 0 0 20px rgba(255, 215, 0, 0.5) !important;
-        margin-bottom: 7rem !important;
+        margin-bottom: 6rem !important;
     }
 
 }
