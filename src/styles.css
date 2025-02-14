@@ -439,6 +439,7 @@ body.fight-active {
 
     .fighter {
         height: 75% !important;
+        margin: auto 3rem;
     }
 
 
@@ -486,16 +487,16 @@ body.fight-active {
         justify-content: flex-start !important;
         flex-direction: column;
         gap: 1rem !important;
-        height: 10vh !important;
+        height: 12vh !important;
         overflow: auto !important;
         width: 95% !important;
     }
 
     .character-tile {
-        height: 3rem !important;
-        width: 3rem !important;
-        min-height: 3rem !important;
-        min-width: 3rem !important;
+        height: 2.5rem !important;
+        width: 2.5rem !important;
+        min-height: 2.5rem !important;
+        min-width: 2.5rem !important;
         margin: 0.5rem auto !important;
     }
 
