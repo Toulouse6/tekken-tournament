@@ -508,7 +508,7 @@ body.fight-active {
     .controls-con {
         margin-top: 5rem !important;
         display: flex !important;
-        flex-direction: row !important;
+        flex-direction: column !important;
         justify-content: center !important;
         align-items: center !important;
         width: 100% !important;
