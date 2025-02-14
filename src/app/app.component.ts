@@ -29,9 +29,12 @@ export class AppComponent implements OnInit {
     constructor(private characterService: CharacterService, @Inject(PLATFORM_ID) private platformId: object) { }
 
     ngOnInit(): void {
+
+
         if (isPlatformBrowser(this.platformId)) {
             this.lockOrientation();
             this.updateOrientation();
+            document.querySelector('.display')?.scrollIntoView({ behavior: 'smooth' });
 
             // Intro sound
             if (typeof window !== 'undefined' && typeof Audio !== 'undefined') {
@@ -49,7 +52,7 @@ export class AppComponent implements OnInit {
     updateOrientation() {
         if (isPlatformBrowser(this.platformId)) {
             const isLandscape = window.innerWidth > window.innerHeight;
-            
+
             if (isLandscape) {
                 document.body.classList.add('landscape-mode');
                 console.log('Landscape mode enabled');
@@ -57,7 +60,7 @@ export class AppComponent implements OnInit {
                 document.body.classList.remove('landscape-mode');
             }
         }
-    }    
+    }
 
     async lockOrientation() {
         if (isPlatformBrowser(this.platformId) && typeof window !== 'undefined') {
