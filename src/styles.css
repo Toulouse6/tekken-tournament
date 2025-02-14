@@ -457,7 +457,8 @@ body.fight-active {
     /* Fighters */
     .fighter img.fullBody {
         margin-top: 1rem !important;
-        transform: translateX(0) !important;;
+        transform: translateX(0) !important;
+        ;
         height: 13.5rem !important;
         bottom: 0 !important;
         top: 0 !important;
@@ -470,18 +471,20 @@ body.fight-active {
     }
 
     .display.fight-active .fighter.fighter1 img.fullBody {
-        transition: transform 3s ease-in-out !important;;
+        transition: transform 3s ease-in-out !important;
+        ;
         transform: translateX(12vw) !important;
     }
-    
+
     .display.fight-active .fighter.fighter2 img.fullBody {
-        transition: transform 3s ease-in-out !important;;
+        transition: transform 3s ease-in-out !important;
+        ;
         transform: translateX(-12vw) !important;
     }
 
     .character-grid {
         margin: 0;
-        padding: 0 1rem 2rem !important;
+        padding: 0 1rem!important;
         display: flex !important;
         align-items: center !important;
         justify-content: left !important;
@@ -537,7 +540,7 @@ body.fight-active {
         border: 2px solid #ba892d !important;
         color: #ba892d !important;
         box-shadow: 0 0 5px rgba(215, 187, 3, 0.8), 0 0 15px rgba(226, 162, 40, 0.6), 0 0 20px rgba(255, 215, 0, 0.5) !important;
-       margin-top: 0;
+        margin-top: 0;
         margin-bottom: 7rem !important;
     }
 
