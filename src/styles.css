@@ -99,22 +99,6 @@ body {
     filter: grayscale(100%) !important;
 }
 
-.fighter1,
-.fighter2 {
-    -webkit-filter: grayscale(0%);
-    filter: grayscale(0%);
-}
-
-
-
-.fighter1 {
-    margin-right: 0;
-}
-
-.fighter2 {
-    margin-left: 0;
-}
-
 /* Title */
 .title h1 {
     font-family: 'sub-title', sans-serif;
@@ -207,7 +191,7 @@ body.fight-active {
 /* Full Body in Active */
 .display.fight-active .fighter img.fullBody {
     transition: transform 2.5s ease-in-out, filter 2.5s ease-in-out;
-    margin-top: 5rem !important;
+    margin-top: 10rem !important;
 }
 
 .display.fight-active .fighter.fighter1 img.fullBody {
@@ -224,7 +208,6 @@ body.fight-active {
     width: auto;
     height: 28rem;
     position: absolute;
-    bottom: 0.5rem;
     transition: filter 0.3s ease-in-out;
 }
 
@@ -271,22 +254,30 @@ body.fight-active {
 
 @media (max-width: 1200px) {
 
-
-    .fighter img.fullBody {
-        height: 22rem;
-    }
-
     .winner-text {
         top: 20%;
         font-size: 4rem;
     }
+
+    .display.fight-active .fighter img.fullBody {
+        margin-top: 13.5rem !important;
+    }
+
+}
+
+@media (max-width: 1024px) {
+
+    .display.fight-active .fighter img.fullBody {
+        margin-top: 14rem !important;
+    }
+
 }
 
 
 @media (max-width: 780px) {
 
     .display.fight-active .fighter img.fullBody {
-        margin-top: 2rem !important;
+        margin-top: 10rem !important;
     }
 
     .winner-text {
@@ -302,14 +293,15 @@ body.fight-active {
         margin-top: 0 !important;
     }
 
+
+    .display.fight-active .fighter img.fullBody {
+        margin-top: 6.5rem !important;
+    }
+
 }
 
 
 @media (max-width: 610px) {
-
-    .display.fight-active .fighter img.fullBody {
-        margin-top: 6rem !important;
-    }
 
     .winner-text {
         top: 25%;
@@ -324,6 +316,10 @@ body.fight-active {
     .display.fight-active .fighter.fighter2 img.fullBody {
         transition: transform 3s ease-in-out;
         transform: translateX(-2vw);
+    }
+
+    .display.fight-active .fighter img.fullBody {
+        margin-top: 6rem !important;
     }
 
 }
@@ -341,13 +337,17 @@ body.fight-active {
         font-size: 2.5rem !important;
     }
 
+    .display.fight-active .fighter img.fullBody {
+        margin-top: 5.5rem !important;
+    }
+
 }
 
 
 @media(max-width: 500px) {
 
     .display.fight-active .fighter img.fullBody {
-        margin-top: 7.5rem !important;
+        margin-top: 6rem !important;
     }
 
 }

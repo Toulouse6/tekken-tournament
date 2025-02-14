@@ -111,6 +111,7 @@
     white-space: nowrap;
     animation: typing 3s steps(30) 1s forwards;
     width: 0;
+    z-index: 9998 !important;
 }
 
 .attributes h4 {
@@ -119,10 +120,25 @@
     font-size: 2.8rem;
     color: #ba892d;
     width: 90%;
+    z-index: 9996;
 }
 
 
 /* Fighters Full Body */
+
+.fighter1,
+.fighter2 {
+    -webkit-filter: grayscale(0%);
+    filter: grayscale(0%);
+}
+
+.fighter1 img.fullBody  {
+    margin-right: 4.5rem;
+}
+
+.fighter2 img.fullBody  {
+    margin-left: 4.5rem;
+}
 
 .fighter img.fullBody {
     height: auto;
@@ -235,6 +251,10 @@
         font-size: 1.4rem;
     }
 
+    .fighter img.fullBody {
+        height: 22rem;
+    }
+
     .fight-gif {
         margin-top: 3rem;
         width: 20rem;
@@ -251,11 +271,20 @@
     }
 
     .fighter img.fullBody {
-        max-height: 20rem;
+        max-height: 22rem;
+        margin-top: 7rem;
     }
 
     .attributes p {
         font-size: 1.2rem;
+    }
+
+    .fighter1 img.fullBody  {
+        margin-right: 2rem;
+    }
+    
+    .fighter2 img.fullBody  {
+        margin-left: 2rem;
     }
 
 }
@@ -264,7 +293,7 @@
 @media (max-width: 780px) {
 
     .display {
-        height: 65vh;
+        height: 60vh;
     }
 
     .vsFrame {
@@ -292,7 +321,16 @@
     }
 
     .fighter img.fullBody {
-        top: 6rem;
+        margin-top: 4rem;
+        max-height: 20rem;
+    }
+
+    .fighter1 img.fullBody  {
+        margin-right: 1rem;
+    }
+    
+    .fighter2 img.fullBody  {
+        margin-left: 1rem;
     }
 
     .vsText {
@@ -316,12 +354,8 @@
 @media (max-width: 700px) {
 
     .fighter img.fullBody {
-        margin-top: 0.5rem;
-        max-height: 21rem;
-    }
-
-    .fighter img.fullBody {
-        top: 7.5rem;
+        max-height: 19rem;
+        top: 2.5rem;
     }
 
     .attributes h4 {
@@ -339,7 +373,7 @@
 @media (max-width: 610px) {
 
     .display {
-        height: 75vh;
+        height: 60vh;
     }
 
     .vsFrame {
@@ -357,8 +391,17 @@
 
     .fighter img.fullBody {
         height: 18rem;
-        top: 8rem;
+        top: 4rem;
     }
+
+    .fighter1 img.fullBody  {
+        margin-right: -1rem;
+    }
+    
+    .fighter2 img.fullBody  {
+        margin-left: -1rem;
+    }
+
 
     .fight-gif {
         margin-top: -35%;
@@ -389,8 +432,8 @@
     }
 
     .fighter img.fullBody {
-        height: 14rem;
-        top: 6rem;
+        height: 15rem;
+        top: 3rem;
     }
 
     .attributes h4 {
