@@ -357,38 +357,37 @@ body.fight-active {
 
     /* Force rotation */
 
-    html {
-        overflow-y: auto !important;
-        overflow-x: hidden !important;
+    html, body {
+        overflow: hidden !important; 
         height: 100vh !important;
-        width: 100vh !important;
+        width: 100vw !important; 
         margin: 0 !important;
         padding: 0 !important;
-    }
-
-    body {
-        transform: rotate(90deg) !important;
-        min-width: 100vh !important;
-        height: 100% !important;
-        position: absolute !important;
-        overflow-y: auto !important;
-        background-color: #131313 !important;
         display: flex !important;
         flex-direction: column !important;
-        align-items: end !important;
-        justify-content: end !important;
-        padding-top: 0 !important;
+        align-items: center !important;
+        justify-content: space-around !important; 
+        background-color: #131313 !important;
     }
-
-    .display {
+    
+    body {
+        transform: rotate(90deg) !important;
+        transform-origin: center center !important;
+        position: absolute !important;
         width: 100vh !important;
+        height: 100vw !important;  
+    }
+    
+    .display {
+        justify-content: flex-start !important;
+        width: 100% !important;
         height: 33vh !important;
         overflow-y: auto !important;
         display: flex !important;
         flex-direction: column !important;
         align-items: center !important;
-        padding-top: 0 !important;
-        margin-top: 0 !important;
+        padding: 0 !important;
+        margin: 0 !important;
     }
 
     /* Attributes */
@@ -483,14 +482,15 @@ body.fight-active {
     }
 
     .character-grid {
-        margin: auto !important;
-        padding: 1.5rem 1rem 1.5rem !important;
+        margin: 0 auto !important;
+        padding: 0.5rem 1rem 1.5rem !important;
         display: flex !important;
+        flex-wrap: nowrap;
         align-items: center !important;
-        justify-content: left !important;
-        flex-direction: column;
+        justify-content: flex-start !important;
+        flex-direction: row;
         gap: 1rem !important;
-        max-height: 8vh !important;
+        height: 12vh !important;
         overflow-x: auto !important;
         overflow-y: hidden !important;
         width: 95% !important;
@@ -501,24 +501,22 @@ body.fight-active {
         width: 3rem !important;
         min-height: 3rem !important;
         min-width: 3rem !important;
-        margin-bottom: 0.5rem !important;
+        margin: 0.5rem auto !important;
     }
 
     /* Controls & Layout */
     .controls-con {
-        margin-top: 0 !important;
+        margin-top: 5rem !important;
         display: flex !important;
         flex-direction: row !important;
         justify-content: center !important;
         align-items: center !important;
-        gap: 2rem !important;
         width: 100% !important;
-        top: -4.5vh !important;
     }
 
     .arena-selection {
         flex-direction: row !important;
-        gap: 3rem !important;
+        gap: 5rem !important;
         justify-content: center !important;
         width: 100% !important;
     }
@@ -528,19 +526,18 @@ body.fight-active {
     }
 
     .arena-nav {
-        font-size: 1.6rem !important;
+        font-size: 1.5rem !important;
     }
 
     /* Fight Button */
     .fight-button {
         position: absolute !important;
-        font-size: 1.4rem !important;
-        padding: 0.8rem 2rem 0.6rem 2rem !important;
-        height: 50px !important;
+        font-size: 1.5rem !important;
+        padding: 0.7rem 2rem 0.5rem 2rem !important;
+        height: 45px !important;
         border: 2px solid #ba892d !important;
         color: #ba892d !important;
         box-shadow: 0 0 5px rgba(215, 187, 3, 0.8), 0 0 15px rgba(226, 162, 40, 0.6), 0 0 20px rgba(255, 215, 0, 0.5) !important;
-        margin-top: 0;
         margin-bottom: 7rem !important;
     }
 
