@@ -277,7 +277,7 @@ body.fight-active {
 @media (max-width: 780px) {
 
     .display.fight-active .fighter img.fullBody {
-        margin-top: 10rem !important;
+        margin-top: 1rem !important;
     }
 
     .winner-text {
@@ -359,7 +359,7 @@ body.fight-active {
 
     html {
         overflow-y: auto !important;
-        overflow-x: auto !important;
+        overflow-x: hidden !important;
         height: 100vh !important;
         width: 100vh !important;
         margin: 0 !important;
@@ -453,6 +453,7 @@ body.fight-active {
 
     /* Fighters */
     .fighter img.fullBody {
+        margin-top: 1rem !important;
         transform: translateX(0) !important;;
         height: 13.5rem !important;
         bottom: 0 !important;
@@ -461,7 +462,7 @@ body.fight-active {
     }
 
     .display.fight-active .fighter img.fullBody {
-        top: -6rem !important;
+        margin-top: 2rem !important;
         bottom: 0 !important;
     }
 
@@ -476,7 +477,8 @@ body.fight-active {
     }
 
     .character-grid {
-        padding: 1rem 1rem 2rem !important;
+        margin: 0;
+        padding: 0 1rem 2rem !important;
         display: flex !important;
         align-items: center !important;
         justify-content: left !important;
@@ -489,6 +491,8 @@ body.fight-active {
     }
 
     .character-tile {
+        height: 3rem !important;
+        width: 3rem !important;
         min-height: 3rem !important;
         min-width: 3rem !important;
         margin-bottom: 0.5rem !important;
@@ -530,6 +534,7 @@ body.fight-active {
         border: 2px solid #ba892d !important;
         color: #ba892d !important;
         box-shadow: 0 0 5px rgba(215, 187, 3, 0.8), 0 0 15px rgba(226, 162, 40, 0.6), 0 0 20px rgba(255, 215, 0, 0.5) !important;
+       margin-top: 0;
         margin-bottom: 7rem !important;
     }
 
