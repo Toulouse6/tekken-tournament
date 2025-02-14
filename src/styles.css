@@ -483,8 +483,8 @@ body.fight-active {
     }
 
     .character-grid {
-        margin: 0;
-        padding: 0 1rem!important;
+        margin: auto !important;
+        padding: 1.5rem 1rem 1.5rem !important;
         display: flex !important;
         align-items: center !important;
         justify-content: left !important;
