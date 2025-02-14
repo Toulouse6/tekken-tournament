@@ -277,7 +277,7 @@ body.fight-active {
 @media (max-width: 780px) {
 
     .display.fight-active .fighter img.fullBody {
-        margin-top: 1rem !important;
+        margin-top: 9rem !important;
     }
 
     .winner-text {
