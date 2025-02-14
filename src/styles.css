@@ -438,7 +438,7 @@ body.fight-active {
     }
 
     .fighter {
-        height: 80% !important;
+        height: 75% !important;
     }
 
 
@@ -486,7 +486,7 @@ body.fight-active {
         justify-content: flex-start !important;
         flex-direction: column;
         gap: 1rem !important;
-        max-height: 10vh !important;
+        height: 10vh !important;
         overflow: auto !important;
         width: 95% !important;
     }
