@@ -375,8 +375,8 @@ body.fight-active {
         background-color: #131313 !important;
         display: flex !important;
         flex-direction: column !important;
-        align-items: flex-start !important;
-        justify-content: flex-start !important;
+        align-items: end !important;
+        justify-content: end !important;
         padding-top: 0 !important;
     }
 
@@ -387,7 +387,7 @@ body.fight-active {
         display: flex !important;
         flex-direction: column !important;
         align-items: center !important;
-        justify-content: flex-start !important;
+        justify-content: end !important;
         padding-top: 0 !important;
         margin-top: 0 !important;
     }
