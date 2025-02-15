@@ -462,19 +462,17 @@ body.fight-active {
     }
 
     .display.fight-active .fighter img.fullBody {
-        margin-top: 1rem !important;
+        margin-top: 1.5rem !important;
         bottom: 0 !important;
     }
 
     .display.fight-active .fighter.fighter1 img.fullBody {
         transition: transform 3s ease-in-out !important;
-        ;
         transform: translateX(12vw) !important;
     }
 
     .display.fight-active .fighter.fighter2 img.fullBody {
         transition: transform 3s ease-in-out !important;
-        ;
         transform: translateX(-12vw) !important;
     }
 
