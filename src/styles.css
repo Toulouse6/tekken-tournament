@@ -501,10 +501,10 @@ body.fight-active {
 
     .character-tile {
         justify-content: end;
-        height: 2.2rem !important;
-        width: 2.2rem !important;
-        min-height: 2.2rem !important;
-        min-width: 2.2rem !important;
+        height: 2rem !important;
+        width: 2rem !important;
+        min-height: 2rem !important;
+        min-width: 2rem !important;
         margin: 0.5rem auto !important;
     }
 
