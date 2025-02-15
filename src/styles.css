@@ -495,17 +495,18 @@ body.fight-active {
         height: 100% !important;
         max-height: 10vh !important;
         width: auto !important;
-        overflow-y: hidden !important;
-        overflow-x: auto !important;
+        overflow-y: auto !important;
+        overflow-x: hidden !important;
     }
 
     .character-tile {
         justify-content: center;
-        height: 2rem !important;
-        width: 2rem !important;
-        min-height: 2rem !important;
-        min-width: 2rem !important;
+        height: 1.8rem !important;
+        width: 1.8rem !important;
+        min-height: 1.8rem !important;
+        min-width: 1.8rem !important;
         margin: 0.5rem auto !important;
+        font-size: 0.5rem;
     }
 
     /* Controls & Layout */
