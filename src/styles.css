@@ -495,7 +495,8 @@ body.fight-active {
         height: 100% !important;
         max-height: 10vh !important;
         width: auto !important;
-        overflow: auto !important;
+        overflow-y: auto !important;
+        overflow-x: hidden !important;
     }
 
     .character-tile {
