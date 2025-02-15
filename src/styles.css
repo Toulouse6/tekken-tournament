@@ -486,7 +486,7 @@ body.fight-active {
         flex-direction: column;
         gap: 1rem !important;
         height: 10vh !important;
-        overflow: hidden !important;
+        overflow-y: hidden !important;
         overflow-x: auto !important;
     }
 
