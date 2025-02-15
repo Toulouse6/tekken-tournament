@@ -386,7 +386,7 @@ body.fight-active {
     }
 
     .display {
-        justify-content: flex-start !important;
+        justify-content: right !important;
         width: 100% !important;
         height: 39vh !important;
         overflow-y: auto !important;
@@ -395,6 +395,7 @@ body.fight-active {
         align-items: center !important;
         padding: 0 !important;
         margin: 0 !important;
+        top: 0;
     }
 
     /* Attributes */
@@ -485,10 +486,10 @@ body.fight-active {
 
     .character-grid {
         margin: 0 !important;
-        padding: 0 1rem !important;
+        padding: 1rem !important;
         display: flex !important;
         flex-wrap: nowrap;
-        align-items: center !important;
+        align-items: right !important;
         justify-content: flex-start !important;
         flex-direction: column;
         gap: 0.5rem !important;
@@ -499,12 +500,11 @@ body.fight-active {
     }
 
     .character-tile {
-        justify-content: center !important;
-        height: 1.5rem !important;
-        min-height: 1.5rem !important;
+        justify-content: right !important;
+        max-height: 1.2rem !important;
+        min-height: 1.2rem !important;
         width: 2.5rem !important;
         min-width: 2.5rem !important;
-        margin: 0.5rem auto !important;
         font-size: 0.5rem;
     }
 
