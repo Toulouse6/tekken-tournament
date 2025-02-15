@@ -488,7 +488,7 @@ body.fight-active {
         gap: 1rem !important;
         height: 10vh !important;
         min-height: 100% !important;
-        width: 100% !important;
+        width: 95% !important;
         overflow: auto !important;
     }
 
