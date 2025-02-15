@@ -460,7 +460,7 @@ body.fight-active {
 
     /* Fighters */
     .fighter img.fullBody {
-        margin-top: 0rem !important;
+        margin-top: 1rem !important;
         transform: translateX(0) !important;
         height: 13.5rem !important;
         bottom: 0 !important;
@@ -469,7 +469,7 @@ body.fight-active {
     }
 
     .display.fight-active .fighter img.fullBody {
-        margin-top: 1.5rem !important;
+        margin-top: 2rem !important;
         bottom: 0 !important;
     }
 
