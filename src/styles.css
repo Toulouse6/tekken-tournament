@@ -501,11 +501,14 @@ body.fight-active {
 
     .character-tile {
         justify-content: right !important;
-        max-height: 1.2rem !important;
-        min-height: 1.2rem !important;
+        max-height: 1.5rem !important;
+        min-height: 1.5rem !important;
         width: 2.5rem !important;
         min-width: 2.5rem !important;
-        font-size: 0.5rem;
+    }
+
+    .character-tile p {
+        display: none !important;
     }
 
     /* Controls & Layout */
