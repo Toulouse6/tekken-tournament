@@ -388,7 +388,7 @@ body.fight-active {
     .display {
         justify-content: flex-start !important;
         width: 100% !important;
-        height: 38vh !important;
+        height: 40vh !important;
         overflow-y: auto !important;
         display: flex !important;
         flex-direction: column !important;
