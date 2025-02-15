@@ -359,7 +359,7 @@ body.fight-active {
 
     html, body {
         overflow: hidden !important; 
-        height: 100vh !important;
+        height: 95vh !important;
         width: 100vw !important; 
         margin: 0 !important;
         padding: 0 !important;
@@ -374,14 +374,14 @@ body.fight-active {
         transform: rotate(90deg) !important;
         transform-origin: center center !important;
         position: absolute !important;
-        width: 100vh !important;
+        width: 95vh !important;
         height: 100vw !important;  
     }
     
     .display {
         justify-content: flex-start !important;
         width: 100% !important;
-        height: 33vh !important;
+        height: 35vh !important;
         overflow-y: auto !important;
         display: flex !important;
         flex-direction: column !important;
