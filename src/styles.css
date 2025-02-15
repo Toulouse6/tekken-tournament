@@ -499,7 +499,7 @@ body.fight-active {
     }
 
     .character-tile {
-        justify-content: center;
+        justify-content: center !important;
         height: 1.5rem !important;
         min-height: 1.5rem !important;
         width: 2.5rem !important;
