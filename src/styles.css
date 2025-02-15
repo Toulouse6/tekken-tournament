@@ -386,7 +386,7 @@ body.fight-active {
     }
 
     .display {
-        justify-content: right !important;
+        justify-content: center !important;
         width: 100% !important;
         height: 39vh !important;
         overflow-y: auto !important;
@@ -489,7 +489,7 @@ body.fight-active {
         padding: 1rem !important;
         display: flex !important;
         flex-wrap: nowrap;
-        align-items: right !important;
+        align-items: center !important;
         justify-content: flex-start !important;
         flex-direction: column;
         gap: 0.5rem !important;
@@ -500,7 +500,7 @@ body.fight-active {
     }
 
     .character-tile {
-        justify-content: right !important;
+        justify-content: center !important;
         max-height: 1.5rem !important;
         min-height: 1.5rem !important;
         width: 2.5rem !important;
