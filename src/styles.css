@@ -447,7 +447,7 @@ body.fight-active {
 
     .fighter {
         height: 75% !important;
-        margin: auto 3rem;
+        margin: auto 3rem !important;
     }
 
 
@@ -486,10 +486,10 @@ body.fight-active {
 
     .character-grid {
         margin: 0 !important;
-        padding: 1rem !important;
+        padding: 1rem 1.5rem !important;
         display: flex !important;
         flex-wrap: nowrap;
-        align-items: center !important;
+        align-items: right !important;
         justify-content: flex-start !important;
         flex-direction: column;
         gap: 0.5rem !important;
@@ -545,7 +545,7 @@ body.fight-active {
         border: 2px solid #ba892d !important;
         color: #ba892d !important;
         box-shadow: 0 0 5px rgba(215, 187, 3, 0.8), 0 0 15px rgba(226, 162, 40, 0.6), 0 0 20px rgba(255, 215, 0, 0.5) !important;
-        margin-bottom: 6rem !important;
+        margin-bottom: 7rem !important;
     }
 
 }
