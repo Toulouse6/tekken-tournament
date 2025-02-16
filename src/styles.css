@@ -366,7 +366,7 @@ body.fight-active {
         display: flex !important;
         flex-direction: column !important;
         align-items: center !important;
-        justify-content:center !important;
+        justify-content: center !important;
         background-color: #131313 !important;
     }
 
@@ -447,6 +447,8 @@ body.fight-active {
 
     .fighter {
         height: 75% !important;
+        min-width: 65% !important;
+        max-width: 65% !important;
         margin: auto 3rem !important;
     }
 
@@ -476,12 +478,12 @@ body.fight-active {
 
     .display.fight-active .fighter.fighter1 img.fullBody {
         transition: transform 3s ease-in-out !important;
-        transform: translateX(12vw) !important;
+        transform: translateX(15vw) !important;
     }
 
     .display.fight-active .fighter.fighter2 img.fullBody {
         transition: transform 3s ease-in-out !important;
-        transform: translateX(-12vw) !important;
+        transform: translateX(-15vw) !important;
     }
 
     .character-grid {
