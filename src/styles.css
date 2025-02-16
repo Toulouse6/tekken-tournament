@@ -387,7 +387,7 @@ body.fight-active {
 
     .display {
         justify-content: center !important;
-        width: 100% !important;
+        width: 90vh !important;
         height: 39vh !important;
         overflow-y: auto !important;
         display: flex !important;
@@ -396,6 +396,7 @@ body.fight-active {
         padding: 0 !important;
         margin: 0 !important;
         top: 0;
+        left: 2.5vh !important;
     }
 
     /* Attributes */
@@ -488,16 +489,16 @@ body.fight-active {
 
     .character-grid {
         margin: 0 !important;
-        padding: 1rem 0.5rem 1rem 1.5rem!important;
+        padding: 1rem 0rem 1rem 2rem !important;
         display: flex !important;
         flex-wrap: nowrap;
         align-items: center !important;
-        justify-content: center !important;
+        justify-content: flex-start !important;
         flex-direction: column;
         gap: 0.5rem !important;
         height: 100% !important;
         max-height: 11vh !important;
-        width: auto !important;
+        width: 90vh !important;
         overflow-x: auto !important;
     }
 
