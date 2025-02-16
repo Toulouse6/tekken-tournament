@@ -462,7 +462,7 @@ body.fight-active {
 
     /* Fighters */
     .fighter img.fullBody {
-        margin-top: 1rem !important;
+        margin-top: 2.5rem !important;
         transform: translateX(0) !important;
         height: 13.5rem !important;
         bottom: 0 !important;
@@ -471,7 +471,7 @@ body.fight-active {
     }
 
     .display.fight-active .fighter img.fullBody {
-        margin-top: 2rem !important;
+        margin-top: 4.5rem !important;
         bottom: 0 !important;
     }
 
@@ -512,7 +512,7 @@ body.fight-active {
         display: none !important;
     }
 
-    /* Controls & Layout */
+    /* Controls */
     .controls-con {
         margin-top: 4.5rem !important;
         display: flex !important;
