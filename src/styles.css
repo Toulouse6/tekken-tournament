@@ -394,7 +394,7 @@ body.fight-active {
         flex-direction: column !important;
         align-items: center !important;
         padding: 0 !important;
-        margin: 0 0 0 2vh !important;
+        margin: 0 !important;
         top: 0;
     }
 
