@@ -1,0 +1,8 @@
+{
+    "name": "Tekken Tournament",
+    "short_name": "Tekken",
+    "start_url": "/",
+    "display": "standalone",
+    "orientation": "landscape"
+  }
+  
