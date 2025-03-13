@@ -1,18 +1,18 @@
 <div class="selection-container">
-    
+
     <!-- Character Grid -->
     <div class="character-grid">
         <!-- Display Fighters -->
-        <div class="character-tile" *ngFor="let character of characters" 
-            (click)="toggleFighterSelection(character)"
-            [class.selected]="character === fighter1 || character === fighter2" 
-            [class.disabled]="isDisabled(character) || isFightActive"
-            [class.chicken-effect]="character.images.headshot.includes('chicken-headshot.png')"
-            [style.backgroundImage]="'url(' + character.images.headshot + ')'">
-            <p>{{ character.name }}</p>
-        </div>
+        <div class="character-tile" 
+        *ngFor="let character of characters" 
+        (click)="toggleFighterSelection(character)"
+        [class.disabled]="isDisabled(character)"
+        [style.backgroundImage]="'url(' + character.images.headshot + ')'">
+        <p>{{ character.name }}</p>
     </div>
     
+    </div>
+
     <!-- Arena Selection Controls -->
     <div class="controls-con" *ngIf="!isFightActive">
 
@@ -30,9 +30,6 @@
             (click)="startFight(fighter1!, fighter2!)">
             Start Fight
         </button>
-
-
-
 
     </div>
 

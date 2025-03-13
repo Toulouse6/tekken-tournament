@@ -62,13 +62,6 @@
     opacity: 0.7;
 }
 
-/* For Chicken */
-.character-tile.chicken-effect:hover {
-    border-color: silver !important;
-    box-shadow: 0 0 8px rgba(192, 192, 192, 0.8), 0 0 18px rgba(211, 211, 211, 0.6), 0 0 28px rgba(220, 220, 220, 0.5);
-    transform: scale(1);
-}
-
 .character-tile p {
     font-family: 'sub-title', sans-serif;
     background-color: rgb(229, 229, 229);
@@ -84,6 +77,43 @@
     text-transform: uppercase;
 }
 
+
+/* For Chicken */
+.character-tile.chicken-effect:hover {
+    border-color: silver !important;
+    box-shadow: 0 0 8px rgba(192, 192, 192, 0.8), 0 0 18px rgba(211, 211, 211, 0.6), 0 0 28px rgba(220, 220, 220, 0.5);
+    transform: scale(1);
+}
+
+.chicken-rain-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none;
+    overflow: hidden;
+    z-index: 99999;
+    display: none;
+    /* Hidden by default */
+}
+
+.chicken-rain {
+    position: absolute;
+    animation: fall linear forwards;
+}
+
+@keyframes fall {
+    0% {
+        transform: translateY(-10vh);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(100vh);
+        opacity: 0;
+    }
+}
 
 /* Arenas Selection */
 

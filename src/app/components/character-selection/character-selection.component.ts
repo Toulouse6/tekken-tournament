@@ -15,18 +15,20 @@ import { Subscription } from 'rxjs';
 
 export class CharacterSelectionComponent implements OnInit {
 
-    @Input() arenas: { name: string; image: string }[] = [];
-    @Output() selectionChange = new EventEmitter<{
-        fighter1: Character | null;
-        fighter2: Character | null;
-        arena: string | null;
-    }>();
+        @Input() arenas: { name: string; image: string }[] = [];
+        @Output() selectionChange = new EventEmitter<{
+            fighter1: Character | null;
+            fighter2: Character | null;
+            arena: string | null;
+        }>();
+    
+        characters: Character[] = [];
+        fighter1: Character | null = null;
+        fighter2: Character | null = null;
+        arena: string | null = "";
+        activeArenaIndex: number = 0;
 
-    characters: Character[] = [];
-    fighter1: Character | null = null;
-    fighter2: Character | null = null;
-    arena: string | null = "";
-    activeArenaIndex: number = 0;
+    isChickenActive: boolean = false;
     isFightActive: boolean = false;
 
     private fightStateSubscription?: Subscription;
@@ -45,13 +47,16 @@ export class CharacterSelectionComponent implements OnInit {
         this.characterService.emitSelection(this.fighter1, this.fighter2, this.arena, this.selectionChange);
     }
 
+
     toggleFighterSelection(character: Character): void {
 
+        // Check if chicken
         if (character.images.headshot.includes('chicken-headshot.png')) {
-            const chickenSound = new Audio('./assets/audio/chicken.mp3');
-            chickenSound.play();
+            this.characterService.triggerChickenEffect();
             return;
-        }
+        };
+
+        if (this.characterService.isChickenActive) return;
 
         const fighters = this.characterService.toggleFighterSelection(character, this.fighter1, this.fighter2);
         this.fighter1 = fighters.fighter1;
@@ -66,10 +71,9 @@ export class CharacterSelectionComponent implements OnInit {
         this.fightStateSubscription?.unsubscribe();
     }
 
-
     isDisabled(character: Character): boolean {
-        return this.characterService.isDisabled(character, this.fighter1, this.fighter2);
-    }
+        return this.characterService.isChickenActive || this.characterService.isDisabled(character, this.fighter1, this.fighter2);
+    }    
 
     // Arena Selection
     updateArena(): void {

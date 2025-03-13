@@ -1,8 +1,9 @@
 <div class="display" [ngClass]="{'default-arena': backgroundPosition === 'center'}"
     [style.backgroundImage]="'url(' + backgroundImage + ')'" [style.backgroundPosition]="backgroundPosition"
     [style.backgroundSize]="'cover'" [style.backgroundRepeat]="'no-repeat'">
-    <div class="overlay"></div>
-
+    <div class="overlay">
+        <div class="chicken-rain-container"></div>
+    </div>
 
     <div class="vsFrame">
         <!-- Fighter 1 -->
@@ -17,7 +18,7 @@
                 <p>{{ fighter1.bornIn }}, {{ fighter1.nationality }}</p>
             </div>
         </div>
-    
+
         <!-- Fighter 2 -->
         <div class="fighter fighter2" *ngIf="fighter2">
             <div class="fighter-background" [style.backgroundImage]="'url(' + fighter2.images.background + ')'">

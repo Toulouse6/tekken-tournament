@@ -9,6 +9,8 @@ import charactersData from '../../assets/characters.json';
 
 export class CharacterService {
 
+    isChickenActive: boolean = false;
+
     // All Arenas
     private arenas = [
         { name: "Silent Swamp", image: './assets/images/arenas/silent-swamp.png' },
@@ -64,6 +66,67 @@ export class CharacterService {
         eventEmitter.emit({ fighter1, fighter2, arena });
     }
 
+// Trigger Chicken affects
+triggerChickenEffect(): void {
+
+    this.isChickenActive = true;
+
+    // Play chicken sound
+    const chickenSound = new Audio('./assets/audio/chicken.mp3');
+    chickenSound.play();
+
+    // Chicken size range
+    const minSize = 50;
+    const maxSize = 100;
+
+    // Hardcoded image path
+    const chickenRainImage = "./assets/images/fighters/fullbody/chicken-body.png";
+
+    // Trigger Chicken Rain
+    const container = document.querySelector('.chicken-rain-container');
+    if (!container) return;
+
+    let remainingChickens = 300; // Track remaining chickens
+
+    for (let i = 0; i < 300; i++) { // Generate chickens
+
+        setTimeout(() => {  // Random delay
+            const img = document.createElement('img');
+            img.src = chickenRainImage;
+            img.classList.add('chicken-rain');
+
+            // Randomize chicken size
+            const size = Math.floor(Math.random() * (maxSize - minSize + 1)) + minSize;
+            img.style.width = `${size}px`;
+            img.style.height = `${size}px`;
+
+            // Randomize rotation
+            const rotation = Math.random() * 360;
+            img.style.transform = `rotate(${rotation}deg)`;
+
+            // Random position
+            img.style.left = `${Math.random() * 100}vw`;
+            img.style.top = `-${size}px`;
+
+            // Random fall duration
+            const duration = Math.random() * 2 + 2;
+
+            container.appendChild(img);
+
+            setTimeout(() => {
+                img.remove(); // Remove after animation
+                remainingChickens--; // Decrease count
+
+                // ✅ Reset isChickenActive
+                if (remainingChickens === 0) {
+                    this.isChickenActive = false;
+                }
+
+            }, duration * 1000);
+        }, Math.random() * 1800); // Random hiding
+    }
+}
+
     // Update Arena
     updateArena(arenas: { name: string; image: string }[], index: number, callback: (arena: string | null) => void): void {
         const selectedArena = arenas[index];
@@ -108,10 +171,10 @@ export class CharacterService {
                 "Elite": 0.5
             }
         };
-    
+
         return chances[level1][level2];
     }
-    
+
 
     // Start Fight
     startFight(fighter1: Character, fighter2: Character, resetCallback: () => void): void {
@@ -131,7 +194,7 @@ export class CharacterService {
             // Win chances
             const winChance = this.getWinChance(fighter1.level, fighter2.level);
             const winner = Math.random() < winChance ? fighter1 : fighter2;
-            const loser = winner === fighter1 ? fighter2 : fighter1; 
+            const loser = winner === fighter1 ? fighter2 : fighter1;
 
             const fightMusic = new Audio('./assets/audio/samurai-lofium.mp3');
             const youLose = new Audio('./assets/audio/you-lose.mp3');
