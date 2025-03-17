@@ -80,7 +80,7 @@ export class CharacterService {
         const maxSize = 100;
 
         // Hardcoded image path
-        const chickenRainImage = "./assets/images/fighters/fullbody/chicken-body.png";
+        const chickenRainImage = "./assets/images/fighters/fullbody/chicken-leg.png";
 
         // Trigger Chicken Rain
         const container = document.querySelector('.chicken-rain-container');
