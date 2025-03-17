@@ -76,7 +76,6 @@
     width: 100%;
     height: 100%;
     z-index: 2;
-    gap: 2rem;
     animation: fadeIn 0.5s ease-in-out forwards;
 }
 
@@ -162,8 +161,6 @@
     margin: 3rem;
     transition: transform 0.3s ease-in-out;
     animation: fadeIn 0.5s ease-in-out;
-    min-width: 70%;
-    max-width: 70%;
 }
 
 .fighter-background {
@@ -215,7 +212,7 @@
     width: 100%;
     justify-content: center;
     align-items: center;
-    gap: 1.5rem;
+    gap: 2rem;
 }
 
 
@@ -298,7 +295,6 @@
     }
 
     .vsFrame {
-        gap: 0.5rem;
         height: 100%;
     }
 
@@ -378,7 +374,7 @@
     }
 
     .vsFrame {
-        gap: 0.5rem;
+
     }
 
     .attributes h4 {
