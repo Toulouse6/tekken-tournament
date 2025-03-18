@@ -1,13 +1,13 @@
-# See http://help.github.com/ignore-files/ for more about ignoring files.
+# Ignore node_modules and dist folders
+node_modules/
+dist/
 
-# Compiled output
-/dist
+# Ignore temporary files
 /tmp
 /out-tsc
 /bazel-out
 
-# Node
-/node_modules
+# Logs
 npm-debug.log
 yarn-error.log
 
@@ -15,10 +15,8 @@ yarn-error.log
 .idea/
 .project
 .classpath
-.c9/
-*.launch
 .settings/
-*.sublime-workspace
+.history/
 
 # Visual Studio Code
 .vscode/*
@@ -26,7 +24,6 @@ yarn-error.log
 !.vscode/tasks.json
 !.vscode/launch.json
 !.vscode/extensions.json
-.history/*
 
 # Miscellaneous
 /.angular/cache
@@ -40,3 +37,12 @@ testem.log
 # System files
 .DS_Store
 Thumbs.db
+
+# Build and deployment artifacts
+*.js
+*.map
+*.css
+package-lock.json
+
+# Exclude generated SSR files
+dist/tekken-fighters/server/
