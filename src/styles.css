@@ -395,7 +395,7 @@ body.fight-active {
     /* Attributes */
 
     .display .attributes {
-        margin-top: -12rem !important;
+        margin-top: -10rem !important;
     }
 
     .display .attributes h4 {
@@ -459,7 +459,7 @@ body.fight-active {
     .fighter img.fullBody {
         margin-top: 1rem !important;
         transform: translateX(0) !important;
-        height: 16rem !important;
+        height: 15rem !important;
         bottom: 0 !important;
         top: 0 !important;
         transition: filter 0.3s ease-in-out !important;
