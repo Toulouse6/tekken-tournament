@@ -1,48 +1,43 @@
-# Ignore node_modules and dist folders
+# Ignore node_modules and build output
 node_modules/
 dist/
+package-lock.json
 
 # Ignore temporary files
 /tmp
 /out-tsc
-/bazel-out
+/.angular/
+.bazel-out/
 
-# Logs
+# Ignore logs
 npm-debug.log
 yarn-error.log
 
-# IDEs and editors
+# Ignore system-generated files
+.DS_Store
+Thumbs.db
+
+# Ignore IDE and editor settings
 .idea/
 .project
 .classpath
 .settings/
 .history/
+.vscode/
 
-# Visual Studio Code
-.vscode/*
-!.vscode/settings.json
-!.vscode/tasks.json
-!.vscode/launch.json
-!.vscode/extensions.json
-
-# Miscellaneous
+# Ignore Angular cache and test files
 /.angular/cache
 .sass-cache/
-/connect.lock
 /coverage
 /libpeerconnection.log
 testem.log
 /typings
 
-# System files
-.DS_Store
-Thumbs.db
-
-# Build and deployment artifacts
+# Ignore auto-generated build files
+*.js.map
+*.css.map
 *.js
-*.map
 *.css
-package-lock.json
 
 # Exclude generated SSR files
 dist/tekken-tournament/server/
