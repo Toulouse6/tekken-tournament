@@ -395,13 +395,13 @@ body.fight-active {
     /* Attributes */
 
     .display .attributes {
-        margin-top: -10rem !important;
+        margin-top: -8rem !important;
     }
 
     .display .attributes h4 {
         font-size: 1.5rem !important;
         color: #ba892d !important;
-        margin-top: 3rem !important;
+        margin-top: 4rem !important;
         margin-bottom: 0.5rem !important;
     }
 
@@ -441,8 +441,8 @@ body.fight-active {
 
     .fighter {
         height: 75% !important;
-        min-width: 65% !important;
-        max-width: 65% !important;
+        min-width: 100% !important;
+        max-width: 100% !important;
         margin: auto 3rem !important;
     }
 
@@ -457,9 +457,9 @@ body.fight-active {
 
     /* Fighters */
     .fighter img.fullBody {
-        margin-top: 1rem !important;
+        margin-top: 0rem !important;
         transform: translateX(0) !important;
-        height: 14.5rem !important;
+        height: 12rem !important;
         bottom: 0 !important;
         top: 0 !important;
         transition: filter 0.3s ease-in-out !important;
@@ -467,7 +467,7 @@ body.fight-active {
 
     /* Fighters in Active */
     .display.fight-active .fighter img.fullBody {
-        margin-top: 2.5rem !important;
+        margin-top: 2rem !important;
         bottom: 0 !important;
     }
 
