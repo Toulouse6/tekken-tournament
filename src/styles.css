@@ -381,7 +381,7 @@ body.fight-active {
 
     .display {
         justify-content: center !important;
-        width: 90vh !important;
+        width: 85vh !important;
         height: 39vh !important;
         overflow-y: auto !important;
         display: flex !important;
@@ -395,7 +395,7 @@ body.fight-active {
     /* Attributes */
 
     .display .attributes {
-        margin-top: -8rem !important;
+        margin-top: -10rem !important;
     }
 
     .display .attributes h4 {
@@ -457,7 +457,7 @@ body.fight-active {
 
     /* Fighters */
     .fighter img.fullBody {
-        margin-top: 0.5rem !important;
+        margin-top: 1rem !important;
         transform: translateX(0) !important;
         height: 14.5rem !important;
         bottom: 0 !important;
@@ -483,7 +483,7 @@ body.fight-active {
 
     .character-grid {
         margin: 0 !important;
-        padding: 1rem 1.5rem !important;
+        padding: 1rem 1rem !important;
         display: flex !important;
         flex-wrap: nowrap;
         align-items: center !important;
@@ -492,7 +492,7 @@ body.fight-active {
         gap: 0.5rem !important;
         height: 100% !important;
         max-height: 11vh !important;
-        width: 85vh !important;
+        width: 80vh !important;
         overflow-x: auto !important;
     }
 
