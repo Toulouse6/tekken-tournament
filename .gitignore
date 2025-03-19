@@ -1,7 +1,6 @@
 # Ignore node_modules and build output
 node_modules/
 dist/
-package-lock.json
 
 # Ignore temporary files
 /tmp
@@ -37,7 +36,6 @@ testem.log
 *.js.map
 *.css.map
 *.js
-*.css
 
 # Exclude generated SSR files
 dist/tekken-tournament/server/
