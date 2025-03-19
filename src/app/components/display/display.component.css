@@ -62,7 +62,6 @@
 
 /* VS Frame */
 
-.fullBody,
 .vsText {
     position: relative;
     z-index: 9997;
@@ -119,7 +118,7 @@
     font-size: 2.8rem;
     color: #ba892d;
     width: 90%;
-    z-index: 9999 !important;
+    z-index: 9998 !important;
 }
 
 
@@ -144,6 +143,7 @@
     animation: fadeIn 0.5s ease-in-out;
     transition: filter 0.5s ease-in-out;
     margin-top: 3rem;
+    z-index: 9999 !important;
 }
 
 /* Fighters Backgrounds */
