@@ -1,0 +1,41 @@
+# Ignore node_modules and build output
+node_modules/
+dist/
+
+# Ignore temporary files
+/tmp
+/out-tsc
+/.angular/
+.bazel-out/
+
+# Ignore logs
+npm-debug.log
+yarn-error.log
+
+# Ignore system-generated files
+.DS_Store
+Thumbs.db
+
+# Ignore IDE and editor settings
+.idea/
+.project
+.classpath
+.settings/
+.history/
+.vscode/
+
+# Ignore Angular cache and test files
+/.angular/cache
+.sass-cache/
+/coverage
+/libpeerconnection.log
+testem.log
+/typings
+
+# Ignore auto-generated build files
+*.js.map
+*.css.map
+*.js
+
+# Exclude generated SSR files
+dist/tekken-tournament/server/
